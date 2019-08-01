@@ -16,7 +16,7 @@ $desktop: $b1;
 html, body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100%;	
 }
 
 ol.default {
@@ -103,6 +103,7 @@ pre code.hljs {
 	box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
+	background-color : black;
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
@@ -111,8 +112,8 @@ pre code.hljs {
     display: block;
     float: right;
     margin: 0;
-    font-size: 1.5em;
-    padding-top: 0.5em;
+	font-size: 1.5em;
+	padding-top: 0.5em;
     @include media ($tablet) {
       display: none;
     }
@@ -120,7 +121,7 @@ pre code.hljs {
   // Nav menu
   .navigation-wrapper {
   	@include outer-container;
-    @include clearfix;
+	@include clearfix;
     position: relative;
   }
   .logo {
@@ -140,7 +141,9 @@ pre code.hljs {
   }
   nav {
     float: none;
-    padding: 1.25em 0;
+	padding: 1.25em 0;
+	font-weight: bold;
+	
     @include media ($tablet) {
       float: right;
       line-height: 1.5em;
@@ -167,7 +170,7 @@ pre code.hljs {
     display: block;
     text-align: right;
     width: 100%;
-    padding: 0.25em 0;
+	padding: 0.25em 0;
     @include media ($tablet) {
       background: transparent;
       display: inline;
@@ -177,7 +180,8 @@ pre code.hljs {
   }
   li.nav-link {
   	a {
-	    display: inline-block;
+		display: inline-block;
+		color: white;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
 	    }
