@@ -19,3 +19,6 @@ package.json
 .jekyll
 Gemfile
 Gemfile.lock
+
+## Git Push
+git.sh
