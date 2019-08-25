@@ -10,11 +10,10 @@ email: sungminryu94@gmail.com
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: images/logo.png
-description: Product documentation template for Jekyll.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+description: WheatBeer's Blog(Sung Min, Ryu)
+author: Sung Min, Ryu
+  name: Sung Min, Ryu
+  email: sungminryu94@gmail.com
 social:
   name: Edition Template
   links:
@@ -27,7 +26,7 @@ facebook_url:
 googleplus_url:
 instagram_url:
 linkedin_url:
-github_url: https://github.com/WheatBeers
+github_url: https://github.com/WheatBeer
 pinterest_url:
 slack_url:
 dribbble_url:

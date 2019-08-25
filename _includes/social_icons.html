@@ -1,34 +1,33 @@
 <!-- Social Icons -->
-<ul>
-  <!-- <li><a>aaaaa</a></li> -->
+<ul class='social'>
+  {%- if site.email -%}
+  <li><a href="mailto:{{- site.email -}}" class="fa fa-envelope"></a></li>
+  {%- endif -%}
   {%- if site.twitter_url -%}
-  <li><a href="{{- site.twitter_url -}}" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
+  <li><a href="{{- site.twitter_url -}}" class="fa fa-twitter"></a></li>
   {%- endif -%}
   {%- if site.facebook_url -%}
-  <li><a href="{{- site.facebook_url -}}" class="fab fa-facebook-f"><span class="label">Facebook</span></a></li>
+  <li><a href="{{- site.facebook_url -}}" class="fa fa-facebook-f"></a></li>
   {%- endif -%}
   {%- if site.googleplus_url -%}
-  <li><a href="{{- site.googleplus_url -}}" class="fab fa-google-plus-g"><span class="label">Google Plus</span></a></li>
+  <li><a href="{{- site.googleplus_url -}}" class="fa fa-google-plus-g"></a></li>
   {%- endif -%}
   {%- if site.instagram_url -%}
-  <li><a href="{{- site.instagram_url -}}" class="fab fa-instagram"><span class="label">Instagram</span></a></li>
+  <li><a href="{{- site.instagram_url -}}" class="fa fa-instagram"></a></li>
   {%- endif -%}
   {%- if site.linkedin_url -%}
-  <li><a href="{{- site.linkedin_url -}}" class="fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+  <li><a href="{{- site.linkedin_url -}}" class="fa fa-linkedin-in"></a></li>
   {%- endif -%}
   {%- if site.github_url -%}
-  <li><a href="{{- site.github_url -}}" class="fab fa-github"><span class="label">GitHub</span></a></li>
+  <li><a href="{{- site.github_url -}}" class="fa fa-github"></a></li>
   {%- endif -%}
   {%- if site.pinterest_url -%}
-  <li><a href="{{- site.pinterest_url -}}" class="fab fa-pinterest"><span class="label">Pinterest</span></a></li>
+  <li><a href="{{- site.pinterest_url -}}" class="fa fa-pinterest"></a></li>
   {%- endif -%}
   {%- if site.slack_url -%}
-  <li><a href="{{- site.slack_url -}}" class="fab fa-slack-hash"><span class="label">Slack</span></a></li>
+  <li><a href="{{- site.slack_url -}}" class="fa fa-slack-hash"></a></li>
   {%- endif -%}
   {%- if site.dribbble_url -%}
-  <li><a href="{{- site.dribbble_url -}}" class="fab fa-dribbble"><span class="label">Dribbble</span></a></li>
-  {%- endif -%}
-  {%- if site.email -%}
-  <li><a href="mailto:{{- site.email -}}" class="fab fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="{{- site.dribbble_url -}}" class="fa fa-dribbble"></a></li>
   {%- endif -%}
 </ul>
