@@ -1,15 +1,27 @@
-{%- comment -%}
-  Include vars:
-  scrolly_nav
-{%- endcomment -%}
-
-<!-- Header -->
 <div id="header">
-  <div class="top">
-    {%- include logo.html -%}
-    {%- include nav.html section_items=include.scrolly_nav -%}
-  </div>
-  <div class="bottom">
-    {%- include social_icons.html -%}
-  </div>
+
+    <div class="top">
+        {%- include top.html -%}
+    </div>
+
+    <div class="mid">
+        {%- include nav.html -%}
+    </div>
+    
 </div>
+
+<section class="main">
+    <div class="page-header">
+        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
+        <h3>{{ page.title }}</h3>
+    </div>
+    <article class="content">
+        {{ content }}
+    </article>
+</section>
+
+<script>
+    document.getElementById("open-nav").addEventListener("click", function () {
+        document.body.classList.toggle("nav-open");
+    });
+</script>

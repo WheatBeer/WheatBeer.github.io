@@ -22,3 +22,5 @@ Gemfile.lock
 
 ## Git Push
 git.sh
+
+run.sh
