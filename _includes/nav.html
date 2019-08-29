@@ -2,21 +2,31 @@
     <ul>
         <li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
             {% assign home = site.html_pages | where: 'url', '/' | first %}
-            <a href="{{ site.baseurl }}/">{{ home.title }}</a>
+            <a class="list-top" href="{{ site.baseurl }}/">{{ home.title }}</a>
         </li>
     </ul>
 
     <ul>
         {% assign grouped = site.docs | group_by: 'category' %}
         {% for group in grouped %}
+        {% assign count = count | plus: 1 %}
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-                {% assign items = group.items | sort: 'order' %}
-                <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
-                <ul>
-                    {% for item in items %}
-                        <li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
+                <div class="list-wrapper">
+                    {% assign items = group.items | sort: 'order' %}
+                    <label class="list-top" href="{{ site.baseurl }}{{ items.first.url }}" for="opener-{{ count }}">
+                        {{ group.name }}
+                    </label>
+                    <input type="checkbox" id="opener-{{ count }}"/>
+                    <ul>
+                        {% for item in items %}
+                            <li class="nav-item {% if item.url == page.url %}current{% endif %}">
+                                <a class="list" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+            
             </li>
         {% endfor %}
     </ul>
@@ -24,7 +34,7 @@
     <ul>
         <li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
             {% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
-            <a href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
+            <a class="list-top" href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
         </li>
     </ul>
 </nav>

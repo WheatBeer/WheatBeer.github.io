@@ -278,12 +278,15 @@ nav > ul {
 		display: block;
 	}
 
-	> a {
+	.list-top {
 		color: #666;
 		text-decoration: none;
 		font-size: 1.4rem;
 		padding: $space / 2 0 $space / 2 $space * 2;
 		display: block;
+		line-height: 1.5;
+		font-weight: 600;
+		padding-left: $space;
 	}
 
 	&.current > a,
@@ -292,11 +295,31 @@ nav > ul {
 		color: #111;
 	}
 
-	&.top-level > a {
-		line-height: 1.5;
-		font-weight: 600;
-		padding-left: $space;
+	&.top-level > .list-wrapper {
+		ul {
+			.list {
+				color: #666;
+				text-decoration: none;
+				font-size: 1.4rem;
+				padding: $space / 2 0 $space / 2 $space * 2;
+				display: block;
+			}
+		}
+		[id^=opener-] { display:none; }
+		[id^=opener-]:checked ~ ul { 
+			list-style: none;
+			height: 100%;
+			transform-origin: top;
+			transition: transform .2s ease-out;
+			transform: scaleY(1);
+
+		}
+		[id^=opener-] ~ ul { 
+			height: 0;
+			transform: scaleY(0);
+		}
 	}
+	
 }
 
 .settings-panel-example {
