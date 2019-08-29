@@ -1,0 +1,25 @@
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    document.getElementById("open-nav").addEventListener("click", function () {
+        document.body.classList.toggle("nav-open");
+    });
+
+    $('input:checkbox[name="box"]').click(function(){
+        $(".checkbox").each(function(index, element) { 
+            if(element.checked){
+                localStorage.setItem(element.id, true);
+            }
+            else {
+                localStorage.setItem(element.id, false);
+            }
+        });
+    });
+        
+    $(document).ready(function() {
+        $(".checkbox").each(function(index, element) {
+            var checked = JSON.parse(localStorage.getItem(element.id));
+            document.getElementById(element.id).checked = checked;
+        });
+    });
+</script>

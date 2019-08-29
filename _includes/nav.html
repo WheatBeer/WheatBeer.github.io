@@ -2,31 +2,32 @@
     <ul>
         <li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
             {% assign home = site.html_pages | where: 'url', '/' | first %}
-            <a class="list-top" href="{{ site.baseurl }}/">{{ home.title }}</a>
+            <a class="menu" href="{{ site.baseurl }}/">{{ home.title }}</a>
         </li>
     </ul>
 
     <ul>
+        <a class="nav-item category">Categories</a>
         {% assign grouped = site.docs | group_by: 'category' %}
+        {% assign count = 0%}
         {% for group in grouped %}
         {% assign count = count | plus: 1 %}
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-                <div class="list-wrapper">
+                <div id="list-wrapper">
                     {% assign items = group.items | sort: 'order' %}
-                    <label class="list-top" href="{{ site.baseurl }}{{ items.first.url }}" for="opener-{{ count }}">
+                    <a class="list-top{% if page.url == group.url %} active {% endif %}"href="{{ site.baseurl }}{{ items.first.url }}">
+                        <label for="opener-{{ count }}">▾</label>
                         {{ group.name }}
-                    </label>
-                    <input type="checkbox" id="opener-{{ count }}"/>
+                    </a>
+                    <input type="checkbox" class="checkbox" id="opener-{{ count }}" name="box"/>
                     <ul>
-                        {% for item in items %}
-                            <li class="nav-item {% if item.url == page.url %}current{% endif %}">
-                                <a class="list" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-                            </li>
-                        {% endfor %}
+                    {% for item in items %}
+                        <li class="nav-item {% if item.url == page.url %}current{% endif %}">
+                            <a class="list" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
                     </ul>
                 </div>
-                
-            
             </li>
         {% endfor %}
     </ul>
@@ -34,7 +35,7 @@
     <ul>
         <li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
             {% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
-            <a class="list-top" href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
+            <a class="menu" href="{{ site.baseurl }}/changelog/">{{ changelog.title }}</a>
         </li>
     </ul>
 </nav>
