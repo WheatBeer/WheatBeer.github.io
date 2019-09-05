@@ -10,15 +10,23 @@
     
 </div>
 
+
 <section class="main">
+    {% if page.category != Home %}
     <div class="page-header">
         <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
         <h3>{{ page.title }}</h3>
     </div>
-    <article class="content">
+
+    <article class="content" id="about_me">
         {{ content }}
     </article>
+
+    {% else %}
+        {{ content }}
+    {% endif %}
+    
+    
 </section>
 
 {%- include script.html -%}
-
