@@ -14,11 +14,11 @@
 <section class="main">
     {% if page.category != Home %}
     <div class="page-header">
-        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
         <h3>{{ page.title }}</h3>
+        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
     </div>
 
-    <article class="content" id="about_me">
+    <article class="content">
         {{ content }}
     </article>
 

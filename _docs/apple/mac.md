@@ -1,6 +1,6 @@
 ---
-title: iOS
-category: Devices
+title: Mac
+category: Apple
 order: 1
 ---
 

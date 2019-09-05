@@ -1,7 +1,7 @@
 ---
-title: Video
-category: Media
-order: 2
+title: GPGPU-Sim
+category: Projects
+order: 1
 ---
 
 Share video to your friends! Send videos from your computer, phone, camera or YouTube.

@@ -1,6 +1,6 @@
 ---
-title: Android
-category: Devices
+title: iPhone
+category: Apple
 order: 2
 ---
 
