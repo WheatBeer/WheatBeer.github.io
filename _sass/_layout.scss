@@ -28,7 +28,6 @@ body {
 			}
 			.mid{
 				padding-top: $nav-header-height*1.33 + 48px;
-				z-index: 2;
 				display: block;
 			}
 		}
@@ -47,6 +46,7 @@ body {
 
 	#header > .mid {
 		display: none;
+		z-index: 2;
 		@media (min-width: $mobile-break) {
 			padding-top: $nav-header-height + 48px;
 			display: block;
