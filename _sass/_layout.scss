@@ -67,7 +67,6 @@ body {
 
 .main {
 	margin-top: $space + $nav-header-height;
-
 	@media (min-width: $mobile-break) {
 		margin-top: 0;
 	}
@@ -281,12 +280,11 @@ $nav-image: $baseurl + "/images/menu.svg";
 .content,
 .page-header {
 	max-width: $content-max-width;
-	padding: 0 ($space + 5) $space;
+	padding: $space ($space + 5) $space;
 	margin: $space auto 0 auto;
 }
 
 .page-header {
-	padding-top: $nav-header-height;
 	h2,
 	h3 {
 		margin: 0;
@@ -307,7 +305,6 @@ $nav-image: $baseurl + "/images/menu.svg";
 	}
 
 	@media (min-width: $mobile-break) {
-		padding-top: 0;
 		h2 {
 			font-size: 2.65rem;
 		}
