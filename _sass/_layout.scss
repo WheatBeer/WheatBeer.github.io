@@ -7,7 +7,7 @@ body {
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
-	#header > .top > form{
+	#header > .top > .search{
 		display: none;
 		@media (min-width: $mobile-break) {
 			display: block;
@@ -23,7 +23,7 @@ body {
 
 		#header {
 			bottom: 0;
-			.top > form{
+			.top > .search{
 				display: block;
 			}
 			.mid{
@@ -46,7 +46,6 @@ body {
 
 	#header > .mid {
 		display: none;
-		z-index: 2;
 		@media (min-width: $mobile-break) {
 			padding-top: $nav-header-height + 48px;
 			display: block;
