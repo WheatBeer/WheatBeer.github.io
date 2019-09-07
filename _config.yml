@@ -7,6 +7,7 @@ baseurl: ""
 google_analytics_key:
 show_full_navigation: true
 email: sungminryu94@gmail.com
+disqus-shortname: wheatbeer
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: images/logo.png
