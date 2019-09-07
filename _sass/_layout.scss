@@ -143,6 +143,7 @@ body {
 			@include flex-direction(row);
 			@include align-items(center);
 			border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+			z-index: 4;
 			@media (min-width: $mobile-break) {
 				height: $nav-header-height*2;
 			}
