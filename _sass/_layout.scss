@@ -7,12 +7,6 @@ body {
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
-	#header > .top > form{
-		display: none;
-		@media (min-width: $mobile-break) {
-			display: block;
-		}
-	}
 	&.nav-open {
 		overflow: hidden;
 
@@ -41,24 +35,6 @@ body {
 		bottom: 0;
 		left: 0;
 		z-index: -1;
-	}
-
-	#header > .mid {
-		display: none;
-		@media (min-width: $mobile-break) {
-			padding-top: $nav-header-height + 48px;
-			display: block;
-			top: $nav-header-height;
-			position: fixed;
-			overflow: auto;
-			width: $nav-width;
-			height: 70%;
-		}
-		
-		ul {
-			padding: 0;
-			margin: 0;
-		}
 	}
 
 	@media (min-width: $mobile-break) {
@@ -166,6 +142,31 @@ body {
 
 		}
 		
+		form{
+			display: none;
+			@media (min-width: $mobile-break) {
+				display: block;
+			}
+		}
+		
+	}
+
+	.mid {
+		display: none;
+		@media (min-width: $mobile-break) {
+			padding-top: $nav-header-height + 48px;
+			display: block;
+			top: $nav-header-height;
+			position: fixed;
+			overflow: auto;
+			width: $nav-width;
+			height: 70%;
+		}
+		
+		ul {
+			padding: 0;
+			margin: 0;
+		}
 	}
 
 
