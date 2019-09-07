@@ -120,11 +120,12 @@ body {
 			img {
 				height: $emblem-size*1.2;
 				width: $emblem-size*1.2;
-				margin-left: 10px;
-				margin-right: 30px;
+				margin-right: 20px;
 				@media (min-width: $mobile-break) {
 					height: $emblem-size*2;
 					width: $emblem-size*2;
+					margin-left: 10px;
+					margin-right: 30px;
 				}
 				
 			}
