@@ -269,6 +269,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	position: relative;
 	background-color: $content-background-color;
 	color: $content-color;
+	margin: 0 auto 0 auto;
 
 	h3::before {
 		content: "";
@@ -281,10 +282,10 @@ $nav-image: $baseurl + "/images/menu.svg";
 .page-header {
 	max-width: $content-max-width;
 	padding: $space ($space + 5) $space;
-	margin: $space auto 0 auto;
 }
 
 .page-header {
+	margin: $space auto 0 auto;
 	h2,
 	h3 {
 		margin: 0;
@@ -302,6 +303,10 @@ $nav-image: $baseurl + "/images/menu.svg";
 	h3 {
 		font-size: 4rem;
 		margin-left: -4px;
+	}
+
+	hr {
+		margin: $space*2 0 0 0;
 	}
 
 	@media (min-width: $mobile-break) {
