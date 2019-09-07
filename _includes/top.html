@@ -3,9 +3,8 @@
     <a id="title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     <button type="button" class="open-nav" id="open-nav"></button>
 </h1>
-<div class="search">
-    <form action="{{ site.baseurl }}/search/" method="get">
-        <input type="text" name="q" id="search-input" placeholder="Search" autofocus>
-        <input type="submit" value="Search" style="display: none;">
-    </form>
-</div>
+
+<form action="{{ site.baseurl }}/search/" method="get">
+    <input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+    <input type="submit" value="Search" style="display: none;">
+</form>

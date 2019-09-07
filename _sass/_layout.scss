@@ -7,7 +7,7 @@ body {
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
-	#header > .top > .search{
+	#header > .top > form{
 		display: none;
 		@media (min-width: $mobile-break) {
 			display: block;
@@ -16,14 +16,13 @@ body {
 	&.nav-open {
 		overflow: hidden;
 
-		nav,
-		#header > form {
+		nav{
 			display: block;
 		}
 
 		#header {
 			bottom: 0;
-			.top > .search{
+			.top > form{
 				display: block;
 			}
 			.mid{
