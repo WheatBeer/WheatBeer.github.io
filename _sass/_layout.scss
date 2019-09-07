@@ -7,7 +7,12 @@ body {
 	height: auto;
 	overflow-x: hidden;
 	background-color: $body-background-color;
-
+	#header > .top > form{
+		display: none;
+		@media (min-width: $mobile-break) {
+			display: block;
+		}
+	}
 	&.nav-open {
 		overflow: hidden;
 
@@ -18,6 +23,14 @@ body {
 
 		#header {
 			bottom: 0;
+			.top > form{
+				display: block;
+			}
+			.mid{
+				padding-top: $nav-header-height*1.33 + 48px;
+				z-index: 2;
+				display: block;
+			}
 		}
 	}
 
@@ -30,6 +43,24 @@ body {
 		bottom: 0;
 		left: 0;
 		z-index: -1;
+	}
+
+	#header > .mid {
+		display: none;
+		@media (min-width: $mobile-break) {
+			padding-top: $nav-header-height + 48px;
+			display: block;
+			top: $nav-header-height;
+			position: fixed;
+			overflow: auto;
+			width: $nav-width;
+			height: 70%;
+		}
+		
+		ul {
+			padding: 0;
+			margin: 0;
+		}
 	}
 
 	@media (min-width: $mobile-break) {
@@ -100,12 +131,12 @@ body {
 		
 		h1 {
 			padding: $emblem-vertical-padding $emblem-horizontal-padding;
-			height: $nav-header-height;
+			height: $nav-header-height*1.33;
 			box-sizing: border-box;
 			background-color: $brand-colour;
 			color: #fff;
 			margin: 0;
-			font-size: 1.7rem;
+			font-size: 2rem;
 			line-height: 0.8;
 			letter-spacing: 0;
 			font-weight: 600;
@@ -116,7 +147,6 @@ body {
 			border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 			@media (min-width: $mobile-break) {
 				height: $nav-header-height*2;
-				font-size: 2rem;
 			}
 	
 			img {
@@ -134,25 +164,9 @@ body {
 				color: #fff;
 				text-decoration: none;
 			}
-		}
-		
-	}
 
-	.mid {
-		padding-top: $nav-header-height + 48px;
-		z-index: 2;
-		@media (min-width: $mobile-break) {
-			top: $nav-header-height;
-			position: fixed;
-			overflow: auto;
-			width: $nav-width;
-			height: 70%;
 		}
 		
-		ul {
-			padding: 0;
-			margin: 0;
-		}
 	}
 
 
@@ -166,7 +180,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 		height: $emblem-size;
 		border: 0;
 		position: absolute;
-		top: $emblem-vertical-padding;
+		top: $emblem-vertical-padding + 10px;
 		right: $emblem-horizontal-padding;
 		border-radius: 2px;
 
