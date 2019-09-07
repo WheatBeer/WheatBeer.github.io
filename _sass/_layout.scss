@@ -16,13 +16,6 @@ body {
 
 		#header {
 			bottom: 0;
-			.top > form{
-				display: block;
-			}
-			// .mid{
-			// 	padding-top: $nav-header-height*1.33 + 48px;
-			// 	display: block;
-			// }
 		}
 	}
 
@@ -152,8 +145,7 @@ body {
 	}
 
 	.mid {
-		// display: none;
-		padding-top: $nav-header-height*1.33 + 48px;
+		padding-top: $nav-header-height*1.33;
 		display: block;
 		@media (min-width: $mobile-break) {
 			padding-top: $nav-header-height + 48px;
