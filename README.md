@@ -1,3 +1,9 @@
+# WheatBeer's Blog
+
+**This blog has been upgraded from the follow jekyll theme blog.** 
+
+***
+
 # Edition
 
 Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
@@ -18,7 +24,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * Change log
 * RSS/Atom feed
-* SEO tags
+* [SEO tags](https://github.com/jekyll/jekyll-seo-tag)
 * Google Analytics
 
 ## Setup
