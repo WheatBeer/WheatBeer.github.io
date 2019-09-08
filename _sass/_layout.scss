@@ -648,7 +648,7 @@ img {
 	font-size: 0.8em;
 
 	.social{
-		padding-bottom: 5px;
+		padding:0 0 5px 0;
 		margin-bottom: 0;
 		li{
 			display: inline;
@@ -664,6 +664,7 @@ img {
 
 	.copyright {
 		cursor: default;
+		padding: 0;
 		margin: 0;
 		li {
 			color: rgb(155, 155, 155);
