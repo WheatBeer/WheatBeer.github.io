@@ -12,22 +12,30 @@
 
 
 <section class="main">
-    {% if page.category != Home %}
-    <div class="page-header">
-        <h3>{{ page.title }}</h3>
-        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
-        <hr>
-    </div>
 
-    <article class="content">
+    {% if page.category == 'Home' %}
         {{ content }}
-        {% include disqus.html %}
-    </article>
-
+    {% elsif page.category == 'Log' %}
+        <div class="page-header">
+            <h3>{{ page.title }}</h3>
+            <br>
+            <blockquote>
+                <p>Subscribe with <a href="{{ site.baseurl }}/feed.xml" target="_blank">RSS</a> to keep up with the latest changes.</p>
+            </blockquote>
+        </div>
+        {{ content }}
     {% else %}
-        {{ content }}
+        <div class="page-header">
+            <h3>{{ page.title }}</h3>
+            <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
+            <hr>
+        </div>
+        <article class="content">
+            {{ content }}
+            <hr>
+            {% include disqus.html %}
+        </article>
     {% endif %}
-    
     
 </section>
 

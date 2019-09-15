@@ -1,17 +1,12 @@
 ---
-title: GPGPU-Sim
+title: GPGPU-SIM
 category: Projects
 order: 1
 ---
 
-Share video to your friends! Send videos from your computer, phone, camera or YouTube.
+## How to run cuDNN with gpgpu-sim
 
-To share a video:
+* EEE Capstone Design at Yonsei Univ. 
+* [Post Link](https://medium.com/@quick94sm/how-to-run-cudnn-with-gpgpu-sim-9e30447ee5a9){: target="_blank"}
 
-1. Open a message with someone
-2. Select the **Send Media** button
-3. Pick a video or paste a YouTube link
-
-> Videos can use up a lot of bandwidth so be aware of your mobile data.
-
-![](//placehold.it/800x600)
+![](https://miro.medium.com/max/732/0*sGAP2HMKDVXBgHqo.png){: .center}
