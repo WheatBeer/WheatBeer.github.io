@@ -1,7 +1,6 @@
 ---
 title: MacOS
 category: Linux & MacOS
-order: 1
 ---
 
 <div id="github"></div>

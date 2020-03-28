@@ -1,7 +1,6 @@
 ---
 title: Linux
 category: Linux & MacOS
-order: 2
 ---
 
 <div id="github"></div>

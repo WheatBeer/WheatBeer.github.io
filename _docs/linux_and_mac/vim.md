@@ -1,7 +1,6 @@
 ---
 title: Vim
 category: Linux & MacOS
-order: 3
 ---
 
 <div id="github"></div>

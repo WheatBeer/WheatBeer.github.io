@@ -1,7 +1,6 @@
 ---
 title: C/C++
 category: Coding
-order: 1
 ---
 
 <div id="github"></div>

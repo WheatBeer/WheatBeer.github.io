@@ -1,7 +1,6 @@
 ---
 title: GPGPU-SIM
 category: Projects
-order: 1
 ---
 
 <div id="github"></div>

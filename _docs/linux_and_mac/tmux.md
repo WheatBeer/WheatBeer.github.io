@@ -1,7 +1,6 @@
 ---
 title: Tmux
 category: Linux & MacOS
-order: 4
 ---
 
 <div id="github"></div>
