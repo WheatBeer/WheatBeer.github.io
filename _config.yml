@@ -85,3 +85,7 @@ defaults:
 types:
   - minor
   - major
+
+markdown: kramdown
+syntax_hightlighter: rouge
+
