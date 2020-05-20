@@ -20,3 +20,5 @@ package.json
 
 ## Posts
 posts/
+
+**/*.swp
