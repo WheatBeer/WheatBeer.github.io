@@ -5,7 +5,7 @@ posts=$wheatbeer/posts
 docs=$wheatbeer/_docs 
 
 print_help() {
-    echo -e "Usage: $0 [post/rm]"
+    echo -e "Usage: $0 [post/rm/rmd]"
     exit 0
 }
 
@@ -16,7 +16,7 @@ fi
 
 # Check arguments
 action=$1; shift
-if [[ $action != post && $action != rm ]]; then
+if [[ $action != post && $action != rm && $action != rmd ]]; then
 	print_help
 fi
 
@@ -48,13 +48,13 @@ if [[ $action = 'post' ]]; then
 	# Posting
 	read -p "Type a category(directory name) you want to post: " folder
 	category="$(tr '[:lower:]' '[:upper:]' <<< ${folder:0:1})${folder:1}"
-	echo e "\n $category"
 	cd $posts
 	if [[ -d $folder ]] ; then
 		read -p "Type a title(file name) you want to post: " file
 		title="$(tr '[:lower:]' '[:upper:]' <<< ${file:0:1})${file:1}"
 		cd $posts/$folder; touch $file.md
 		echo -e "[[edit]](https://github.com/WheatBeer/posts/edit/master/$folder/$file.md)" > $file.md 
+		#./git.sh
 		cd $docs/$folder; touch $file.md
 		echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
 		echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
@@ -70,6 +70,7 @@ if [[ $action = 'post' ]]; then
 				title="$(tr '[:lower:]' '[:upper:]' <<< ${file:0:1})${file:1}"
 				cd $posts/$folder; touch $file.md
 				echo -e "[[edit]](https://github.com/WheatBeer/posts/edit/master/$folder/$file.md)" > $file.md 
+				#./git.sh
 				cd $docs/$folder; touch $file.md
 				echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
 				echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
@@ -89,10 +90,19 @@ elif [[ $action = 'rm' ]]; then
 		echo -e "_docs directory(to visualize):"
 		cd $docs/$folder; ls 
 		read -p "Type the file name you want to remove: " file 
-		cd $posts/$folder; rm $file.md
-		cd $docs/$folder; rm $file.md
+		cd $posts/$folder; rm $file 
+		cd $docs/$folder; rm $file
+		# cd $posts; ./git.sh
 	else
 		echo -e "\n$folder dosen't exist"
 		exit 1
 	fi
+elif [[ $action = 'rmd' ]]; then
+	read -p "Type the directory: " folder 
+	rm -rf $docs/$folder
+	rm -rf $post/$folder
+	echo -e "\nposts directory(to edit on github):"
+	cd $post; ls -d */
+	echo -e "_docs directory(to visualize):"
+	cd $docs; ls -d */
 fi
