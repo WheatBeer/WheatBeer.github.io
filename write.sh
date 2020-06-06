@@ -57,7 +57,6 @@ if [[ $action = 'post' ]]; then
 		cd $docs/$folder; touch $file.md
 		echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
 		echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
-		cd $posts; ./git.sh
 		cd $wheatbeer; ./git.sh
 	else
 		echo -e "$folder does not exist"
@@ -74,7 +73,6 @@ if [[ $action = 'post' ]]; then
 				cd $docs/$folder; touch $file.md
 				echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
 				echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
-				cd $posts; ./git.sh
 				cd $wheatbeer; ./git.sh
 				break	
 			elif [[ $checker = 'n' || $checker = 'N' ]]; then
@@ -98,7 +96,6 @@ elif [[ $action = 'rm' ]]; then
 		cd $posts/$folder; ls 
 		echo -e "_docs directory(to visualize):"
 		cd $docs/$folder; ls 
-		cd $posts; ./git.sh
 		cd $wheatbeer; ./git.sh
 	else
 		echo -e "\n$folder dosen't exist"
@@ -112,6 +109,5 @@ elif [[ $action = 'rmd' ]]; then
 	cd $posts; ls -d */
 	echo -e "_docs directory(to visualize):"
 	cd $docs; ls -d */
-	cd $posts; ./git.sh
 	cd $wheatbeer; ./git.sh
 fi
