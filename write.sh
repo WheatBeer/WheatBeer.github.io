@@ -34,12 +34,12 @@ docs_d=(`cd $docs; ls -d */ | sed -e 's/\///g'`)
 if [[ $action = 'post' ]]; then
 	# Check sync
 	if [[ ${#post_d[@]} != ${#docs_d[@]} ]]; then
-		echo =e "\nBoth are not synced"	
+		echo -e "\nBoth are not synced"	
 		exit 1
 	else
 		for (( i = 0 ; i < ${#post_d[@]} ; i++ )) ; do
 			if [[ ${post_d[$i]} != ${docs_d[$i]} ]]; then
-				echo =e "\nBoth are not synced"	
+				echo -e "\nBoth are not synced"	
 				exit 1
 			fi
 		done
@@ -100,9 +100,9 @@ elif [[ $action = 'rm' ]]; then
 elif [[ $action = 'rmd' ]]; then
 	read -p "Type the directory: " folder 
 	rm -rf $docs/$folder
-	rm -rf $post/$folder
+	rm -rf $posts/$folder
 	echo -e "\nposts directory(to edit on github):"
-	cd $post; ls -d */
+	cd $posts; ls -d */
 	echo -e "_docs directory(to visualize):"
 	cd $docs; ls -d */
 fi
