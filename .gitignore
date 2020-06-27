@@ -9,16 +9,18 @@ _site/
 .bundle/
 vendor/
 
-## MacOS
+# MacOS
 node_modules
 package.json
 .DS_Store
 
-## Jekyll stuff
+# Jekyll stuff
 .jekyll-metadata
 .jekyll
 
-## Posts
+# Posts
 posts/
 
-**/*.swp
+# Vim swap
+*.swp
+.vscode/
