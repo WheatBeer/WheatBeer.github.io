@@ -17,7 +17,7 @@ fi
 # Check arguments
 action=$1; shift
 if [[ $action != post && $action != rm && $action != rmd ]]; then
-	print_help
+    print_help
 fi
 
 # Check posts' directories
@@ -83,24 +83,24 @@ if [[ $action = 'post' ]]; then
 		done
 	fi
 elif [[ $action = 'rm' ]]; then
-	read -p "Type the directory: " folder 
-	if [[ -d $posts/$folder || -d $docs/$folder ]] ; then
-		echo -e "\nposts directory(to edit on github):"
-		cd $posts/$folder; ls 
-		echo -e "_docs directory(to visualize):"
-		cd $docs/$folder; ls 
-		read -p "Type the file name you want to remove: " file 
-		cd $posts/$folder; rm $file 
-		cd $docs/$folder; rm $file
-		echo -e "\nposts directory(to edit on github):"
-		cd $posts/$folder; ls 
-		echo -e "_docs directory(to visualize):"
-		cd $docs/$folder; ls 
-		cd $wheatbeer; ./git.sh
-	else
-		echo -e "\n$folder dosen't exist"
-		exit 1
-	fi
+    read -p "Type the directory: " folder 
+    if [[ -d $posts/$folder || -d $docs/$folder ]] ; then
+        echo -e "\nposts directory(to edit on github):"
+        cd $posts/$folder; ls 
+        echo -e "_docs directory(to visualize):"
+        cd $docs/$folder; ls 
+        read -p "Type the file name you want to remove: " file 
+        cd $posts/$folder; rm $file 
+        cd $docs/$folder; rm $file
+        echo -e "\nposts directory(to edit on github):"
+        cd $posts/$folder; ls 
+        echo -e "_docs directory(to visualize):"
+        cd $docs/$folder; ls 
+        cd $wheatbeer; ./git.sh
+    else
+        echo -e "\n$folder dosen't exist"
+        exit 1
+    fi
 elif [[ $action = 'rmd' ]]; then
 	read -p "Type the directory: " folder 
 	rm -rf $docs/$folder
