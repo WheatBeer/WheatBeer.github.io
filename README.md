@@ -2,6 +2,13 @@
 
 **This blog has been upgraded from the follow jekyll theme blog.** 
 
+~~~bash
+$ install.sh    # install jekyll & bundler 
+$ run.sh        # run jekyll serve
+$ git.sh        # git add all, commit, and push
+$ write.sh      # easy posting and sync *posts repo
+~~~
+*posts repo link: https://github.com/WheatBeer/wheatbeer.github.io_posts)
 ***
 
 # Edition
