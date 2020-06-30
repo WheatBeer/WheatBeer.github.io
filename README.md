@@ -8,7 +8,7 @@ $ run.sh        # run jekyll serve
 $ git.sh        # git add all, commit, and push
 $ write.sh      # easy posting and sync *posts repo
 ~~~
-*posts repo link: https://github.com/WheatBeer/wheatbeer.github.io_posts)
+*posts repo link: https://github.com/WheatBeer/wheatbeer.github.io_posts
 ***
 
 # Edition
