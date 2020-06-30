@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ruby -v
 gem install jekyll bundler
 jekyll -v
