@@ -40,6 +40,8 @@ plugins:
   - jekyll-feed
 
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
   - README.md
