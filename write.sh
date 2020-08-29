@@ -56,7 +56,7 @@ if [[ $action = 'post' ]]; then
         echo -e "[[edit]](https://github.com/WheatBeer/posts/edit/master/$folder/$file.md)" > $file.md 
         cd $docs/$folder; touch $file.md
         echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
-        echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
+        echo -e "\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
         cd $wheatbeer; ./git.sh
     else
         echo -e "$folder does not exist"
@@ -72,7 +72,7 @@ if [[ $action = 'post' ]]; then
                 echo -e "[[edit]](https://github.com/WheatBeer/posts/edit/master/$folder/$file.md)" > $file.md 
                 cd $docs/$folder; touch $file.md
                 echo -e "---\ntitle: $title\ncategory: $category\n---" >> $file.md
-                echo -e "\n\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
+                echo -e "\n<div id=\"github\"></div>\n<script>\ngetText(\"https://raw.githubusercontent.com/WheatBeer/posts/master/$folder/$file.md\");\n</script>" >> $file.md
                 cd $wheatbeer; ./git.sh
                 break	
             elif [[ $checker = 'n' || $checker = 'N' ]]; then
