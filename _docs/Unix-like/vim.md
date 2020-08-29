@@ -1,6 +1,6 @@
 ---
 title: Vim
-category: Unix-like 
+category: Unix-like
 ---
 
 <div id="github"></div>
