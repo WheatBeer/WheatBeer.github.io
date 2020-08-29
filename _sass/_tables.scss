@@ -3,19 +3,15 @@ table {
 	margin-bottom: 1.75em;
 }
 
-tr {
-	border-bottom: 1px solid #EEE;
+th {
+	border-bottom: 2px solid gray;
+	padding-bottom: 4px;
 }
 
 tr:nth-child(even) {
-	background: #fcfcfc;
+	background: #e0e0e0;
 }
 
 td, th {
 	padding: 8px;
-	text-align: left;
-}
-
-th {
-	padding-bottom: 4px;
 }
