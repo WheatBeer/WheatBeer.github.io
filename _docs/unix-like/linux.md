@@ -2,7 +2,7 @@
 title: Linux
 category: Unix-like
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/Unix-like/linux.md)
+[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/unix-like/linux.md)
 
 ## grub-reboot for dual-booting
 
