@@ -2,7 +2,7 @@
 title: Undergraduate
 category: Projects
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/blob/master/_docs/projects/undergraduate.md)
+[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/projects/undergraduate.md)
 
 ## Undergraduate Projects at Yonsei Univ.
 

@@ -2,7 +2,7 @@
 title: Vim
 category: Unix-like
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/blob/master/_docs/unix-like/vim.md)
+[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/Unix-like/vim.md)
 
 ## Useful Links
 * Vim을 IDE처럼 사용하기: https://blog.b1ue.sh/vim-ide/

@@ -2,7 +2,7 @@
 title: GPGPU-SIM
 category: Simulators
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/blob/master/_docs/simulators/gpgpu-sim.md)
+[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/simulators/gpgpu-sim.md)
 
 ## How to run cuDNN with gpgpu-sim
 
