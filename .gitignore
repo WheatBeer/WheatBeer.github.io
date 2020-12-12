@@ -22,6 +22,7 @@ package.json
 # Posts
 posts/
 
-# Vim swap
+# Swap
 *.swp
 .vscode/
+Gemfile.lock
