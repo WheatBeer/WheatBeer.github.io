@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm Gemfile.lock
 ruby -v
 gem install jekyll bundler
 jekyll -v
