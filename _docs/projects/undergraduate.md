@@ -6,6 +6,7 @@ category: Projects
 [[edit]](https://github.com/WheatBeer.github.io/blob/master/_docs/projects/undergraduate.md)
 
 ## Undergraduate Projects at Yonsei Univ.
+
 |Semester|Class|Language|
 |:---:|---|:---:|
 |18-2|[Application Programming(Computer System)(EEE3545)](https://github.com/WheatBeer/undergraduate_projects/tree/master/computer_systems)|C
