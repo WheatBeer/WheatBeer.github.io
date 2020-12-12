@@ -54,6 +54,11 @@ collections:
     permalink: /:path/
     output: true
 
+  papers:
+    title: Papers
+    permalink: /:path/
+    output: true
+
 defaults:
   -
     scope:
