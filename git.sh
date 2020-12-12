@@ -1,7 +1,5 @@
 #!/bin/bash
 
 git add .
-git commit -m 'first commit'
-git push origin master
-
-cd ./posts; ./pull.sh; ./git.sh
+git commit -m 'update'
+git push
