@@ -2,9 +2,4 @@
 title: Vimrc
 category: Templates
 ---
-
-
-<div id="github"></div>
-<script>
-getText("https://raw.githubusercontent.com/WheatBeer/posts/master/templates/vimrc.md");
-</script>
+[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/blob/master/_docs/templates/vimrc.md)

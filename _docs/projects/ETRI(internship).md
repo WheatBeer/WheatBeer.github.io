@@ -2,7 +2,6 @@
 title: ETRI(internship)
 category: Projects
 ---
-
 [[edit]](https://github.com/WheatBeer/WheatBeer.github.io/blob/master/_docs/projects/ETRI(internship).md)
 
 ## MobileNetV2 Reduced Precision
