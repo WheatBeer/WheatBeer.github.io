@@ -578,9 +578,11 @@ blockquote {
 	margin-right: -10px;
 	background-color: $brand-colour-light;
 	border-color: $brand-colour;
+	overflow: auto;
 
 	p:last-child {
 		margin-bottom: 0;
+        white-space: nowrap;
 	}
 
 	@media (max-width: $full-width-break) {
