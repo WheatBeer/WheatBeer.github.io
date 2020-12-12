@@ -8,10 +8,11 @@ google_analytics_key:
 show_full_navigation: true
 email: sungminryu94@gmail.com
 disqus-shortname: wheatbeer
+markdown: kramdown
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: images/logo.png
-description: WheatBeer's Blog(Sungmin, Ryu)
+description: WheatBeer's Blog (Sungmin, Ryu)
 author: Sungmin, Ryu
 
 # Social settings
