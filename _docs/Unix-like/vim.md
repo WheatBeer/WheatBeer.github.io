@@ -6,8 +6,8 @@ category: Unix-like
 
 ## Useful Links
 * Vim을 IDE처럼 사용하기: https://blog.b1ue.sh/vim-ide/
-* .ycm_extra_conf.py 설정</br>
-: https://neverapple88.tistory.com/26 (Korean)</br> 
+* .ycm_extra_conf.py 설정
+: https://neverapple88.tistory.com/26 (Korean)
  & https://programmer.group/installation-of-vim-plug-in-youcompleteme-for-mac.html (English)
 
 ~~~bash
@@ -16,7 +16,7 @@ echo | clang -std=c++11 -stdlib=libc++ -v -E -x c++ -      // clang을 사용할
 ~~~
 
 * .vimrc examples</br>
-: https://xevolts.tistory.com/19 </br>
+: https://xevolts.tistory.com/19 
 & https://code4rain.wordpress.com/2015/03/02/vi%EC%84%A4%EC%A0%95vimrc/
 * Vim & Tmux에서 Mac/리눅스 클립보드(clipboard)로 copy & paste 하기
 https://rampart81.github.io/post/vim-clipboard-share/
