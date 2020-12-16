@@ -6,23 +6,50 @@
         </li>
     </ul>
 
-    <ul>
+    <!-- <ul>
         <li class="nav-item top-level {% if page.url == '/log/' %}current{% endif %}">
             {% assign log = site.html_pages | where: 'url', '/log/' | first %}
             <a class="menu" href="{{ site.baseurl }}/log/">{{ log.title }}</a>
         </li>
-    </ul>
+    </ul> -->
 
     <ul>
-        <a class="category">Categories</a>
-        {% assign grouped = site.docs | group_by: 'category' %}
+        <a class="category">Papers</a>
+        {% assign grouped = site.papers | group_by: 'category' %}
         {% assign count = 0%}
         {% for group in grouped %}
         {% assign count = count | plus: 1 %}
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
                 <div id="list-wrapper">
                     {% assign items = group.items | sort: 'order' %}
-                    <a class="list-top{% if page.url == group.url %} active {% endif %}"href="{{ site.baseurl }}{{ items.first.url }}">
+                    <a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}">
+                        <label for="opener-{{ count }}">▾</label>
+                        {{ group.name }}
+                    </a>
+                    <input type="checkbox" class="checkbox" id="opener-{{ count }}" name="box"/>
+                    <ul>
+                    {% for item in items %}
+                        <li class="nav-item {% if item.url == page.url %}current{% endif %}">
+                            <a class="list" href="{{ site.baseurl }}{{ item.url }}">
+                                {{ item.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        <a class="category">Categories</a>
+        {% assign grouped = site.docs | group_by: 'category' %}
+        {% for group in grouped %}
+        {% assign count = count | plus: 1 %}
+            <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+                <div id="list-wrapper">
+                    {% assign items = group.items | sort: 'order' %}
+                    <a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}">
                         <label for="opener-{{ count }}">▾</label>
                         {{ group.name }}
                     </a>
