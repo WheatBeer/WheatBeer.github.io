@@ -281,7 +281,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	color: $content-color;
 	margin: 0 auto 0 auto;
 
-	h2{
+	h2 {
 		padding-bottom: 10px;
 	}
 	.date {
@@ -294,6 +294,29 @@ $nav-image: $baseurl + "/images/menu.svg";
 .page-header {
 	max-width: $content-max-width;
 	padding: $space ($space + 5) $space;
+}
+
+.cv {
+	padding: 1em 0 0 0;
+	position: relative;
+	text-align: center;
+
+	h1 {
+		font-size: 4rem;
+		color: rgb(101, 101, 101); 
+	}
+
+	h2 {
+		font-size: 4rem;
+		color: rgb(101, 101, 101); 
+	}
+	p{	
+		margin : 0 auto 2em auto;
+		text-align: justify;
+		font-size: 13px;
+		font-family: "Open Sans", sans-serif;
+		width: 80%;
+	}
 }
 
 .page-header {
