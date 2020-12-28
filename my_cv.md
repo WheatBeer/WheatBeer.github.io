@@ -1,14 +1,18 @@
 # CONTACT
-
+* * *
 ## E-mail: sungmin.ryu@yonsei.ac.kr
-&nbsp;
 
 # RESEARCH INTERESTS
+* * *
 
 # EDUCATION
+* * *
 
 # WORK EXPERIENCES
+* * *
 
 # ACTIVITIES
+* * *
 
 # PUBLICATIONS
+* * *
