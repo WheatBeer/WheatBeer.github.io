@@ -297,10 +297,10 @@ $nav-image: $baseurl + "/images/menu.svg";
 }
 
 .cv {
-	padding: 1em 0 0 0;
+	padding: 0.5em 0 0 0;
 	position: relative;
 	text-align: left;
-	
+
 	hr {
 		margin : 0 auto 1em auto;
 		background: rgb(101, 101, 101);
@@ -311,7 +311,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	h1 {
 		margin : 1em auto 0.5em auto;
 		text-align: justify;
-		font-size: 2.7rem;
+		font-size: 2.5rem;
 		color: rgb(101, 101, 101);
 		width: 80%;
 	}
