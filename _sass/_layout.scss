@@ -262,11 +262,11 @@ $nav-image: $baseurl + "/images/menu.svg";
 	padding: 5em 0 0 0;
 	position: relative;
 	text-align: center;
-	h2{
+	h2 {
 		font-size: 4rem;
 		color: rgb(101, 101, 101); 
 	}
-	p{	
+	p {	
 		margin : 0 auto 2em auto;
 		text-align: justify;
 		font-size: 13px;
@@ -299,18 +299,22 @@ $nav-image: $baseurl + "/images/menu.svg";
 .cv {
 	padding: 1em 0 0 0;
 	position: relative;
-	text-align: center;
+	text-align: left;
 
 	h1 {
-		font-size: 4rem;
-		color: rgb(101, 101, 101); 
+		margin : 0 auto 2em auto;
+		text-align: justify;
+		font-size: 3rem;
+		color: rgb(101, 101, 101);
+		width: 80%;
+
 	}
 
 	h2 {
-		font-size: 4rem;
+		font-size: 1rem;
 		color: rgb(101, 101, 101); 
 	}
-	p{	
+	p {	
 		margin : 0 auto 2em auto;
 		text-align: justify;
 		font-size: 13px;
