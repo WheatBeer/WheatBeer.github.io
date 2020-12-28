@@ -263,7 +263,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	position: relative;
 	text-align: center;
 	h2 {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		color: rgb(77, 77, 77); 
 	}
 	p {	
@@ -307,19 +307,17 @@ $nav-image: $baseurl + "/images/menu.svg";
 		height: 1px;
 		width: 80%;
 	}
-
 	h1 {
 		margin : 1em auto 0.5em auto;
 		text-align: justify;
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		color: rgb(77, 77, 77);
 		width: 80%;
 	}
-
 	h2 {
 		margin : 1em auto 0.5em auto;
 		text-align: justify;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		color: rgb(77, 77, 77);
 		width: 80%;
 		strong {
@@ -330,19 +328,17 @@ $nav-image: $baseurl + "/images/menu.svg";
 			font-weight: 600;
 		}
 	}
-
 	h3 {
 		margin : 0 auto 0.5em auto;
 		text-align: justify;
-		text-indent: 1rem;
-		font-size: 1.3rem;
+		text-indent: 1em;
+		font-size: 1.2rem;
 		color: rgb(101, 101, 101);
 		width: 80%;
 		strong {
 			color: black;
 		}
 	}
-
 	p {	
 		margin : 0 auto 2em auto;
 		text-align: justify;
