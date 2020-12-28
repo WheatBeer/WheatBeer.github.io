@@ -242,7 +242,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 		color: white;
 		text-align: center;
 		h2{
-			font-size: 6.5vmax;
+			font-size: 5.5vmax;
 			color: white;
 			margin: 0 0 0 0;
 		}
@@ -689,13 +689,5 @@ img {
 				margin-left: 0;
 			}
 		}
-	}
-}
-
-#github { 
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
