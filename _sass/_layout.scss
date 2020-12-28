@@ -322,6 +322,9 @@ $nav-image: $baseurl + "/images/menu.svg";
 		font-size: 1.5rem;
 		color: rgb(101, 101, 101);
 		width: 80%;
+		strong {
+			color: black;
+		}
 	}
 	p {	
 		margin : 0 auto 2em auto;
