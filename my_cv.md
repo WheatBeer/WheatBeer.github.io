@@ -52,9 +52,9 @@ Yonsei University
 #### (*May.2018 - Sep.2018*)
 ### * Building smart contracts in C++
 ### * Lecturer for <a href="https://github.com/EOSIO" target="_blank">EOSIO</a> software system
-## ** ESL Course in Intensive English Institute <br> University of Illinois at Urbana-Champaign (UIUC), Illinois, USA**
+## **ESL Course in Intensive English Institute <br> University of Illinois at Urbana-Champaign (UIUC), Illinois, USA**
 #### (*Jan.2018 - May.2018*)
-## **Military Service (Axillary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea **
+## **Military Service (Axillary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea**
 #### (*Jun.2014 - Mar.2016*)
 
 # PUBLICATIONS
