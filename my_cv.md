@@ -7,6 +7,10 @@
 
 # RESEARCH INTERESTS
 * * *
+## Computer architecture and systems
+## Neural network accelerators
+## Hardware modeling and simulations
+## GPU microarchitecture
 
 # EDUCATION
 * * *
@@ -22,7 +26,7 @@
 
 # WORK EXPERIENCES
 * * *
-## Intern, ETRI (Electronics and Telecommunications Research Institute) (*Jul.2019 - Aug.2019*)
+## **Intern, ETRI (Electronics and Telecommunications Research Institute)** (*Jul.2019 - Aug.2019*)
 ### * Internship program of the Korean government-funded research institute
 ### * Topic: Neural network acceleration with quantization (framework: PyTorch)
 ## Intern, ChainPartners (*May.2018 - Sep.2018*)
