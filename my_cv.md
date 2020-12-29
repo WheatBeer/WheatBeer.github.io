@@ -57,6 +57,13 @@ Yonsei University
 ## **Military Service (Axillary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea**
 #### (*Jun.2014 - Mar.2016*)
 
+# PROGRAMMING SKILLS
+* * *
+## C/C++
+## Verilog
+## Python
+## HTML, CSS
+
 # PUBLICATIONS
 * * *
 ## **(To appear)**
