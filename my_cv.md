@@ -14,7 +14,7 @@
 
 # EDUCATION
 * * *
-## **Pursuing his Ph.D. degree in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
+## **Pursuing a Ph.D. Degree in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
 #### (*Feb.2020 - Present*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer System LAB (ICSL)</a>
@@ -23,14 +23,14 @@
 #### (*Mar.2017 - Feb.2020*)
 ### * Transferred from Sogang Univ.
 ### * Cumulative GPA: 3.65/4.3 (Major GPA: 3.74/4.3)
-## **Department of Electronic Engineering <br> Sogang University, Seoul, Republic of Korea** 
+## **2nd Grade Completion in Department of Electronic Engineering <br> Sogang University, Seoul, Republic of Korea** 
 #### (*Mar.2013 - Feb.2017*)
-## **Whimoon High School <br> Seoul, Republic of Korea** 
+## **Whimoon High School, Seoul, Republic of Korea** 
 #### (*Mar.2009 - Feb.2012*)
 
 # WORK EXPERIENCES
 * * *
-## **Intern, ETRI (Electronics and Telecommunications Research Institute)** 
+## **Intern, ETRI (Electronics and Telecommunications Research Institute) <br> Seoul SW-SoC R&BD Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul.2019 - Aug.2019*)
 ### * Internship program of the Korean government-funded research institute
 ### * Topic: Neural network acceleration with quantization (framework: PyTorch)
