@@ -25,14 +25,17 @@
 ### * Cumulative GPA: 3.65/4.3 (Major GPA: 3.74/4.3)
 ## **Department of Electronic Engineering <br> Sogang University, Seoul, Republic of Korea** 
 #### (*Mar.2013 - Feb.2017*)
-## Whimoon High School, Seoul, Republic of Korea (*Mar.2009 - Feb.2012*)
+## **Whimoon High School <br> Seoul, Republic of Korea** 
+#### (*Mar.2009 - Feb.2012*)
 
 # WORK EXPERIENCES
 * * *
-## **Intern, ETRI (Electronics and Telecommunications Research Institute)** (*Jul.2019 - Aug.2019*)
+## **Intern, ETRI (Electronics and Telecommunications Research Institute)** 
+#### (*Jul.2019 - Aug.2019*)
 ### * Internship program of the Korean government-funded research institute
 ### * Topic: Neural network acceleration with quantization (framework: PyTorch)
-## Intern, ChainPartners (*May.2018 - Sep.2018*)
+## **Intern, ChainPartners <br> Seoul, Republic of Korea ** 
+#### (*May.2018 - Sep.2018*)
 ### * EOS blockchain research regarding CPU, memory, and network usage
 ### * UI/UX design assistance of the blockchain application
 
