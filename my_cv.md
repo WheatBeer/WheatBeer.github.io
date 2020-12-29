@@ -34,7 +34,7 @@
 #### (*Jul.2019 - Aug.2019*)
 ### * Internship program of the Korean government-funded research institute
 ### * Topic: Neural network acceleration with quantization (framework: PyTorch)
-## **Intern, ChainPartners <br> Seoul, Republic of Korea** 
+## **Intern, ChainPartners, Seoul, Republic of Korea** 
 #### (*May.2018 - Sep.2018*)
 ### * EOS blockchain research regarding CPU, memory, and network usage
 ### * UI/UX design assistance of the blockchain application
