@@ -48,7 +48,7 @@ Yonsei University
 ## **Capstone Design in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Dec.2018 - Jun.2019*)
 ### * Topic: Improving GPU performance in deep neural network on GPGPU-Sim
-## **Vice President at International Yonsei Community (Club) <br> Yonsei University, Seoul, Republic of Korea**
+## **Vice President of International Yonsei Community (Club) <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Sep.2018 - Dec.2018*)
 ## **Yonsei Blockchain LAB (Club) <br> Yonsei University, Seoul, Republic of Korea**
 #### (*May.2018 - Sep.2018*)
