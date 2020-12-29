@@ -1,3 +1,7 @@
+> Integrated M.S./Ph.D. Student <br>
+School of Electrical and Electronic Engineering <br>
+Yonsei University
+
 # CONTACT
 * * *
 ## **E-mail**: sungmin.ryu@yonsei.ac.kr
