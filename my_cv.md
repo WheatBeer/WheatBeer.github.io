@@ -10,7 +10,7 @@
 ## Pursuing his Ph.D. degree in School of Electrical & Electronic Engineering, Yonsei University, Seoul, Republic of Korea (*Feb.2020 - Present*)
 ### * Advisor: [William J. Song](https://sites.google.com/site/wjhsong)
 ### * Lab: [Intelligent Computer System LAB (ICSL)](https://icsl.yonsei.ac.kr/)
-### * Cumulative GPA: 4.24/4.3
+### * Cumulative GPA: 4.26/4.3
 ## B.S. in School of Electrical & Electronic Engineering, Yonsei University, Seoul, Republic of Korea (*Mar.2017 - Feb.2020*)
 ### * Transferred from Sogang Univ.
 ### * Cumulative GPA: 3.65/4.3  |  Major GPA: 3.74/4.3
