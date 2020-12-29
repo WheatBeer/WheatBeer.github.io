@@ -241,17 +241,17 @@ $nav-image: $baseurl + "/images/menu.svg";
 	.cover_title{
 		color: white;
 		text-align: center;
-		h2{
+		h2 {
 			font-size: 5.5vmax;
 			color: white;
-			margin: 0 0 0 0;
+			margin: 1em 0 1em 0;
 		}
-		h3{
+		h3 {
 			font-size: 3vmax;
 			color: white;
 			margin: 1em 0 1em 0;
 		}
-		p{
+		p {
 			font-size: 1.7rem;
 			font-family: "Open Sans", sans-serif;
 		}
@@ -263,7 +263,11 @@ $nav-image: $baseurl + "/images/menu.svg";
 	position: relative;
 	text-align: center;
 	h2 {
-		font-size: 3.5rem;
+		font-size: 3.7rem;
+		color: rgb(77, 77, 77); 
+	}
+	h3 {
+		font-size: 2.5rem;
 		color: rgb(77, 77, 77); 
 	}
 	p {	
