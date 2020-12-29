@@ -45,6 +45,18 @@ Yonsei University
 
 # ACTIVITIES
 * * *
+## **Capstone Design in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
+#### (*Dec.2018 - Jun.2019*)
+### * Topic: Improving GPU performance in deep neural network on GPGPU-Sim
+## **Yonsei Blockchain LAB (Club) <br> Yonsei University, Seoul, Republic of Korea**
+#### (*May.2018 - Sep.2018*)
+### * Building smart contracts in C++
+### * Lecturer for <a href="https://github.com/EOSIO" target="_blank">EOSIO</a> software system
+## ** ESL Course in Intensive English Institute <br> University of Illinois at Urbana-Champaign (UIUC), Illinois, USA**
+#### (*Jan.2018 - May.2018*)
+## **Military Service (Axillary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea **
+#### (*Jun.2014 - Mar.2016*)
 
 # PUBLICATIONS
 * * *
+### (To appear)
