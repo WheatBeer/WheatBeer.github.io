@@ -4,7 +4,7 @@
 title: WheatBeer
 url: "https://WheatBeer.github.io"
 baseurl: ""
-google_analytics: 'G-0MZF9H5B13'
+google_analytics_key: 'G-0MZF9H5B13'
 
 show_full_navigation: true
 email: sungminryu94@gmail.com
