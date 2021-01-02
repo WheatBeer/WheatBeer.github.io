@@ -24,4 +24,3 @@ category: Unix-like
 * Clipboard: Preference > General > Selection > Application in terminal may access clipboard
 * Status bar: Preference > Profiles > Session > Status bar enabled
 * iTerm2 color scheme: https://github.com/mbadolato/iTerm2-Color-Schemes (scheme/midnight-in-mojave.itermcolors)
-* Key binding: Preference > Keys > Key Bindings (Previous/Next Tab)
