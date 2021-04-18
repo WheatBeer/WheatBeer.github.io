@@ -1,13 +1,14 @@
-> Integrated M.S./Ph.D. Student <br>
+<!--
+> Masters Student <br>
 School of Electrical and Electronic Engineering <br>
 Yonsei University
+-->
 
 # CONTACT
 * * *
 ## **E-mail**: sungmin.ryu@yonsei.ac.kr
 ## **Linkedin**: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank">sungmin-ryu-2b0605194</a>
 ## **Webpage**: <a href="https://wheatbeer.github.io" target="_blank">wheatbeer.github.io</a>
-## **Address**: 50 Yonsei-ro Eng-C410, Seoul, Seodaemun-gu 03722, Republic of Korea
 
 # RESEARCH INTERESTS
 * * *
