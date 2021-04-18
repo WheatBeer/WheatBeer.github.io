@@ -1,5 +1,5 @@
 ---
 title: ~/.vimrc
 category: Templates
+path: programming/templates/vimrc.md
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_programming/templates/vimrc.md)

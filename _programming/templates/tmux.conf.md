@@ -1,5 +1,5 @@
 ---
 title: ~/.tmux.conf
 category: Templates
+path: programming/templates/tmux.conf.md
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_programming/templates/tmux.conf.md)
