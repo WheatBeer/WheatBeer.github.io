@@ -285,9 +285,51 @@ $nav-image: $baseurl + "/images/menu.svg";
 	background-color: $content-background-color;
 	color: $content-color;
 	margin: 0 auto 0 auto;
+	padding: 0 ($space + 5) ($space - 10);
+	max-width: $content-max-width;
 
+	hr {
+		margin : 0 auto 1em auto;
+		height: 1px;
+		width: 100%;
+	}
+	h1 {
+		margin : 0.2em auto 0.2em auto;
+		text-align: left;
+		font-size: 3.2rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.05em;
+	}
 	h2 {
-		padding-bottom: 10px;
+		margin : 0.3em auto 0.3em auto;
+		text-align: left;
+		font-size: 2.5rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.05em;
+	}
+	h3 {
+		margin : 0.4em auto 0.4em auto;
+		text-align: left;
+		font-size: 2.0rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.01em;
+	}
+	p {	
+		margin : 0.5em auto 0.5em auto;
+		text-align: left;
+		font-size: 1.4rem;
+		font-family: "Open Sans", sans-serif;
+		width: 100%;
+	}
+	ul {	
+		margin : 0.5em auto 0.5em auto;
+		text-align: left;
+		font-size: 1.4rem;
+		font-family: "Open Sans", sans-serif;
+		width: 100%;
 	}
 	.date {
 		color: #888;
@@ -295,10 +337,39 @@ $nav-image: $baseurl + "/images/menu.svg";
 	}
 }
 
-.content,
 .page-header {
+	margin: ($space - 10) auto 0 auto;
+	padding: $space ($space + 5) ($space - 10);
 	max-width: $content-max-width;
-	padding: $space ($space + 5) $space;
+	h2,
+	h3 {
+		margin: 0;
+		line-height: 1.2;
+		letter-spacing: -1px;
+		font-size: 3.0rem;
+		margin-left: -4px;
+	}
+	h2 {
+		font-size: 1.5rem;
+		margin-left: -1px;
+		color: #888;
+		letter-spacing: 0;
+	}
+	hr {
+		margin: $space*0.7 0 0 0;
+		height: 2px;
+	}
+	@media (min-width: $mobile-break) {
+		h2 {
+			font-size: 2.0rem;
+		}
+		h3 {
+			font-size: 4.0rem;
+		}
+	}
+	@media (min-width: $full-width-break) {
+		margin-top: 55px;
+	}
 }
 
 .cv {
@@ -374,48 +445,6 @@ $nav-image: $baseurl + "/images/menu.svg";
 			font-size: 1.4rem;
 			font-weight: bold;
 		}
-	
-
-	}
-}
-
-.page-header {
-	margin: $space auto 0 auto;
-	h2,
-	h3 {
-		margin: 0;
-		line-height: 1.2;
-		letter-spacing: -1px;
-	}
-
-	h2 {
-		font-size: 2rem;
-		margin-left: -1px;
-		color: #888;
-		letter-spacing: 0;
-	}
-
-	h3 {
-		font-size: 4rem;
-		margin-left: -4px;
-	}
-
-	hr {
-		margin: $space*2 0 0 0;
-	}
-
-	@media (min-width: $mobile-break) {
-		h2 {
-			font-size: 2.65rem;
-		}
-
-		h3 {
-			font-size: 5.4rem;
-		}
-	}
-
-	@media (min-width: $full-width-break) {
-		margin-top: 55px;
 	}
 }
 

@@ -49,13 +49,18 @@ exclude:
   - LICENCE
 
 collections:
-  docs:
-    title: Documentation
+  programming:
+    title: programming
     permalink: /:path/
     output: true
 
-  papers:
-    title: Papers
+  projects:
+    title: Projects 
+    permalink: /:path/
+    output: true
+
+  research:
+    title: Research
     permalink: /:path/
     output: true
 
