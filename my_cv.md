@@ -12,7 +12,7 @@ Yonsei University
 # RESEARCH INTERESTS
 * * *
 ## Computer architecture and systems
-## Neural network accelerators
+## Neural network acceleration
 ## Hardware modeling and simulations
 ## GPU microarchitecture
 
@@ -22,11 +22,9 @@ Yonsei University
 #### (*Feb.2020 - Present*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
-### * Cumulative GPA: 4.26/4.3
 ## **B.S. in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar.2017 - Feb.2020*)
 ### * Transferred from Sogang Univ.
-### * Cumulative GPA: 3.65/4.3 (Major GPA: 3.74/4.3)
 ## **2nd Grade Completion in Department of Electronic Engineering <br> Sogang University, Seoul, Republic of Korea** 
 #### (*Mar.2013 - Feb.2017*)
 ## **Whimoon High School, Seoul, Republic of Korea** 
@@ -62,8 +60,9 @@ Yonsei University
 # PROGRAMMING SKILLS
 * * *
 ## C/C++
-## Verilog
+## CUDA
 ## Python
+## Verilog
 ## HTML, CSS
 
 # PUBLICATIONS
