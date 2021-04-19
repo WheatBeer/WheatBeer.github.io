@@ -1,11 +1,10 @@
 ---
 title: MacOS
 category: Unix-like
+path: programming/unix-like/macos-essential.md
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/unix-like/mac.md)
 
 ## The Essential Apps for Mac
-
 * [Homebrew & Cask](https://brew.sh/)
     * The missing package manager for macOS.
 * [iTerm2](https://www.iterm2.com/)
