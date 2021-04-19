@@ -1,29 +1,30 @@
 ---
-title: ETRI (internship)
-category: Projects
+title: ETRI-internship
+category: Undergraduate
+path: projects/undergraduate/etri-internship.md
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/projects/ETRI(internship).md)
 
-## MobileNetV2 Reduced Precision
-MobileNetV2 Reduced Precision Validation & Retraining 
-[[Source code]](https://github.com/WheatBeer/MobileNetV2_reduced_precision)
+# MobileNetV2 Validation & Retraining with Reduced-precision Weights 
+### *Korean government-funded internship program at [ETRI](https://www.etri.re.kr/intro.html) [[Code]](https://github.com/WheatBeer/MobileNetV2_reduced_precision)* 
+* * *
 
-#### Dependencies
+### 1. Dependencies
 - [Pytorch][pytorch] (ver.1.1.0)
 - torchvision
 - tqdm (for progress bar)
 - You can check other dependencies on top of *.py files
 
-#### MobileNetV2(Model + Pretrained weights & biases)
+### 2. MobileNetV2(Model + Pretrained weights & biases)
 - Paper: ["Inverted Residuals and Linear Bottlenecks"][paper]
 - [Model Code][code] & [Imagenet Dataset][imagenet]
 - Model Architecture: See the [model_info folder][model_info]'s text files or run model_info.py
 - Top 1 & Top 5
+
 > Pretrained model: './data/mobilenet_v2-b0353104.pth' <br>
 Top 1 Accuracy: 71.88 % <br>
 Top 5 Accuracy: 90.29 %
 
-#### Usage
+### 3. Usage
 **1. model_info.py**
 - Model Information(Architecture, Parameters, etc.)
 - If you want to get other pretrained model's parameter values, you have to change the weight path(-w).

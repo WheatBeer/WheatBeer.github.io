@@ -1,10 +1,11 @@
 ---
-title: Undergraduate
-category: Projects
+title: Class projects
+category: Undergraduate
+path: projects/undergraduate/class-projects.md
 ---
-[[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/projects/undergraduate.md)
 
-## Undergraduate Projects at Yonsei Univ.
+# Undergraduate Projects at Yonsei Univ.
+* * *
 
 |Semester|Class|Language|
 |:---:|---|:---:|

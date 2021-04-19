@@ -51,7 +51,7 @@ clean:
 	@echo "# Makefile Clean: $(OBJDIR)/'s [ $(notdir $(OBJS) $(SUBOBJS) ] and [ $(EXE)) ] are removed" 
 ~~~
 
-- ***Makefile*** supports directories with following structure.
+- Above ***Makefile*** supports directories with following structure.
 
 ~~~bash
 # For C++

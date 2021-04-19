@@ -9,6 +9,8 @@ th {
 	border-bottom: 2px solid gray;
 	padding-bottom: 4px;
     white-space: nowrap;
+	padding: 8px;
+    font-size: 1.5rem;
 }
 
 tr:nth-child(even) {
@@ -16,7 +18,9 @@ tr:nth-child(even) {
     white-space: nowrap;
 }
 
-td, th {
+td {
+    font-size: 1.5rem;
 	padding: 8px;
     white-space: nowrap;
+	width: 200px;
 }
