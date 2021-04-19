@@ -1,5 +1,5 @@
 ---
-title: ETRI(internship)
+title: ETRI (internship)
 category: Projects
 ---
 [[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/projects/ETRI(internship).md)
