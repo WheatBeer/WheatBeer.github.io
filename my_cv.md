@@ -69,3 +69,10 @@ Yonsei University
 # PUBLICATIONS
 * * *
 ## **(To appear)**
+
+# AWARDS AND HONORS
+* * *
+## **Graduate Admission Scholorship, Yonsei University
+#### (*Jan.2020*)
+## **High Honors Student Award, Yonsei University
+#### (*Jan.2019*)
