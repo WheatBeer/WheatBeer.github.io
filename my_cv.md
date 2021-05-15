@@ -1,8 +1,6 @@
-<!--
-> Masters Student <br>
+> Master's Student <br>
 School of Electrical and Electronic Engineering <br>
 Yonsei University
--->
 
 # CONTACT
 * * *
@@ -19,7 +17,7 @@ Yonsei University
 
 # EDUCATION
 * * *
-## **Pursuing a Ph.D. Degree in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
+## **Pursuing M.S. Degree in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
 #### (*Feb.2020 - Present*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
