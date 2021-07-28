@@ -69,7 +69,7 @@ Yonsei University
 # PUBLICATIONS & PATENTS
 * * *
 ## **(To appear)**
-## **Current work: Analytical Optimization of Dataflow and Hardware Mapping on Deep Neural Network Accelerators**
+## **Current work: [NeuroSpector](https://wheatbeer.github.io/graduate/NeuroSpector/)**
 
 # AWARDS AND HONORS
 * * *
