@@ -66,9 +66,10 @@ Yonsei University
 ## Verilog
 ## HTML, CSS
 
-# PUBLICATIONS
+# PUBLICATIONS & PATENTS
 * * *
 ## **(To appear)**
+## **Current work: Analytical Optimization of Dataflow and Hardware Mapping on Deep Neural Network Accelerators**
 
 # AWARDS AND HONORS
 * * *
