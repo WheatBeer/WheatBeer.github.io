@@ -69,7 +69,7 @@ Yonsei University
 # PUBLICATIONS & PATENTS
 * * *
 ## **(To appear)**
-## **Current Work: [NeuroSpector](https://wheatbeer.github.io/graduate/NeuroSpector/)**
+## **Current Work: [NeuroSpector](https://wheatbeer.github.io/graduate/neurospector/)**
 
 # AWARDS AND HONORS
 * * *
