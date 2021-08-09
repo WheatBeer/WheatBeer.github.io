@@ -70,8 +70,7 @@ Yonsei University
 * * *
 ## **Current Paper Work: [NeuroSpector](https://wheatbeer.github.io/graduate/neurospector/)**
 ## **Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method (Patent)**
-### W. Song (Professor), **S. Ryu**, C. Park, and B. Kim 
-### *10-2021-0104333, Aug. 2021.* 
+### W. Song (Professor), **S. Ryu**, C. Park, and B. Kim | 10-2021-0104333, Aug. 2021.  
 
 # AWARDS AND HONORS
 * * *
