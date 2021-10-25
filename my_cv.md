@@ -23,9 +23,7 @@ Yonsei University
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
 ## **B.S. in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar.2017 - Feb.2020*)
-### * Transferred from Sogang Univ.
-## **2nd Grade Completion in Department of Electronic Engineering <br> Sogang University, Seoul, Republic of Korea** 
-#### (*Mar.2013 - Feb.2017*)
+### * Transferred from Sogang Univ. (*Mar.2013 - Feb.2017*)
 ## **Whimoon High School, Seoul, Republic of Korea** 
 #### (*Mar.2009 - Feb.2012*)
 
@@ -33,18 +31,18 @@ Yonsei University
 * * *
 ## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> Seoul SW-SoC R&BD Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul.2019 - Aug.2019*)
-### * Internship program at the Korean government-funded research institute
-### * Topic: Neural network acceleration with quantization (framework: PyTorch)
+### * Internship program sponsored by national government
+### * Topic: Neural network acceleration with quantization (PyTorch)
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May.2018 - Sep.2018*)
-### * EOS blockchain research regarding CPU, memory, and network usage
+### * Research on EOS blockchain system
 ### * UI/UX design assistance of blockchain applications
 
 # ACTIVITIES
 * * *
 ## **Capstone Design in School of Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Dec.2018 - Jun.2019*)
-### * Topic: Improving GPU performance in deep neural network on GPGPU-Sim
+### * Topic: Improving GPU performance in deep neural network on GPU simulator
 ## **Vice President of International Yonsei Community (Club) <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Sep.2018 - Dec.2018*)
 ## **Yonsei Blockchain LAB (Club) <br> Yonsei University, Seoul, Republic of Korea**
@@ -53,10 +51,10 @@ Yonsei University
 ### * Lecturer for <a href="https://github.com/EOSIO" target="_blank">EOSIO</a> software system
 ## **ESL Course in Intensive English Institute <br> University of Illinois at Urbana-Champaign (UIUC), Illinois, USA**
 #### (*Jan.2018 - May.2018*)
-## **Military Service (Axillary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea**
+## **Military Service (Auxiliary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea**
 #### (*Jun.2014 - Mar.2016*)
 
-# PROGRAMMING SKILLS
+# PROGRAMMING LANGUAGES
 * * *
 ## C/C++
 ## CUDA
@@ -72,7 +70,7 @@ Yonsei University
 
 # AWARDS AND HONORS
 * * *
-## **Graduate Admission Scholorship, Yonsei University**
+## **Graduate Admission Scholarship, Yonsei University**
 #### (*Jan.2020*)
 ## **High Honors Student Award, Yonsei University**
 #### (*Jan.2019*)
