@@ -31,7 +31,7 @@ Yonsei University
 * * *
 ## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> Seoul SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul.2019 - Aug.2019*)
-### * Internship program sponsored by national government
+### * Internship program sponsored by the national government
 ### * Topic: Neural network acceleration with quantization (PyTorch)
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May.2018 - Sep.2018*)
