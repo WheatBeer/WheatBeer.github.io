@@ -10,10 +10,10 @@ Yonsei University
 
 # RESEARCH INTERESTS
 * * *
-## Computer architecture and systems
-## Neural network acceleration
-## Hardware modeling and simulations
-## GPU microarchitecture
+## **Computer architecture and systems**
+## **Neural network acceleration**
+## **Hardware modeling and simulations**
+## **GPU microarchitecture**
 
 # EDUCATION
 * * *
@@ -54,16 +54,16 @@ Yonsei University
 ## **Military Service (Auxiliary police) <br> Yeongdeungpo Police Station, Seoul, Republic of Korea**
 #### (*Jun.2014 - Mar.2016*)
 
-# PROGRAMMING LANGUAGES
-* * *
-## **C/C++, CUDA, Python, Java, Verilog, HTML, CSS**
-
 # PUBLICATIONS & PATENTS
 * * *
 ## **S. Ryu, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis, Yonsei University.*** 
 #### (*Dec. 2021*)  
 ## **W. Song, S. Ryu, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent).*** 
 #### (*Aug. 2021*)  
+
+# PROGRAMMING LANGUAGES
+* * *
+## **C/C++, CUDA, Python, Java, Verilog, HTML, CSS**
 
 # AWARDS AND HONORS
 * * *
