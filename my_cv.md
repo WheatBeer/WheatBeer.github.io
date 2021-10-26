@@ -23,7 +23,7 @@ Yonsei University
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
 ## **B.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar.2017 - Feb.2020*)
-### * Transferred from Sogang Univ. (*Mar.2013 - Feb.2017*)
+### * Transferred from Sogang Univ. 
 ## **Whimoon High School, Seoul, Republic of Korea** 
 #### (*Mar.2009 - Feb.2012*)
 
@@ -56,12 +56,14 @@ Yonsei University
 
 # PROGRAMMING LANGUAGES
 * * *
-## C/C++, CUDA, Python, Java, Verilog, HTML, CSS
+## **C/C++, CUDA, Python, Java, Verilog, HTML, CSS**
 
 # PUBLICATIONS & PATENTS
 * * *
-## **S. Ryu**, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis, Yonsei University*, Dec. 2021.  
-## W. Song, **S. Ryu**, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent)*, Aug. 2021.  
+## **S. Ryu, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis, Yonsei University.*** 
+#### (*Dec. 2021*)  
+## **W. Song, S. Ryu, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent).*** 
+#### (*Aug. 2021*)  
 
 # AWARDS AND HONORS
 * * *
