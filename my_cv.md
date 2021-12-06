@@ -61,6 +61,7 @@ Yonsei University
 ## **W. Song, S. Ryu, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent).*** 
 #### (*Aug. 2021*)  
 
+
 # PROGRAMMING LANGUAGES
 * * *
 ## **C/C++, CUDA, Python, Java, Verilog, HTML, CSS**
