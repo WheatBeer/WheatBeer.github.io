@@ -8,17 +8,10 @@ Yonsei University
 ## **Linkedin**: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank">sungmin-ryu-2b0605194</a>
 ## **Webpage**: <a href="https://wheatbeer.github.io" target="_blank">wheatbeer.github.io</a>
 
-# RESEARCH INTERESTS
-* * *
-## **Computer architecture and systems**
-## **Neural network acceleration**
-## **Hardware modeling and simulations**
-## **GPU microarchitecture**
-
 # EDUCATION
 * * *
 ## **M.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
-#### (*Mar. 2020 - Feb. 2022 (expected)*)
+#### (*Mar. 2020 - Feb. 2022*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
 ## **B.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
@@ -56,7 +49,7 @@ Yonsei University
 
 # PUBLICATIONS & PATENTS
 * * *
-## C. Park, B. Kim, **S. Ryu**, and W. Song, "NeuroSpector: Systematic Optimization of Dataflow Scheduling in Deep Neural Network Accelerators", (*under review*).
+## C. Park, B. Kim, **S. Ryu**, and W. Song, "NeuroSpector: Systematic Optimization of Dataflow Scheduling in Deep Neural Network Accelerators," (*under review*).
 ## **S. Ryu**, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis*, Yonsei University, Dec. 2021. 
 ## W. Song, **S. Ryu**, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent)*, Aug. 2021.  
 
