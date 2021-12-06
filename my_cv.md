@@ -56,10 +56,10 @@ Yonsei University
 
 # PUBLICATIONS & PATENTS
 * * *
-## C. Park, B. Kim, *S. Ryu*, and W. Song, “NeuroSpector: Systematic Optimization of Dataflow Scheduling in Deep Neural Network Accelerators” (under review)
-## *S. Ryu*, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis, Yonsei University. 
+## C. Park, B. Kim, **S. Ryu**, and W. Song, "NeuroSpector: Systematic Optimization of Dataflow Scheduling in Deep Neural Network Accelerators" (*under review*)
+## **S. Ryu**, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis*, Yonsei University. 
 #### (*Dec. 2021*)  
-## W. Song, *S. Ryu*, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," 10-2021-0104333 (Patent). 
+## W. Song, **S. Ryu**, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *10-2021-0104333 (Patent)*. 
 #### (*Aug. 2021*)  
 
 # PROGRAMMING LANGUAGES
