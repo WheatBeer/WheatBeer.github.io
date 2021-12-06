@@ -55,7 +55,7 @@ Yonsei University
 
 # PROGRAMMING LANGUAGES
 * * *
-## **C/C++, CUDA, Python, Java, Verilog, HTML, CSS**
+## **C/C++**, CUDA, Python, Java, Verilog, HTML, CSS
 
 # AWARDS AND HONORS
 * * *
