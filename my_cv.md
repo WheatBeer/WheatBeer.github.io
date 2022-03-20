@@ -13,7 +13,7 @@ Yonsei University
 ## **M.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
 #### (*Mar. 2020 - Feb. 2022*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
-### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computer Systems LAB (ICSL)</a>
+### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computing Systems LAB (ICSL)</a>
 ## **B.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar. 2017 - Feb. 2020*)
 ### * Transferred from Sogang Univ. 
