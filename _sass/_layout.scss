@@ -369,7 +369,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 }
 
 .cv {
-	padding: 0 0 ($space + 50) 0;
+	padding: $space 0 ($space + 50) 0;
 	position: relative;
 	text-align: left;
 	li {
