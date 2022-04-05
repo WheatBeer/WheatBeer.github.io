@@ -285,7 +285,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	background-color: $content-background-color;
 	color: $content-color;
 	margin: 0 auto 0 auto;
-	padding: $space ($space + 5) ($space - 10);
+	padding: $space ($space + 5) $space;
 	max-width: $content-max-width;
 	hr {
 		margin : 0.5em auto 0.5em auto;
@@ -462,7 +462,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	background-color: $content-background-color;
 	color: $content-color;
 	margin: 0 auto 0 auto;
-	padding: $space 0 ($space - 10);
+	padding: $space 0 $space;
 	max-width: $content-max-width;
 	ul li {
 		margin: 0.5em auto 0.5em auto;

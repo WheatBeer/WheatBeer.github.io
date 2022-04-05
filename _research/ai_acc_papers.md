@@ -1,7 +1,7 @@
 ---
 title: Papers
-category: NPU
-path: research/npu_papers.md 
+category: AI Accelerators
+path: research/ai_acc_papers.md 
 ---
 
 ### *This page is from [here](https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md).*

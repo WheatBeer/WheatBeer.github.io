@@ -1,5 +1,5 @@
 ---
-title: GPGPU-SIM
+title: GPGPU-sim
 category: Simulators
 path: research/simulators_gpgpusim.md
 ---
