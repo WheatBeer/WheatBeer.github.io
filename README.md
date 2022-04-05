@@ -9,7 +9,7 @@ $ git.sh        # git add all, commit, and push
 ~~~
 
 ***
-This blog has been upgraded from the follow template.
+*This blog has been upgraded from the follow edition.*
 ***
 
 ## Edition
