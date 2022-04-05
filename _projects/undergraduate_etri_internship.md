@@ -4,8 +4,8 @@ category: Undergraduate
 path: projects/undergraduate_etri_internship.md
 ---
 
-# MobileNetV2 Validation & Retraining with Reduced-precision Weights 
-### *Korean government-funded internship program at [ETRI](https://www.etri.re.kr/intro.html) [[Code]](https://github.com/WheatBeer/MobileNetV2_reduced_precision)* 
+## MobileNetV2 Validation & Retraining with Reduced-precision Weights 
+**Korean government-funded internship program at [ETRI](https://www.etri.re.kr/intro.html) [[Code]](https://github.com/WheatBeer/MobileNetV2_reduced_precision)** 
 * * *
 
 ### 1. Dependencies

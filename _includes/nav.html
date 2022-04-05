@@ -21,9 +21,9 @@
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
                 <div id="list-wrapper">
                     {% assign items = group.items | sort: 'order' %}
-                    <a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}">
-                        <label for="opener-{{ count }}">▾</label>
-                        {{ group.name }}
+                    <!--a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}"-->
+                    <a class="list-top">
+                        <label for="opener-{{ count }}">▾ &nbsp;&nbsp;&nbsp;{{ group.name }}</label>
                     </a>
                     <input type="checkbox" class="checkbox" id="opener-{{ count }}" name="box"/>
                     <ul>
@@ -48,9 +48,8 @@
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
                 <div id="list-wrapper">
                     {% assign items = group.items | sort: 'order' %}
-                    <a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}">
-                        <label for="opener-{{ count }}">▾</label>
-                        {{ group.name }}
+                    <a class="list-top">
+                        <label for="opener-{{ count }}">▾&nbsp;&nbsp;&nbsp;{{ group.name }}</label>
                     </a>
                     <input type="checkbox" class="checkbox" id="opener-{{ count }}" name="box"/>
                     <ul>
@@ -76,9 +75,8 @@
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
                 <div id="list-wrapper">
                     {% assign items = group.items | sort: 'order' %}
-                    <a class="list-top{% if page.url == group.url %}active{% endif %}" href="{{ site.baseurl }}{{ items.first.url }}">
-                        <label for="opener-{{ count }}">▾</label>
-                        {{ group.name }}
+                    <a class="list-top">
+                        <label for="opener-{{ count }}">▾&nbsp;&nbsp;&nbsp;{{ group.name }}</label>
                     </a>
                     <input type="checkbox" class="checkbox" id="opener-{{ count }}" name="box"/>
                     <ul>
