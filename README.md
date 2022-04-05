@@ -1,5 +1,7 @@
 # WheatBeer's Blog
 
+## Scripts
+
 ~~~bash
 $ setup.sh      # install jekyll & bundler 
 $ run.sh        # run jekyll serve
