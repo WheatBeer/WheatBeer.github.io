@@ -1,6 +1,4 @@
-> Master's Student <br>
-School of Electrical and Electronic Engineering <br>
-Yonsei University
+A jobseeker
 
 # CONTACT
 * * *
@@ -25,7 +23,7 @@ Yonsei University
 ## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> Seoul SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul. 2019 - Aug. 2019*)
 ### * Internship program sponsored by the national government
-### * Topic: Neural network acceleration with quantization (PyTorch)
+### * Topic: Lightweight DNNs with quantization (PyTorch)
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May. 2018 - Sep. 2018*)
 ### * Research on EOS blockchain system
@@ -55,7 +53,7 @@ Yonsei University
 
 # PROGRAMMING LANGUAGES
 * * *
-## **C/C++**, CUDA, Python, Java, Verilog, HTML, CSS
+## **C/C++**, Python, Java, CUDA, Verilog, HTML, CSS
 
 # AWARDS AND HONORS
 * * *
