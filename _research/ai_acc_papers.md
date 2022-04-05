@@ -1,6 +1,6 @@
 ---
 title: Papers
-category: AI Accelerators
+category: AI Accelerator (NPU)
 path: research/ai_acc_papers.md 
 ---
 

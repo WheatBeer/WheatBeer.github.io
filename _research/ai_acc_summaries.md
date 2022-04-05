@@ -1,6 +1,6 @@
 ---
 title: Summaries
-category: AI Accelerators
+category: AI Accelerator (NPU)
 path: research/ai_acc_summaries.md 
 ---
 
