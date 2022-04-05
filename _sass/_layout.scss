@@ -73,7 +73,7 @@ body {
 }
 
 #header {
-	$emblem-size: 35px;
+	$emblem-size: 32px;
 	$emblem-vertical-padding: ($nav-header-height - $emblem-size) / 2;
 	$emblem-horizontal-padding: $space;
 	position: fixed;
@@ -94,7 +94,6 @@ body {
 		@media (min-width: $mobile-break) {
 			width: $nav-width;
 		}
-		
 		h1 {
 			padding: $emblem-vertical-padding $emblem-horizontal-padding;
 			height: $nav-header-height*1.33;
@@ -102,7 +101,7 @@ body {
 			background-color: $brand-colour;
 			color: #fff;
 			margin: 0;
-			font-size: 2rem;
+			font-size: 1.8rem;
 			line-height: 0.8;
 			letter-spacing: 0;
 			font-weight: 600;
@@ -115,7 +114,6 @@ body {
 			@media (min-width: $mobile-break) {
 				height: $nav-header-height*2;
 			}
-	
 			img {
 				height: $emblem-size*1.2;
 				width: $emblem-size*1.2;
@@ -123,26 +121,22 @@ body {
 				@media (min-width: $mobile-break) {
 					height: $emblem-size*2;
 					width: $emblem-size*2;
-					margin-left: 10px;
-					margin-right: 30px;
+					margin-left: 5px;
+					margin-right: 20px;
 				}
 				
 			}
-
 			#title{
 				color: #fff;
 				text-decoration: none;
 			}
-
 		}
-		
 		form{
 			display: none;
 			@media (min-width: $mobile-break) {
 				display: block;
 			}
 		}
-		
 	}
 
 	.mid {
@@ -157,7 +151,6 @@ body {
 			width: $nav-width;
 			height: 70%;
 		}
-		
 		ul {
 			padding: 0;
 			margin: 0;
@@ -285,7 +278,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 	background-color: $content-background-color;
 	color: $content-color;
 	margin: 0 auto 0 auto;
-	padding: $space ($space + 5) $space;
+	padding: $space ($space + 50) $space;
 	max-width: $content-max-width;
 	hr {
 		margin : 0.5em auto 0.5em auto;
@@ -342,7 +335,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 
 .page-header {
 	margin: ($space - 10) auto 0 auto;
-	padding: $space ($space + 5) ($space - 10);
+	padding: $space ($space + 50) 0;
 	max-width: $content-max-width;
 	h2,
 	h3 {
