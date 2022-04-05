@@ -6,20 +6,21 @@ path: research/npu_summaries.md
 
 ## Paper list
 <hr>
-**1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning  [ASPLOS’14]**
-<br>**2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18]**
-<br>**3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]**
-<br>**4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]**
-<br>**5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]**
-<br>**6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]**
-<br>**7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]**
-<br>**8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]**
-<br>**9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]**
-<br>**10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]**
-<br>**11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]**
+**[1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning  [ASPLOS’14]](#diannao)**
+<br>**[2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18]](#scale-sim)**
+<br>**[3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]](#eyeriss)**
+<br>**[4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]](#cnvlutin)**
+<br>**[5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]](#cambricon-x)**
+<br>**[6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]](#scnn)**
+<br>**[7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]](#eie)**
+<br>**[8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]](#ese)**
+<br>**[9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]](#dac20)**
+<br>**[10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]](#mnnfast)**
+<br>**[11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]](#manna)**
 <hr>
 
 <br>
+#### diannao
 ### 1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning [ASPLOS’14]
 <hr>
 **Motivation**
@@ -44,6 +45,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### scale-sim
 ### 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] 
 *Advanced version: A Systematic Methodology for Characterizing Scalability of DNN Accelerators using SCALE-Sim [ISPASS’20]*
 <hr>
@@ -61,6 +63,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### eyeriss
 ### 3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]
 *Cross-referenced paper: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks [JSSC’16]*
 <hr>
@@ -78,6 +81,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### cnvlutin
 ### 4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]
 <hr>
 **Motivation**
@@ -94,6 +98,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### cambricon-x
 ### 5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]
 <hr>
 **Motivation**
@@ -110,6 +115,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### scnn
 ### 6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]
 <hr>
 **Motivation**
@@ -126,6 +132,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### eie
 ### 7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]
 <hr>
 **Motivation**
@@ -142,6 +149,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### ese
 ### 8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]
 <hr>
 **Motivation**
@@ -158,6 +166,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### dac20
 ### 9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]
 <hr>
 **Motivation**
@@ -174,6 +183,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### mnnfast
 ### 10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]
 <hr>
 **Motivation**
@@ -190,6 +200,7 @@ For the implementation of a single layer on the accelerator, a tiling factor cal
 
 
 <br>
+#### manna
 ### 11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]
 <hr>
 **Motivation**

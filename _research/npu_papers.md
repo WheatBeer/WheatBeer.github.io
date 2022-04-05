@@ -4,7 +4,7 @@ category: NPU
 path: research/npu_papers.md 
 ---
 
-### This page is from *[here](https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md).*
+### *This page is from [here](https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md).*
 
 <div class="md" id="md-parsing">
     <script>
