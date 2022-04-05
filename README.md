@@ -1,7 +1,7 @@
 # WheatBeer's Blog
 
 ~~~bash
-$ setup.sh    # install jekyll & bundler 
+$ setup.sh      # install jekyll & bundler 
 $ run.sh        # run jekyll serve
 $ git.sh        # git add all, commit, and push
 ~~~
