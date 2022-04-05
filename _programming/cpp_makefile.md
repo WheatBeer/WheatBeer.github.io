@@ -1,7 +1,7 @@
 ---
 title: Makefile
-category: Templates
-path: programming/templates/Makefile.md
+category: C/C++
+path: programming/cpp_makefile.md
 ---
 
 ~~~bash

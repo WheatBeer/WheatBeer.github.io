@@ -287,7 +287,6 @@ $nav-image: $baseurl + "/images/menu.svg";
 	margin: 0 auto 0 auto;
 	padding: $space ($space + 5) ($space - 10);
 	max-width: $content-max-width;
-
 	hr {
 		margin : 0.5em auto 0.5em auto;
 		height: 1px;
@@ -376,6 +375,11 @@ $nav-image: $baseurl + "/images/menu.svg";
 	padding: 0.5em 0 1em 0;
 	position: relative;
 	text-align: left;
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 	hr {
 		margin : 0 auto 1em auto;
 		background: rgb(101, 101, 101);
@@ -446,6 +450,68 @@ $nav-image: $baseurl + "/images/menu.svg";
 			font-size: 1.4rem;
 			font-weight: bold;
 		}
+	}
+}
+
+.md {
+	position: relative;
+	background-color: $content-background-color;
+	color: $content-color;
+	margin: 0 auto 0 auto;
+	padding: $space ($space + 5) ($space - 10);
+	max-width: $content-max-width;
+	li {
+		margin : 0.5em auto 0.5em auto;
+		text-align: left;
+		width: 100%;
+	}
+	hr {
+		margin : 0.5em auto 0.5em auto;
+		height: 1px;
+		width: 100%;
+	}
+	h1 {
+		margin : 0.8em auto 0.5em auto;
+		text-align: left;
+		font-size: 3.0rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.05em;
+	}
+	h2 {
+		margin : 0.8em auto 0.5em auto;
+		text-align: left;
+		font-size: 2.3rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.05em;
+	}
+	h3 {
+		margin : 0.8em auto 0.5em auto;
+		text-align: left;
+		font-size: 1.9rem;
+		color: rgb(77, 77, 77);
+		width: 100%;
+		letter-spacing: 0.01em;
+	}
+	p {	
+		margin : 0.5em auto 0.5em auto;
+		text-align: left;
+		font-size: 1.5rem;
+		font-family: "Open Sans", sans-serif;
+		width: 100%;
+	}
+	ul {	
+        display: block;
+		margin : 0.5em auto 0.5em auto;
+		text-align: left;
+		font-size: 1.5rem;
+		font-family: "Open Sans", sans-serif;
+		width: 100%;
+	}
+	.date {
+		color: #888;
+		font-style: italic;
 	}
 }
 

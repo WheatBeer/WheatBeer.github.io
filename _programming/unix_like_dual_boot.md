@@ -1,10 +1,10 @@
 ---
-title: Dual Booting (L+W)
+title: Dual Booting
 category: Unix-like
-path: programming/unix-like/dual-boot.md
+path: programming/unix_like_dual_boot.md
 ---
 
-## grub-reboot for dual-booting
+## grub-reboot for dual-booting (Linux + Windows)
 
 1. Change 'GRUB_DEFAULT=0' to 'GRUB_DEFAULT=saved' in /etc/default/grub
 

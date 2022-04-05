@@ -40,7 +40,15 @@
     // get markdown content  
     function getText(myUrl){
         $.ajax({ url: myUrl, type: 'get', dataType: 'html', async: false,
-            success: function(data) { document.getElementById('github').innerHTML = marked(data); } 
+            success: function(data) { document.getElementById('cv-parsing').innerHTML = marked(data); } 
+        });
+    }
+</script>
+<script>  
+    // get markdown content  
+    function getText1(myUrl){
+        $.ajax({ url: myUrl, type: 'get', dataType: 'html', async: false,
+            success: function(data) { document.getElementById('md-parsing').innerHTML = marked(data); } 
         });
     }
 </script>

@@ -1,6 +1,7 @@
 ---
 title: GPGPU-SIM
 category: Simulators
+path: research/simulators_gpgpusim.md
 ---
 [[edit]](https://github.com/WheatBeer/WheatBeer.github.io/edit/master/_docs/simulators/gpgpu-sim.md)
 

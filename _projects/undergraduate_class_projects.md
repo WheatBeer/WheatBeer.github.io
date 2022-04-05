@@ -1,7 +1,7 @@
 ---
-title: Class projects
+title: Class Projects
 category: Undergraduate
-path: projects/undergraduate/class-projects.md
+path: projects/undergraduate_class_projects.md
 ---
 
 # Undergraduate Projects at Yonsei Univ.

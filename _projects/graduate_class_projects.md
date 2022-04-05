@@ -1,7 +1,7 @@
 ---
-title: Class projects
+title: Class Projects
 category: Graduate
-path: projects/graduate/class-projects.md
+path: projects/graduate_class_projects.md
 ---
 
 # Graduate Projects at Yonsei Univ.

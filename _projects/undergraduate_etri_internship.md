@@ -1,7 +1,7 @@
 ---
-title: ETRI-internship
+title: ETRI Internship
 category: Undergraduate
-path: projects/undergraduate/etri-internship.md
+path: projects/undergraduate_etri_internship.md
 ---
 
 # MobileNetV2 Validation & Retraining with Reduced-precision Weights 
