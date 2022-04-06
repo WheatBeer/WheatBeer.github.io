@@ -186,24 +186,6 @@ body {
     }
 }
 
-.button {
-    position: relative;
-    display: inline-block;
-    border-radius: 0.35em;
-    color: #fff !important;
-    text-decoration: none;
-    padding: 0.7em 2.0em 0.7em 2.0em;
-    background-color: black;
-    font-size: 2.5vmax;
-    border: 0;
-    cursor: pointer;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    &:hover {
-        background-color: rgb(104, 104, 104);
-        font-weight: bold;
-    }
-}
 
 .cover {
     padding: 32vh 0 32vh 0;
@@ -218,22 +200,40 @@ body {
         top: 0;
         z-index: -1;
     }
-    .cover_title{
+    .cover_title {
         color: white;
         text-align: center;
         h2 {
-            font-size: 5.5vmax;
+            font-size: 4.0rem;
             color: white;
-            margin: 1em 0 0 0;
+            margin: 1rem 0 0 0;
         }
         h3 {
-            font-size: 3vmax;
             color: white;
-            margin: 1em 0 1em 0;
+            font-size: 2.5rem;
+            margin: 1rem 0 1em 0;
         }
         p {
             font-size: 1.7rem;
             font-family: "Open Sans", sans-serif;
+        }
+    }
+    .button {
+        position: relative;
+        display: inline-block;
+        border-radius: 0.35em;
+        color: #fff !important;
+        text-decoration: none;
+        padding: 0.7em 2.0em 0.7em 2.0em;
+        background-color: black;
+        font-size: 2.5rem;
+        border: 0;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        &:hover {
+            background-color: rgb(104, 104, 104);
+            font-weight: bold;
         }
     }
 }
@@ -243,12 +243,12 @@ body {
     position: relative;
     text-align: center;
     h2 {
-        font-size: 3.7rem;
+        font-size: 3.5rem;
         color: rgb(77, 77, 77); 
     }
     h3 {
-        margin-top: 0.5em;
         font-size: 2.5rem;
+        margin-top: 0.5em;
         color: rgb(77, 77, 77); 
     }
     p {	
@@ -265,17 +265,19 @@ body {
     background-color: $content-background-color;
     color: $content-color;
     margin: 0 auto 0 auto;
-    padding: $space ($space + 50) $space;
+    padding: $space $space $space;
     max-width: $content-max-width;
     hr {
         margin : 0.5em auto 0.5em auto;
+        background: rgb(90, 90, 90);
         height: 1px;
         width: 100%;
     }
     h1 {
         margin : 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 3.0rem;
+        font-size: 3.0vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.05em;
@@ -283,7 +285,8 @@ body {
     h2 {
         margin : 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 2.3rem;
+        font-size: 2.3vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.05em;
@@ -291,7 +294,8 @@ body {
     h3 {
         margin : 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 1.9rem;
+        font-size: 1.9vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.01em;
@@ -303,14 +307,16 @@ body {
     p {	
         margin : 0.5em auto 0.5em auto;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.5vmax;
+        line-height: 170%;
         font-family: "Open Sans", sans-serif;
         width: 100%;
     }
     ul {	
         margin : 0.5em auto 0.5em auto;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.5vmax;
+        line-height: 170%;
         font-family: "Open Sans", sans-serif;
         width: 100%;
     }
@@ -318,29 +324,54 @@ body {
         color: #888;
         font-style: italic;
     }
+    @media (min-width: $mobile-break) {
+        h1 {
+            font-size: 3.0rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+        }
+        h3 {
+            font-size: 1.7rem;
+        }
+        p {	
+            font-size: 1.3rem;
+        }
+        ul {
+            font-size: 1.3rem;
+        }
+    }
 }
 
 .page-header {
     margin: ($space - 10) auto 0 auto;
-    padding: $space ($space + 50) 0;
+    padding: $space $space 0;
     max-width: $content-max-width;
-    h2,
-    h3 {
-        margin: 0;
-        line-height: 1.2;
-        letter-spacing: -1px;
-        font-size: 3.0rem;
-        margin-left: -4px;
-    }
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.3vmax;
         margin-left: -1px;
         color: #888;
         letter-spacing: 0;
     }
+    h3 {
+        margin: 0;
+        font-size: 4.0vmax;
+        line-height: 170%;
+        letter-spacing: -1px;
+        margin-left: -4px;
+    }
     hr {
         margin: $space*0.7 0 0 0;
         height: 2px;
+        border-top:1px solid rgb(101, 101, 101);
+        border-bottom:1px solid rgb(101, 101, 101);
+    }
+    a {
+        img {
+            float: right;
+            width: 2.8vmax; 
+            height: 2.8vmax;
+        }
     }
     @media (min-width: $mobile-break) {
         h2 {
@@ -349,6 +380,12 @@ body {
         h3 {
             font-size: 4.0rem;
         }
+        a {
+            img {
+                width: 2.8rem; 
+                height: 2.8rem;
+            }
+        }
     }
     @media (min-width: $full-width-break) {
         margin-top: 55px;
@@ -356,7 +393,7 @@ body {
 }
 
 .cv {
-    padding: $space 0 ($space + 50) 0;
+    padding: $space 0 $space 0;
     position: relative;
     text-align: left;
     li {
@@ -424,7 +461,7 @@ body {
         border-bottom: 1px solid black;
         padding: 0 0 0 0;
         overflow: auto;
-        width: 370px;
+        width: 80%;
         background-color: white;
         p:last-child {
             margin : 0 1em 0 1em;
@@ -443,20 +480,17 @@ body {
     margin: 0 auto 0 auto;
     padding: $space 0 $space;
     max-width: $content-max-width;
-    ul li {
-        margin: 0.5em auto 0.5em auto;
-        text-align: left;
-        width: 100%;
-    }
     hr {
         margin : 0.5em auto 0.5em auto;
+        background: rgb(90, 90, 90);
         height: 1px;
         width: 100%;
     }
     h1 {
         margin: 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 2.3rem;
+        font-size: 2.3vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.05em;
@@ -464,7 +498,8 @@ body {
     h2 {
         margin: 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 1.9rem;
+        font-size: 1.9vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.01em;
@@ -472,7 +507,8 @@ body {
     h3 {
         margin: 0.8em auto 0.5em auto;
         text-align: left;
-        font-size: 1.7rem;
+        font-size: 1.7vmax;
+        line-height: 170%;
         color: rgb(77, 77, 77);
         width: 100%;
         letter-spacing: 0.01em;
@@ -480,20 +516,39 @@ body {
     p {	
         margin: 0.5em auto 0.5em auto;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.5vmax;
+        line-height: 170%;
         font-family: "Open Sans", sans-serif;
         width: 100%;
     }
     ul {	
         margin: 0.5em auto 0.5em auto;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.5vmax;
+        line-height: 170%;
         font-family: "Open Sans", sans-serif;
         width: 100%;
     }
     .date {
         color: #888;
         font-style: italic;
+    }
+    @media (min-width: $mobile-break) {
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.7rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {	
+            font-size: 1.3rem;
+        }
+        ul {
+            font-size: 1.3rem;
+        }
     }
 }
 

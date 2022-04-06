@@ -15,7 +15,7 @@ pre {
 	margin: 0 0 1.0em 0;
 	width: 100%;
 	padding: 10px;
-	font-size: 0.75em;
+	font-size: 1.4vmax;
 	white-space: pre;
 	overflow: auto;
 	border-radius: 3px;
@@ -27,6 +27,15 @@ pre {
 		border: none;
 		padding: 0
 	}
+}
+
+@media (min-width: $mobile-break) {
+    pre {
+        font-size: 0.75em;
+        code, tt {
+            font-size: inherit;
+        }
+    }
 }
 
 blockquote > code,
