@@ -4,7 +4,7 @@ category: Undergraduate
 path: projects/undergraduate_class_projects.md
 ---
 
-# Undergraduate Projects at Yonsei Univ.
+## Undergraduate Projects at Yonsei Univ.
 * * *
 
 |Semester|Class|Language|

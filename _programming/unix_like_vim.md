@@ -3,6 +3,15 @@ title: Vim
 category: Unix-like
 path: programming/unix_like_vimrc.md
 ---
+{% comment %}
+## Outline
+<hr>
+[~/.vimrc](#vimrc for MacOS)
+{% endcomment %}
+
+#### vimrc
+## **~/.vimrc** for MacOS
+<hr>
 
 ~~~txt
 set nocompatible              " be iMproved, required
@@ -160,6 +169,7 @@ endif
 autocmd BufNewFile,BufRead *.tex set spell
 ~~~
 
+{% comment %}
 ## Useful Links
 * Vim을 IDE처럼 사용하기: https://blog.b1ue.sh/vim-ide/
 * .ycm_extra_conf.py 설정
@@ -213,3 +223,4 @@ Plugin 'airblade/vim-gitgutter'    " show git file status diff</br>
 Plugin 'godlygeek/tabular'         " aligning multilines with same form (ex select lines + :Tab + / + <char>
 Plugin 'Tuxdude/mark.vim'
 ~~~
+{% endcomment %}

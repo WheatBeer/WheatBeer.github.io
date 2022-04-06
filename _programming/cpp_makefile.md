@@ -4,6 +4,9 @@ category: C/C++
 path: programming/cpp_makefile.md
 ---
 
+## Template
+<hr>
+
 ~~~bash
 # Directories
 SRCDIR=src

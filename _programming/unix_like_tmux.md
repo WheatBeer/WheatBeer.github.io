@@ -4,7 +4,8 @@ category: Unix-like
 path: programming/unix_like_tmux.conf.md
 ---
 
-### For MacOS
+## **~/.tmux_conf** for MacOS
+<hr>
 
 ~~~bash
 # refresh 

@@ -4,7 +4,7 @@ category: Graduate
 path: projects/graduate_class_projects.md
 ---
 
-# Graduate Projects at Yonsei Univ.
+## Graduate Projects at Yonsei Univ.
 * * *
 
 |Semester|Class|Note|
