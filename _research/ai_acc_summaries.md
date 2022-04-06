@@ -21,7 +21,7 @@ path: research/ai_acc_summaries.md
 
 <br>
 #### diannao
-### 1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning [ASPLOS’14]
+## 1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning [ASPLOS’14]
 <hr>
 **Motivation**
 <br>
@@ -49,7 +49,7 @@ The previous studies have focused on efficiently implementing the computation pa
 
 <br>
 #### scale-sim
-### 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] 
+## 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] 
 *Advanced Version: A Systematic Methodology for Characterizing Scalability of DNN Accelerators using SCALE-Sim [ISPASS’20]*
 <hr>
 **Motivation**
@@ -72,7 +72,7 @@ Since SCALE-Sim is the first public and open source CNN accelerator simulator, i
 
 <br>
 #### eyeriss
-### 3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]
+## 3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]
 *Cross-referenced paper: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks [JSSC’16]*
 <hr>
 **Motivation**
@@ -95,12 +95,13 @@ They establish a novel dataflow called RS, and the dataflow is more energy effic
 
 <br>
 #### cnvlutin
-### 4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]
+## 4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]
 <hr>
 **Motivation**
 <br>
 A large fraction of the computations performed by DNNs are intrinsically ineffectual as they involve a multiplication where one of the inputs is zero. The ineffectual computations can be skipped by taking additional units and control flow. The value-based DNN acceleration approach can enhance power efficiency and reduce execution time, and thus it can improve overall EDP and ED^2P.
 <br>
+<center><img src="/images/cnvlutin.png"/></center>
 **Methodology**
 <br>
 Cnvlutin (CNV) unit is based on DaDianNao which consists of neuron lanes (NBin) and filter lanes (SB), and adder trees. The neuron lanes of baseline are distributed to corresponding subunits in CNV. A filter lane is composed of multiple synapse sublanes, and the sublanes are also distributed to corresponding subunits in CNV. To skip ineffectual computations from input zeros, CNV has offset buffers for each subunit. The offsets adjust the synapse sublane’s index, so that it can access the appropriate synapse column. After MAC operations, output neurons are encoded for the next layer. The CNV encoder rearranges output neurons and creates output neuron offsets.
@@ -116,12 +117,13 @@ Prior works targeted at accelerating sparse vector matrix operations using FPGAs
 
 <br>
 #### cambricon-x
-### 5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]
+## 5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]
 <hr>
 **Motivation**
 <br>
 Although the number of operations and memory accesses can be greatly reduced with synapse pruning that brings about sparse and irregular neural networks, general purpose hardware and existing accelerators have not been able to exploit the pruning technique. To maximize efficiency, Cambricon-X utilizes the sparsity and irregularity of neural networks by taking an indexing module (IM). IM efficiently selects and transfers needed neurons to connected PEs with reduced bandwidth requirement, while each PE stores irregular and compressed synapses for local computation in an asynchronous fashion.
 <br>
+<center><img src="/images/cambriconx.png"/></center>
 **Methodology**
 <br>
 Cambricon-X is based on DianNao, and thus each PE in Fig. 4 has an adder tree they call a PEFU. The difference between two architectures is the existence of a buffer controller (BC) which can exploit the sparse and irregular features. The BC is designed for transferring necessary neurons to PEs, orchestrating computations on PEs, and performing less computation-intensive operations. The controller consists of an indexing module (IM), and a specialized function unit for the BC (BCFU). To implement the IM, they introduce two commonly-used indexing options: direct indexing and step indexing. Step indexing is more efficient in terms of area and power than direct indexing. 
@@ -137,12 +139,13 @@ Prior accelerators (e.g., DianNao and DaDianNao) fill the pruned synapses with z
 
 <br>
 #### scnn
-### 6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]
+## 6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]
 <hr>
 **Motivation**
 <br>
 Sparse neural networks have emerged as an effective solution to reduce the amount of computation and memory required. The opportunities of the efficient reduction come from the zero-valued weights and zero-valued activations. The former data stem from network pruning during training, and the latter data arise from the common ReLU operator. To exploit the zero values, previous accelerators have been leveraged only for single-type data. Table 2 shows how the accelerators and SCNN (this work) exploit sparsity. Eyeriss exploits sparsity in activations by storing them in compressed form in DRAM and by gating computation cycles for zero-valued activations to save energy. Cnvlutin moves and stages sparse activations in compressed form and skips computation cycles for zero-valued activations to improve both performance and energy efficiency. Conversely, Cambricon-X exploits sparsity by compressing the pruned weights, skipping computation cycles for zero-valued weights, but it still suffers from wasted computation cycles when the non-zero weight is to be multiplied with zero-valued activations. Compared to the three accelerators, SCNN leverages all of the sparsity opportunities. 
 <br>
+<center><img src="/images/scnn.png"/></center>
 **Methodology**
 <br>
 They propose PT-IS-CP-sparse dataflow. The word order in the dataflow notation (i.e., PT -> IS -> CP) means the order of process in the SCNN accelerator. If the number of output activations (W x H) for each channel (K) is larger than the number of PEs, the activations are partitioned into planar tiles (PTs), and the tiles are handled by the PEs in the same cycle. The PEs hold input data temporally for input-stationary (IS), weight neurons are broadcast to the PEs. In each PE, an array of F x I multipliers computes a full cartesian product (CP) of output partial sums using non-zero values (sparse value skipping). Each multiplier output is accumulated with a partial sum at the matching output coordinates in the output activation space.
@@ -154,12 +157,13 @@ They propose PT-IS-CP-sparse dataflow. The word order in the dataflow notation (
 
 <br>
 #### eie
-### 7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]
+## 7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]
 <hr>
 **Motivation**
 <br>
 During matrix multiplication, the memory access is usually the bottleneck especially when the matrix is larger than the on-chip buffer capacity. Also, there is no reuse of the weight matrix, and thus a memory access is required for every operation. Therefore, an efficient way to execute a large matrix multiplication layer (e.g., FC layer) is needed. Network compression via pruning and weight sharing makes it possible to fit the layers. However, processing these compressed layers is challenging. To efficiently operate on the compressed layers, they propose EIE, an efficient inference engine, a specialized accelerator that performs customized sparse matrix vector multiplication and handles weight sharing with no loss of efficiency. 
 <br>
+<center><img src="/images/eie.png"/></center>
 **Methodology**
 <br>
 To exploit the sparsity of activations, an encoded sparse weight matrix is stored in a variation of compressed sparse column (CSC) format. The variant format consists of virtual weights, relative row indices, and column pointers. EIE has multiple PEs, and non-zero Input activations are distributed to each PE. In Figure 4(a), the non-zero activations are detected by the leading non-zero detection (LNZD) nodes. Each LNZD node finds the next non-zero activation across its four children and sends this result up the quadtree. A central control unit (CCU) receives the non-zero activations and broadcasts these to the PEs. Figure 4(b) illustrates the architecture of a PE in EIE. Two column pointers are read from a pointer read unit in one cycle. A sparse matrix access unit uses the two pointers to read the non-zero weight neurons. The arithmetic unit receives a weight index and a relative row index, and performs MAC operation. To sum up, the sparse activation operations are eliminated by LNZD, and the sparse weight neurons are automatically ignored by the compressed format.
@@ -175,12 +179,13 @@ Compressed layers are not efficient on previous sparse matrix multiplication (SP
 
 <br>
 #### ese
-### 8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]
+## 8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]
 <hr>
 **Motivation**
 <br>
 In the speech recognition process, LSTM networks are used for an acoustic model, and these are the most computation and memory intensive parts. To achieve higher prediction accuracy, large networks are used. As the networks grow, the opportunity to exploit the sparsity also increases. Although pruning and quantization can reduce memory footprint, some new challenges arise: 1) irregular computation, 2) load imbalance, and 3) failure to use the parallelism of compressed LSTM. General purpose processors cannot implement these challenges efficiently, but ESE can. 1) After quantization, the weight (12-bit) and index (4-bit) are not byte-aligned, and thus ESE groups both into 2 bytes. 2) ESE uses load balance-aware pruning to overcome the load imbalance that is caused by sparsity and reduce the hardware efficiency. 3) ESE takes advantage of the parallelism both inter sparse SpMV operation and intra SpMV operation.
 <br>
+<center><img src="/images/ese.png"/></center>
 **Methodology**
 <br>
 Processing units (PEs) of ESE are similar to those of EIE (prior work). Since a single element in the voice vector (input vector) is consumed by multiple PEs, operations of all the PEs have to be synchronized. To handle the element-wise multiplication, ElemMul units are outside the PEs.
@@ -196,12 +201,13 @@ Prior GRU/LSTM accelerators have only targeted parallelism for operations and no
 
 <br>
 #### dac20
-### 9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]
+## 9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]
 <hr>
 **Motivation**
 <br>
 Large RNNs have the potential to be handled in parallel. Left figure (Fig.2 in paper) shows parallelism levels of large-scale and stacked RNNs from fine-grained (left) to coarse-grained (right) operations. At each parallelism level, the parallelism degrees are defined by RNN models and continue to grow as models become larger and stacked for more high-quality services. However, existing model parallelism methods suffer from severe HW underutilization when they distribute RNNs to multiple accelerators and thus fail to obtain the scalable performance. Therefore, this work introduces full parallelism levels of modern RNNs and proposes a systematic strategy to obtain optimal parallelism degrees at each level.
 <br>
+<center><img src="/images/dac20.png"/></center>
 **Methodology**
 <br>
 This work introduces three parallelism levels of modern RNNs and proposes systematic strategies to obtain optimal parallelism degrees at each level. Fig. 6 summarizes four key ideas to find an optimal partitioning result for multiple FPGAs by exploiting the full parallelism of large-scale RNNs. 1) To find dependencies between input sequences and layers, two-dimensional RNN analysis is leveraged. Due to the analysis, the optimal number of FPGAs dedicated to each layer is determined natually. 2) To explore both operation-level (i.e., input/gate-wise) and matrix-level row-wise partitioning, which cannot be explored by conventional approaches at the same time, single- layer partitioning analysis is performed. This partitioning method provides optimal distributions that significantly reduce the load imbalance and vector reduction overheads. 3) To derive more detailed communication cost of RNN partitioning, communication analysis is considered. Lastly, 4) Software pipelining is applied to increase the utilization of FPGAs.
@@ -213,12 +219,13 @@ This work introduces three parallelism levels of modern RNNs and proposes system
 
 <br>
 #### mnnfast
-### 10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]
+## 10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]
 <hr>
 **Motivation**
 <br>
 Memory-augmented neural networks (MemNNs), which can make an inference with the previous history stored in memory, are known for their huge reasoning power and capability to learn from a large number of inputs rather than other networks. As the size of input datasets rapidly grows, the necessity of large-scale memory networks continuously arises. Although such large-scale memory networks provide excellent reasoning power, the current computer infrastructure cannot achieve scalable performance due to its limited system architecture. 
 <br>
+<center><img src="/images/mnnfast.png"/></center>
 **Methodology**
 <br>
 MemNN has three performance problems: 1) high memory bandwidth consumption, 2) heavy computation, and 3) cache contention. During the embedding operation, MemNN looks up the embedding matrix to convert input sentences into internal state vectors. 1) Although a larger embedding dimension is beneficial for solving complicated questions, a higher memory bandwidth is required. In Figure 5, a baseline algorithm needs all temporary values of  intermediate vectors. However, MnnFast overcomes this thorough column-based algorithm which enables MemNN to partially calculate output vectors. 2) To handle the significant computational overhead, a zero-skipping technique is used. 3) The large-scale MemNN suffers from huge cache contention between the embedding and inference operations. This cache contention dramatically increases the number of cache misses for the inference operation, which results in huge performance degradation. To overcome these limitations, they propose an embedding cache that is a dedicated cache for storing internal state vectors during the embedding operation.
@@ -230,12 +237,13 @@ MemNN has three performance problems: 1) high memory bandwidth consumption, 2) h
 
 <br>
 #### manna
-### 11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]
+## 11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]
 <hr>
 **Motivation**
 <br>
 Memory-augmented neural networks (MANNs) can achieve one-shot learning and complex cognitive capabilities that are well beyond those of classical DNNs. For soft reads and writes to the differentiable memory, access to all the memory locations is required for each operation. Thus, the enhanced capabilities of MANNs (or the larger memories of MANNs) lead to a high computational cost, and results in poor performance of MANNs on modern CPUs, GPUs, and other accelerators. To address this, this paper presents Manna, a specialized hardware inference accelerator for MANNs. 
 <br>
+<center><img src="/images/manna.png"/></center>
 **Methodology**
 <br>
 Manna is a memory-centric, highly parallel CMOS-based architecture designed explicitly for memory-augmented neural networks. Google DeepMind’s neural turing machine (NTM) consists of a DNN controller (i.e., DNN network) and external differentable memory. Manna processes the DNN controller part with controller tile in Figure 4. Soft reads and writes to the differentiable memory are handled by remaining tiles called DiffMem tiles. A DiffMem tile has eMACs that can calculate MAC, and element-wise operations. They provide a compiler to map MANNs to Manna that minimize data movement. 
