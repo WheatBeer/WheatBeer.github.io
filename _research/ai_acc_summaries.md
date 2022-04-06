@@ -29,6 +29,7 @@ Layers of state-of-art CNNs consist of thousands of neurons and millions of syna
 During processing the large networks, general purpose hardware (e.g., SIMD processors, and GPUs), and previous accelerators have shown memory inefficiency. 
 They not only confirm the observation that dedicated storage is key for achieving good performance and power but also try to improve locality at the level of registers located close to computational operators with *tiling* that can reduce the data movements. 
 <br>
+<center><img src="/images/diannao.png"/></center>
 **Methodology**
 <br>
 They first describe tiling methods of three CNN layers: convolutional, pooling, and classifier (fully-connected). 
@@ -55,6 +56,7 @@ The previous studies have focused on efficiently implementing the computation pa
 <br>
 The authors mention that there was no cycle-accurate DNN accelerator before SCALE-Sim. The lack of accelerator analysis tools is the main motivation of this paper. It provides systolic array based accelerator analysis by taking various microarchitectural features. This tool allows architects to know principled insights on both the design trade-offs and efficient mapping strategies for accelerators. However, since this paper is not a conference paper, motivation and contribution to this paper are weaker than other papers. Thus, the authors have developed this paper’s methodologies to publish to a conference, and the advanced version of this paper was finally published in ISPASS’20. The advanced version focuses on scalability of accelerators that is described as scaling-up and scaling-out in the original. 
 <br>
+<center><img src="/images/scalesim.png"/></center>
 **Methodology**
 <br>
 SCALE-Sim takes several parameters, such as array size, scratchpad memory size,  dataflow strategy, and DNN layer parameters, and then reports latency, array utilization, memory accesses, and DRAM bandwidth requirement. In the paper, they provide a method of DNN layer mapping on a systolic array based accelerator depending on three dataflow: input-stationary (IS), weight-stationary (WS), and output-stationary (OS).
@@ -77,6 +79,7 @@ Since SCALE-Sim is the first public and open source CNN accelerator simulator, i
 <br>
 Highly-parallel computing hardware, such as SIMD/SIMT machines, can achieve high throughput during DNN processing. However, the DNN computational complexity, which comes from high-dimensional DNN layers, can make the machines energy inefficient from a large amount of data movement. Hence, finding a proper dataflow that brings about the minimal data movement cost is crucial to achieving energy efficient DNN processing. In this paper, they categorize existing dataflows (e.g., IS, WS, OS, and NLR) and propose their own dataflow called *row-stationary (RS)*. They also introduce a fabricated chip, called Eyeriss, which uses the RS dataflow.
 <br>
+<center><img src="/images/eyeriss.png"/></center>
 **Methodology**
 <br>
 Eyeriss consists of three levels: global buffer, register files (RFs), and multiply-and-accumulate (MAC) units. The chip employs 108KB shared memory, where 100KB of space is assigned to input and output data, and the rest is used for filters in FIFO fashion. In each PE, there are separate buffers for input, filter, and output data totaling 0.5KB. PE array, which is made up of 168 (14 x 12) PEs, creates RS dataflow by mapping input height and filter height to PE array X and Y. Due to this mapping, the row-direction data (e.g., input rows, filter rows, and output rows) are moved between adjacent levels, and thus they call the data *row primitives*.
