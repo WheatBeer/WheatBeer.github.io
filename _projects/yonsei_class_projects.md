@@ -4,7 +4,7 @@ category: Yonsei
 path: projects/yonsei_class_projects.md
 ---
 
-## Undergraduate Projects 
+## Undergraduate
 * * *
 
 |Semester|Class|Language|
@@ -18,7 +18,7 @@ path: projects/yonsei_class_projects.md
 |19-2|[Digital System Design (EEE3544-01)](https://github.com/WheatBeer/undergraduate_projects/tree/master/digital_system_design)|Verilog
 |19-2|[System Programming (CSI3107-01)](https://github.com/WheatBeer/undergraduate_projects/tree/master/system_programming)|C (Linux kernel)
 
-## Graduate Projects
+## Graduate
 * * *
 
 |Semester|Class|Note|
