@@ -49,7 +49,7 @@ The previous studies have focused on efficiently implementing the computation pa
 
 <br>
 #### scale-sim
-## 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] 
+## 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] <a href="https://github.com/ARM-software/SCALE-Sim" target="_blank">[github]</a>
 *Advanced Version: A Systematic Methodology for Characterizing Scalability of DNN Accelerators using SCALE-Sim [ISPASS’20]*
 <hr>
 **Motivation**
