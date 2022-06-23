@@ -2,7 +2,7 @@
 
 # CONTACT
 * * *
-## **E-mail**: sungmin.ryu@yonsei.ac.kr
+## **E-mail**: sungminryu94@gmail.com
 ## **Linkedin**: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank">sungmin-ryu-2b0605194</a>
 ## **Webpage**: <a href="https://wheatbeer.github.io" target="_blank">wheatbeer.github.io</a>
 
@@ -53,7 +53,7 @@
 
 # PROGRAMMING LANGUAGES
 * * *
-## **C/C++**, Python, Java, CUDA, Verilog, HTML, CSS
+## **C/C++**, Python, Java, CUDA C/C++, Verilog, HTML, CSS, MySQL
 
 # AWARDS AND HONORS
 * * *
