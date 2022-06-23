@@ -1,7 +1,7 @@
 ---
 title: Makefile
-category: C/C++
-path: programming/cpp_makefile.md
+category: Templates
+path: docs/tp_makefile.md
 ---
 
 ## Template

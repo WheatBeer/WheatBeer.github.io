@@ -1,7 +1,7 @@
 ---
 title: MacOS Apps
 category: Unix-like
-path: programming/unix_like_macos_apps.md
+path: docs/ul_macos_apps.md
 ---
 
 ## The Essential Apps for Mac

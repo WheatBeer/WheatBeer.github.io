@@ -14,8 +14,8 @@
     </ul> -->
 
     <ul>
-        <a class="category">Programming</a>
-        {% assign grouped = site.programming | group_by: 'category' %}
+        <a class="category">Documents</a>
+        {% assign grouped = site.docs | group_by: 'category' %}
         {% for group in grouped %}
         {% assign count = count | plus: 1 %}
             <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">

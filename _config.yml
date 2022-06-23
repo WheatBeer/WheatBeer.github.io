@@ -49,8 +49,8 @@ exclude:
   - LICENCE
 
 collections:
-  programming:
-    title: programming
+  docs:
+    title: Docs
     permalink: /:path/
     output: true
 
@@ -84,13 +84,6 @@ defaults:
         content:
           width: 800
           height: 2000
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      _comments:
-        type: Marks the impact of this release
 
 # -----------
 # CloudCannon

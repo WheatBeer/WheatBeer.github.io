@@ -1,7 +1,7 @@
 ---
 title: Dual Booting
 category: Unix-like
-path: programming/unix_like_dual_boot.md
+path: docs/ul_dual_boot.md
 ---
 
 ##  Linux + Windows dual-booting (grub-reboot)

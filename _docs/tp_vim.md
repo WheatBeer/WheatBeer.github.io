@@ -1,7 +1,7 @@
 ---
 title: Vim
-category: Unix-like
-path: programming/unix_like_vimrc.md
+category: Templates
+path: docs/tp_vimrc.md
 ---
 {% comment %}
 ## Outline

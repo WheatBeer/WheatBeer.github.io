@@ -1,7 +1,7 @@
 ---
 title: Tmux
-category: Unix-like
-path: programming/unix_like_tmux.conf.md
+category: Templates
+path: docs/tp_tmux.conf.md
 ---
 
 ## **~/.tmux_conf** for MacOS
