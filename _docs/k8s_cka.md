@@ -1,5 +1,5 @@
---
-title: Makefile
+---
+title: CKA
 category: Kubernetes
 path: docs/k8s_cka.md
 ---
