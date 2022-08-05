@@ -4,7 +4,7 @@ category: Templates
 path: docs/tp_tmux.conf.md
 ---
 
-## **~/.tmux_conf** for MacOS
+## **~/.tmux.conf** for MacOS
 <hr>
 
 ~~~bash
