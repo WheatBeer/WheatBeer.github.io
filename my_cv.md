@@ -1,4 +1,4 @@
-> 
+> Software Engineer at NH Futures
 
 # CONTACT
 * * *
@@ -20,7 +20,9 @@
 
 # WORK EXPERIENCES
 * * *
-## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> Seoul SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
+## **Software Engineer, <a href="https://futures.co.kr/" target="_blank">NH Futures Co., Ltd.</a> (Derivatives Broker) <br> Seoul, Republic of Korea** 
+#### (*Aug. 2022 - Present*)
+## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul. 2019 - Aug. 2019*)
 ### * Internship program sponsored by the national government
 ### * Topic: Lightweight DNNs with quantization (PyTorch)
