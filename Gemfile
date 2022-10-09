@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '4.1.1'
+gem 'bundler'
+gem 'jekyll'
+gem 'webrick'
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
@@ -8,5 +10,3 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'kramdown', '>= 2.3.0'
 end
-
-gem "webrick", "~> 1.4"
