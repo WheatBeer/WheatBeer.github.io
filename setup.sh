@@ -1,2 +1,4 @@
-#!/bin/zsh
-sudo bundle install
+#!/bin/bash
+
+sudo gem install jekyll bundler 
+bundle install

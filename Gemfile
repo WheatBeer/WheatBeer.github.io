@@ -1,7 +1,5 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'bundler'
-gem 'jekyll'
 gem 'webrick'
 
 group :jekyll_plugins do
