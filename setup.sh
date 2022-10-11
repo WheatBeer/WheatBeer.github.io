@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo gem install jekyll bundler 
-bundle install
+sudo bundle install
