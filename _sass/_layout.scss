@@ -457,34 +457,33 @@ body {
             font-weight: 600;
         }
     }
+    h5 {
+        border-top: 1.5px solid black;
+        border-left: 1.5px solid white;
+        border-right: 1.5px solid white;
+        border-bottom: 1.5px solid black;
+        margin : 0 auto 0 auto;
+        padding: 0.5em 0 0.5em 0;
+        text-align: center;
+        font-size: 1.7rem;
+        color: rgb(77, 77, 77);
+        width: 80%;
+        white-space: nowrap;
+        overflow: auto;
+        em {
+            color: black;
+            font-weight: 600;
+        }
+        @media (min-width: $mobile-break) {
+            width: 25%;
+        }
+    }
     p {	
         margin : 0 auto 2em auto;
         text-align: left;
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         width: 80%;
-    }
-    blockquote {
-        margin : 0.5em auto 0.5em auto;
-        border-top: 1.5px solid black;
-        border-left: 1.5px solid white;
-        border-right: 1.5px solid white;
-        border-bottom: 1.5px solid black;
-        padding: 0 0 0 0;
-        overflow: auto;
-        width: 80%;
-        background-color: white;
-        p:last-child {
-            margin : 0 1em 0 1em;
-            padding: 0 0 0 0;
-            white-space: nowrap;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        @media (min-width: $mobile-break) {
-            width: 50%;
-            text-align: center;
-        }
     }
 }
 
