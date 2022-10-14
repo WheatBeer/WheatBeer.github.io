@@ -1,5 +1,7 @@
 ##### Software Engineer at NH Futures
-##### Linux IPC/Socket Programming<br>Parallel Programming<br>FEP (Front-End Processor)<br>DMA (Direct Market Access)<br>HFT (High-Frequency Trading)
+
+# INTEREST
+## Linux Programming (Thread, IPC, Socket, etc.), FEP (Front-End Processor) Development, and High-Frequency Trading (HFT) via DMA (Direct Market Access).
 
 # CONTACT
 * * *
