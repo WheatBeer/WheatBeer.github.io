@@ -1,4 +1,5 @@
-##### Software Engineer at NH Futures<br>Interested in FEP
+##### Software Engineer at NH Futures
+##### Linux IPC/Socket Programming<br>Parallel Programming<br>FEP (Front-End Processor)<br>DMA (Direct Market Access)<br>HFT (High-Frequency Trading)
 
 # CONTACT
 * * *
