@@ -4,7 +4,7 @@
 * * *
 ## **Linux Programming (Thread, IPC, Socket, etc.)**
 ## **FEP (Front-End Processor) Development**
-## **High-Frequency Trading (HFT) via DMA (Direct Market Access)**
+## **HFT (High-Frequency Trading) via DMA (Direct Market Access)**
 
 # CONTACT
 * * *
