@@ -10,7 +10,6 @@
 * * *
 ## **E-mail**: sungminryu94@gmail.com
 ## **Linkedin**: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank">sungmin-ryu-2b0605194</a>
-## **Webpage**: <a href="https://wheatbeer.github.io">wheatbeer.github.io</a>
 
 # EDUCATION
 * * *
