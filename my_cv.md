@@ -34,7 +34,7 @@
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May. 2018 - Sep. 2018*)
 ### * Research on EOS blockchain system
-### * UI/UX design assistance of blockchain applications
+### * UI/UX design for blockchain applications
 
 # ACTIVITIES
 * * *
