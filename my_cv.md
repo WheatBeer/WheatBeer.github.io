@@ -19,7 +19,7 @@
 ### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computing Systems LAB (ICSL)</a>
 ## **B.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar. 2017 - Feb. 2020*)
-### * Transferred from Sogang university 
+### * Transferred from Sogang University 
 ## **Whimoon High School, Seoul, Republic of Korea** 
 #### (*Mar. 2009 - Feb. 2012*)
 
