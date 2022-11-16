@@ -33,7 +33,7 @@
 ### * Topic: Lightweight DNNs with quantization (PyTorch)
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May. 2018 - Sep. 2018*)
-### * Research on EOS blockchain system
+### * Research on blockchain systems
 ### * UI/UX design for blockchain applications
 
 # ACTIVITIES
