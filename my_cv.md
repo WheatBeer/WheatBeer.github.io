@@ -66,6 +66,11 @@
 * * *
 ## **C/C++**, Python, Java, CUDA C/C++, Verilog, HTML, CSS, MySQL
 
+# Certifications
+* * *
+## **Certified Derivatives Investment Advisor (파생상품투자권유자문인력) <br> Korea Financial Investment Association**
+#### (*Nov. 2022*)
+
 # AWARDS AND HONORS
 * * *
 ## **Graduate Admission Scholarship, Yonsei University**
