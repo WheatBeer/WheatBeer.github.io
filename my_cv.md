@@ -66,7 +66,7 @@
 * * *
 ## **C/C++**, Python, Java, CUDA C/C++, Verilog, HTML, CSS, MySQL
 
-# Certifications
+# CERTIFICATIONS
 * * *
 ## **Certified Derivatives Investment Advisor (파생상품투자권유자문인력) <br> Korea Financial Investment Association**
 #### (*Nov. 2022*)
