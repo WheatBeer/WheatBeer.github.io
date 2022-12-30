@@ -35,7 +35,7 @@
 #### (*Jul. 2019 - Aug. 2019*)
 ### * Internship program sponsored by the national government
 ### * Developed a framework for lightweight DNNs (i.e., quantization) using PyTorch
-## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
+## **Intern, <a href="https://www.chain.partners/" target="_blank">Chain Partners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May. 2018 - Sep. 2018*)
 ### * Research on blockchain systems
 ### * UI/UX design for blockchain applications
