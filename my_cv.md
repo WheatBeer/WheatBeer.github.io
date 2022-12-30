@@ -27,10 +27,14 @@
 * * *
 ## **Software Engineer, <a href="https://futures.co.kr/" target="_blank">NH Futures Co., Ltd.</a> (Derivatives Brokerage House) <br> Seoul, Republic of Korea** 
 #### (*Aug. 2022 - Present*)
+### * Linux system programming (e.g., IPC, thread, socket, etc.)
+### * Developed and operated front-end processor (FEP) systems
+### * Reorganized and developed HTS/MTS server systems to respond to the next-generation system of the Korea Exchange (KRX) 
+### * Operated direct market access (DMA) order management systems
 ## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a> (Electronics and Telecommunications Research Institute) <br> SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul. 2019 - Aug. 2019*)
 ### * Internship program sponsored by the national government
-### * Topic: Lightweight DNNs with quantization (PyTorch)
+### * Developed a framework for lightweight DNNs (i.e., quantization) using PyTorch
 ## **Intern, <a href="https://www.chain.partners/" target="_blank">ChainPartners</a> (Blockchain Start-up) <br> Seoul, Republic of Korea** 
 #### (*May. 2018 - Sep. 2018*)
 ### * Research on blockchain systems
@@ -45,7 +49,7 @@
 #### (*Sep. 2018 - Dec. 2018*)
 ## **Yonsei Blockchain LAB (Club) <br> Yonsei University, Seoul, Republic of Korea**
 #### (*May. 2018 - Sep. 2018*)
-### * Building smart contracts in C++
+### * Developed smart contracts in C++
 ### * Lecturer for <a href="https://github.com/EOSIO" target="_blank">EOSIO</a> software system
 ## **ESL Course in Intensive English Institute <br> University of Illinois at Urbana-Champaign (UIUC), Illinois, USA**
 #### (*Jan. 2018 - May. 2018*)
