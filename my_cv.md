@@ -31,7 +31,7 @@
 ### * Developed and operated front-end processor (FEP) systems
 ### * Reorganized and developed HTS/MTS server systems to respond to the next-generation system of the Korea Exchange (KRX) 
 ### * Operated direct market access (DMA) order management systems
-## **Intern, Electronics and Telecommunications Research Institute (<a href="https://www.etri.re.kr/intro.html" target="_blank">ETRI</a>) <br> SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
+## **Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank">Electronics and Telecommunications Research Institute</a> (ETRI) <br> SW-SoC R&D Center, Gyeonggi-do, Republic of Korea** 
 #### (*Jul. 2019 - Aug. 2019*)
 ### * Internship program sponsored by the national government
 ### * Developed a framework for lightweight DNNs (i.e., quantization) using PyTorch
