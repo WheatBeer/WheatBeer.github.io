@@ -26,7 +26,7 @@
 # WORK EXPERIENCES
 * * *
 ## **Software Engineer, <a href="https://futures.co.kr/" target="_blank">NH Futures Co., Ltd.</a> (Derivatives Brokerage House) <br> Seoul, Republic of Korea** 
-#### (*Aug. 2022 - Present*)
+#### (*Aug. 2022 - Jan. 2023*)
 ### * Linux system programming (e.g., IPC, thread, socket, etc.)
 ### * Developed and operated front-end processor (FEP) systems
 ### * Reorganized and developed HTS/MTS server systems to respond to the next-generation system of the Korea Exchange (KRX) 
