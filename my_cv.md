@@ -1,4 +1,4 @@
-##### Software Engineer at NH Futures
+##### Quantitive Developer at Kyobo Securities
 
 # INTERESTS
 * * *
