@@ -24,7 +24,7 @@
 
 # WORK EXPERIENCES
 * * *
-## **Quant Developer, <a href="https://iprovest.com/" target="_blank">Kyobo Securities Co., Ltd.</a> <br> Seoul, Republic of Korea** 
+## **Quantitive Developer, <a href="https://iprovest.com/" target="_blank">Kyobo Securities Co., Ltd.</a> <br> Seoul, Republic of Korea** 
 #### (*Feb. 2023 - Present*)
 ## **Software Engineer, <a href="https://futures.co.kr/" target="_blank">NH Futures Co., Ltd.</a> (Derivatives Brokerage House) <br> Seoul, Republic of Korea** 
 #### (*Aug. 2022 - Jan. 2023*)
