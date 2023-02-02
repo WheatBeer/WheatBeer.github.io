@@ -2,8 +2,7 @@
 
 # INTERESTS
 * * *
-## **Linux Programming (Thread, IPC, Socket, etc.)**
-## **FEP (Front-End Processor) Development**
+## **Market Making**
 ## **HFT (High-Frequency Trading) via DMA (Direct Market Access)**
 
 # CONTACT
@@ -25,6 +24,8 @@
 
 # WORK EXPERIENCES
 * * *
+## **Quant Developer, <a href="https://iprovest.com/" target="_blank">Kyobo Securities Co., Ltd.</a> <br> Seoul, Republic of Korea** 
+#### (*Feb. 2023 - Present*)
 ## **Software Engineer, <a href="https://futures.co.kr/" target="_blank">NH Futures Co., Ltd.</a> (Derivatives Brokerage House) <br> Seoul, Republic of Korea** 
 #### (*Aug. 2022 - Jan. 2023*)
 ### * Linux system programming (e.g., IPC, thread, socket, etc.)
