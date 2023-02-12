@@ -1,4 +1,4 @@
-##### Quantitative Developer at Kyobo Securities
+##### Quant Developer at Kyobo Securities
 
 # INTERESTS
 * * *
