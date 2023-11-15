@@ -59,7 +59,7 @@
 
 # PUBLICATIONS
 * * *
-## C. Park, B. Kim, **S. Ryu**, and W. Song, “NeuroSpector: Systematic Optimization of Dataflow Scheduling in DNN Accelerators,” *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, Aug. 2023., vol. 34, no. 8, Aug. 2023, pp. 2279-2294<a href="https://github.com/yonsei-icsl/neurospector" target="_blank">[**Github**]</a>
+## C. Park, B. Kim, **S. Ryu**, and W. Song, “NeuroSpector: Systematic Optimization of Dataflow Scheduling in DNN Accelerators,” *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, vol. 34, no. 8, Aug. 2023, pp. 2279-2294 <a href="https://github.com/yonsei-icsl/neurospector" target="_blank">[**Github**]</a>
 
 ## **S. Ryu**, "Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction," *Master’s Thesis*, Yonsei University, Dec. 2021. 
 
