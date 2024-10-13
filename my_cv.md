@@ -15,7 +15,7 @@
 ## **M.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea** 
 #### (*Mar. 2020 - Feb. 2022*)
 ### * Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank">William J. Song</a>
-### * Lab: <a href="https://icsl.yonsei.ac.kr/" target="_blank">Intelligent Computing Systems LAB (ICSL)</a>
+### * Lab: <a href="https://casl.yonsei.ac.kr/" target="_blank">Computer Architecture and System Lab (CASL)</a>
 ## **B.S. in Electrical & Electronic Engineering <br> Yonsei University, Seoul, Republic of Korea**
 #### (*Mar. 2017 - Feb. 2020*)
 ### * Transferred from Sogang University 
@@ -66,7 +66,6 @@
 # PATENTS
 * * *
 ## W. Song, C. Park, B. Kim, and **S. Ryu**, "Neural Network Computing Device and Control Method," *US17/883010*, Aug. 2022.
-## W. Song, **S. Ryu**, C. Park, and B. Kim, "Scheduling Optimization Device for DNN Accelerator, Scheduling Optimization Method for DNN Accelerator and Computer Program Stored in A Recording Medium to Execute The Method," *KR10-2021-0104333*, Aug. 2021.  
 
 # PROGRAMMING LANGUAGES
 * * *
