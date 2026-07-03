@@ -53,8 +53,8 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
   const pathname = usePathname();
   const currentSlug = pathname.replace(/^\/|\/$/g, "");
 
-  const content = (
-    <nav className="flex h-full flex-col gap-4 overflow-y-auto p-4">
+  const navList = (
+    <>
       <Link
         href="/"
         className={`rounded px-2 py-1 text-sm font-semibold ${
@@ -83,7 +83,7 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
           </div>
         ),
       )}
-    </nav>
+    </>
   );
 
   return (
@@ -91,29 +91,35 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
       <button
         type="button"
         onClick={() => setMobileOpen((v) => !v)}
-        className="fixed top-3 left-3 z-40 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
+        className="fixed top-3 left-3 z-50 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
         aria-label="Toggle navigation"
       >
-        <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-        <span className="mt-1 block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-        <span className="mt-1 block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
+        {mobileOpen ? (
+          <span className="block text-lg leading-none text-slate-700 dark:text-slate-300">✕</span>
+        ) : (
+          <span className="flex flex-col gap-1">
+            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
+            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
+            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
+          </span>
+        )}
       </button>
 
-      <aside className="hidden h-full w-64 shrink-0 border-r border-slate-200 md:block dark:border-slate-800">
-        {content}
+      <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-slate-200 md:block dark:border-slate-800">
+        <nav className="flex flex-col gap-4 p-4">{navList}</nav>
       </aside>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-30 md:hidden">
+        <>
           <div
-            className="absolute inset-0 bg-black/30"
+            className="fixed inset-0 z-30 bg-black/30 md:hidden"
             onClick={() => setMobileOpen(false)}
             aria-hidden
           />
-          <aside className="absolute top-0 left-0 h-full w-64 bg-white shadow-xl dark:bg-slate-900">
-            {content}
+          <aside className="fixed inset-y-0 left-0 z-40 w-64 overflow-y-auto bg-white shadow-xl md:hidden dark:bg-slate-900">
+            <nav className="flex flex-col gap-4 p-4 pt-16">{navList}</nav>
           </aside>
-        </div>
+        </>
       )}
     </>
   );
