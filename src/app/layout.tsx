@@ -34,7 +34,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">
+      <body className="flex h-screen flex-col overflow-hidden">
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -49,11 +49,13 @@ export default function RootLayout({
         </Script>
 
         <Header />
-        <div className="flex flex-1">
+        <div className="flex min-h-0 flex-1">
           <Sidebar groups={navGroups} />
-          <main className="min-w-0 flex-1">{children}</main>
+          <main className="min-w-0 flex-1 overflow-y-auto">
+            {children}
+            <Footer />
+          </main>
         </div>
-        <Footer />
       </body>
     </html>
   );
