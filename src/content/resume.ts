@@ -1,4 +1,4 @@
-export const resumeTagline = "Quant Developer at Kyobo Securities";
+export const resumeTagline = "Software Engineer at KB Securities";
 
 export interface ResumeItem {
   /** May contain trusted inline HTML (links, <br>) authored by the site owner. */
@@ -64,8 +64,19 @@ export const resumeSections: ResumeSection[] = [
     heading: "Work Experiences",
     items: [
       {
+        titleHtml: `Software Engineer, KB Securities Co., Ltd. (Passive Tech Team)<br>Seoul, Republic of Korea`,
+        dateRange: "Apr. 2026 - Present",
+        subItemsHtml: ["ETF/ETN/ELW LP + 파생 MM"],
+      },
+      {
         titleHtml: `Quantitative Developer, <a href="https://iprovest.com/" target="_blank" rel="noopener noreferrer">Kyobo Securities Co., Ltd.</a><br>Seoul, Republic of Korea`,
-        dateRange: "Feb. 2023 - Present",
+        dateRange: "Feb. 2023 - Apr. 2026",
+        subItemsHtml: [
+          "Developing and improving automated market making (MM) systems in KRX securities and derivatives markets",
+          "Developing HFT-based arbitrage platform through DMA systems",
+          "Developed an order management system (OMS) from scratch",
+          "Using C++17, Boost C++, Linux, TCPDirect, Redis, etc.",
+        ],
       },
       {
         titleHtml: `Software Engineer, <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures Co., Ltd.</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
