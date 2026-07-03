@@ -99,7 +99,7 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
         <span className="mt-1 block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
       </button>
 
-      <aside className="hidden w-64 shrink-0 border-r border-slate-200 md:block dark:border-slate-800">
+      <aside className="hidden h-full w-64 shrink-0 border-r border-slate-200 md:block dark:border-slate-800">
         {content}
       </aside>
 
