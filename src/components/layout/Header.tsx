@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-center gap-3 border-b border-slate-200 bg-white px-4 py-4 md:justify-start md:pl-8 dark:border-slate-800 dark:bg-slate-950">
+    <header className="flex shrink-0 items-center justify-center gap-3 border-b border-slate-200 bg-white px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-4 md:justify-start md:pl-8 dark:border-slate-800 dark:bg-slate-950">
       <Link href="/" className="flex items-center gap-3">
         <Image
           src="/images/logo.png"

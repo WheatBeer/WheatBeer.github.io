@@ -91,7 +91,7 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
       <button
         type="button"
         onClick={() => setMobileOpen((v) => !v)}
-        className="fixed top-3 left-3 z-50 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
+        className="fixed top-[max(0.75rem,env(safe-area-inset-top))] left-3 z-50 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
         aria-label="Toggle navigation"
       >
         {mobileOpen ? (
