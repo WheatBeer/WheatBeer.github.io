@@ -34,7 +34,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex h-screen flex-col overflow-hidden">
+      <body className="flex h-dvh flex-col overflow-hidden">
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

@@ -112,11 +112,11 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
       {mobileOpen && (
         <>
           <div
-            className="fixed inset-0 z-30 bg-black/30 md:hidden"
+            className="fixed inset-0 z-30 touch-none overscroll-contain bg-black/30 md:hidden"
             onClick={() => setMobileOpen(false)}
             aria-hidden
           />
-          <aside className="fixed inset-y-0 left-0 z-40 w-64 overflow-y-auto bg-white shadow-xl md:hidden dark:bg-slate-900">
+          <aside className="fixed inset-y-0 left-0 z-40 w-64 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
             <nav className="flex flex-col gap-4 p-4 pt-16">{navList}</nav>
           </aside>
         </>
