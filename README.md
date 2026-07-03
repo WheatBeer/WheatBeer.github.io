@@ -1,76 +1,25 @@
 # WheatBeer's Blog
 
-## Scripts
-
-~~~bash
-$ setup.sh      # install jekyll & bundler 
-$ run.sh        # run jekyll serve
-$ git.sh        # git add all, commit, and push
-~~~
-
-***
-*This blog has been upgraded from the follow edition.*
-***
-
-## Edition
-
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-## Features
-
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* [SEO tags](https://github.com/jekyll/jekyll-seo-tag)
-* Google Analytics
-
-## Setup
-
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+Personal resume/portfolio site built with Next.js (App Router), TypeScript, and Tailwind CSS, statically exported and deployed to GitHub Pages.
 
 ## Develop
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
 ~~~bash
-$ bundle install
+npm install
+npm run dev      # http://localhost:3000
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+## Build
 
 ~~~bash
-$ bundle exec jekyll serve
+npm run build     # emits static output to ./out
 ~~~
 
-## Editing
+## Content
 
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
+* `src/content/resume.ts` — structured resume data (education, work experience, publications, etc.)
+* `src/content/{docs,projects,research}/*.md` — Markdown articles with `title`/`category` frontmatter, grouped in the sidebar by category
 
-### Documentation pages
+## Deploy
 
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and publishes it via GitHub Pages (Pages source must be set to "GitHub Actions" in repo Settings).
