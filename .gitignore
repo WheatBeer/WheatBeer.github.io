@@ -1,28 +1,12 @@
-# Compiled site
-/_site/
-_site/
-
-# Sass garbage
-.sass-cache
-.jekyll-cache/
-
-# Bundler
-.bundle/
-vendor/
+# Next.js
+/.next/
+/out/
+node_modules/
+next-env.d.ts
 
 # MacOS
-node_modules
-package.json
 .DS_Store
-
-# Jekyll stuff
-.jekyll-metadata
-.jekyll
-
-# Posts
-posts/
 
 # Swap
 *.swp
 .vscode/
-Gemfile.lock
