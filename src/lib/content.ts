@@ -7,22 +7,10 @@ import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 
-export type ContentType = "docs" | "projects" | "research";
-
-const CONTENT_TYPES: ContentType[] = ["docs", "projects", "research"];
-
-const TYPE_LABELS: Record<ContentType, string> = {
-  docs: "Documents",
-  projects: "Projects",
-  research: "Research",
-};
-
-const CONTENT_DIR = path.join(process.cwd(), "src", "content");
+const CONTENT_DIR = path.join(process.cwd(), "src", "content", "posts");
 
 export interface ContentMeta {
   slug: string;
-  type: ContentType;
-  typeLabel: string;
   title: string;
   category: string;
   order: number;
@@ -49,32 +37,24 @@ function markdownToHtml(markdown: string): Promise<string> {
     .then((file) => String(file));
 }
 
-function slugsForType(type: ContentType): string[] {
-  const dir = path.join(CONTENT_DIR, type);
+function slugs(): string[] {
   return fs
-    .readdirSync(dir)
+    .readdirSync(CONTENT_DIR)
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.replace(/\.md$/, ""));
 }
 
 export function getAllContentMeta(): ContentMeta[] {
-  const entries: ContentMeta[] = [];
-  for (const type of CONTENT_TYPES) {
-    for (const slug of slugsForType(type)) {
-      const filePath = path.join(CONTENT_DIR, type, `${slug}.md`);
-      const raw = fs.readFileSync(filePath, "utf8");
-      const { data } = matter(raw) as unknown as { data: Frontmatter };
-      entries.push({
-        slug,
-        type,
-        typeLabel: TYPE_LABELS[type],
-        title: data.title,
-        category: data.category,
-        order: data.order ?? 0,
-      });
-    }
-  }
-  return entries;
+  return slugs().map((slug) => {
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, `${slug}.md`), "utf8");
+    const { data } = matter(raw) as unknown as { data: Frontmatter };
+    return {
+      slug,
+      title: data.title,
+      category: data.category,
+      order: data.order ?? 0,
+    };
+  });
 }
 
 async function fetchExternalHtml(url: string): Promise<string> {
@@ -87,35 +67,30 @@ async function fetchExternalHtml(url: string): Promise<string> {
 }
 
 export async function getContentBySlug(slug: string): Promise<ContentEntry | null> {
-  for (const type of CONTENT_TYPES) {
-    const filePath = path.join(CONTENT_DIR, type, `${slug}.md`);
-    if (!fs.existsSync(filePath)) continue;
+  const filePath = path.join(CONTENT_DIR, `${slug}.md`);
+  if (!fs.existsSync(filePath)) return null;
 
-    const raw = fs.readFileSync(filePath, "utf8");
-    const { data, content } = matter(raw) as unknown as {
-      data: Frontmatter;
-      content: string;
-    };
+  const raw = fs.readFileSync(filePath, "utf8");
+  const { data, content } = matter(raw) as unknown as {
+    data: Frontmatter;
+    content: string;
+  };
 
-    let html = await markdownToHtml(content);
-    if (data.externalSource) {
-      const externalHtml = await fetchExternalHtml(data.externalSource);
-      html += externalHtml;
-    }
-
-    return {
-      slug,
-      type,
-      typeLabel: TYPE_LABELS[type],
-      title: data.title,
-      category: data.category,
-      order: data.order ?? 0,
-      html,
-    };
+  let html = await markdownToHtml(content);
+  if (data.externalSource) {
+    const externalHtml = await fetchExternalHtml(data.externalSource);
+    html += externalHtml;
   }
-  return null;
+
+  return {
+    slug,
+    title: data.title,
+    category: data.category,
+    order: data.order ?? 0,
+    html,
+  };
 }
 
 export function getAllSlugs(): string[] {
-  return getAllContentMeta().map((entry) => entry.slug);
+  return slugs();
 }

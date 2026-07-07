@@ -1,6 +1,6 @@
 ---
 title: Summaries
-category: AI Accelerator (NPU)
+category: AI
 ---
 
 ## Paper list

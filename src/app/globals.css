@@ -32,10 +32,6 @@ body {
     sans-serif;
 }
 
-.prose-content {
-  max-width: none;
-}
-
 .prose-content hr {
   margin-top: 1.5em;
   margin-bottom: 1.5em;

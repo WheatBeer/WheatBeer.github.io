@@ -1,6 +1,6 @@
 ---
 title: GPGPU-sim
-category: Simulators
+category: AI
 ---
 
 ## How to run cuDNN with gpgpu-sim 
