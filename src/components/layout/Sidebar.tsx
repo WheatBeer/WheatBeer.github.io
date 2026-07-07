@@ -120,10 +120,10 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
               <button
                 type="button"
                 onClick={onCloseMobile}
-                className="flex items-center justify-center rounded-md p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+                className="flex items-center justify-center rounded-md border border-slate-200 bg-white p-2 shadow-sm dark:border-slate-700 dark:bg-slate-900"
                 aria-label="Close navigation"
               >
-                <span className="block text-lg leading-none">✕</span>
+                <span className="block text-lg leading-none text-slate-700 dark:text-slate-300">✕</span>
               </button>
             </div>
             <nav className="flex flex-col gap-4 p-4 pt-0">{navList}</nav>
