@@ -13,10 +13,10 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative flex flex-col items-center gap-4 text-center text-white">
-        <h2 className="text-3xl font-bold tracking-wide md:text-4xl">SUNGMIN&rsquo;S BLOG</h2>
+        <h2 className="text-[2.0625rem] font-bold tracking-wide md:text-[2.475rem]">SUNGMIN&rsquo;S BLOG</h2>
         <a
           href="#about-me"
-          className="rounded-full border border-white/70 px-5 py-2 text-sm font-medium tracking-wide uppercase transition-colors hover:bg-white hover:text-slate-900"
+          className="rounded-full border border-white/70 px-5 py-2 text-[0.9625rem] font-medium tracking-wide uppercase transition-colors hover:bg-white hover:text-slate-900"
         >
           About Me
         </a>
