@@ -66,7 +66,10 @@ export const resumeSections: ResumeSection[] = [
       {
         titleHtml: `Software Engineer, Passive Tech Team, <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Apr. 2026 - Present",
-        subItemsHtml: ["ETF/ETN/ELW LP + 파생 MM"],
+        subItemsHtml: [
+          "ETF/ETN/ELW liquidity provisioning (LP) and derivatives market making (MM)",
+          "Introducing Horizon OMS to HKEX (Hong Kong Exchange)",
+        ],
       },
       {
         titleHtml: `Quantitative Developer, Quant Dealing Part, <a href="https://iprovest.com/" target="_blank" rel="noopener noreferrer">Kyobo Securities</a><br>Seoul, Republic of Korea`,
@@ -75,7 +78,7 @@ export const resumeSections: ResumeSection[] = [
           "Developed and improved automated market making (MM) systems in KRX securities and derivatives markets",
           "Developed HFT-based arbitrage platform through DMA systems",
           "Developed an order management system (OMS) from scratch",
-          "Using C++17, Boost C++, Linux, TCPDirect, Redis, etc.",
+          "C++17, Boost C++, Linux, TCPDirect, Redis",
         ],
       },
       {
