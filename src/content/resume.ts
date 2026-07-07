@@ -79,7 +79,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Software Engineer, <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
+        titleHtml: `Software Engineer, IT Team, <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
         dateRange: "Aug. 2022 - Jan. 2023",
         subItemsHtml: [
           "Linux system programming (e.g., IPC, thread, socket, etc.)",
