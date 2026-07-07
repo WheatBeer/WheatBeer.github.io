@@ -18,7 +18,7 @@ npm run build     # emits static output to ./out
 ## Content
 
 * `src/content/resume.ts` — structured resume data (education, work experience, publications, etc.)
-* `src/content/{docs,projects,research}/*.md` — Markdown articles with `title`/`category` frontmatter, grouped in the sidebar by category
+* `src/content/posts/*.md` — Markdown articles with `title`/`group`/`category` frontmatter; `group` (e.g. AI, Projects, Research) and `category` control how each article is grouped in the sidebar
 
 ## Deploy
 
