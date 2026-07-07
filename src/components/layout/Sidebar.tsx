@@ -56,8 +56,13 @@ function CategoryBlock({
   );
 }
 
-export default function Sidebar({ groups }: { groups: NavGroup[] }) {
-  const [mobileOpen, setMobileOpen] = useState(false);
+interface SidebarProps {
+  groups: NavGroup[];
+  mobileOpen: boolean;
+  onCloseMobile: () => void;
+}
+
+export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarProps) {
   const pathname = usePathname();
   const currentSlug = pathname.replace(/^\/|\/$/g, "");
 
@@ -94,23 +99,6 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => setMobileOpen((v) => !v)}
-        className="fixed top-[max(0.75rem,env(safe-area-inset-top))] left-3 z-50 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
-        aria-label="Toggle navigation"
-      >
-        {mobileOpen ? (
-          <span className="block text-lg leading-none text-slate-700 dark:text-slate-300">✕</span>
-        ) : (
-          <span className="flex flex-col gap-1">
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-          </span>
-        )}
-      </button>
-
       <aside className="hidden w-64 shrink-0 overflow-y-auto border-r border-slate-200 md:block dark:border-slate-800">
         <nav className="flex flex-col gap-4 p-4">{navList}</nav>
       </aside>
@@ -119,11 +107,11 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
         <>
           <div
             className="fixed inset-0 z-30 touch-none overscroll-contain bg-black/30 md:hidden"
-            onClick={() => setMobileOpen(false)}
+            onClick={onCloseMobile}
             aria-hidden
           />
           <aside className="fixed inset-y-0 left-0 z-40 w-64 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
-            <nav className="flex flex-col gap-4 p-4 pt-16">{navList}</nav>
+            <nav className="flex flex-col gap-4 p-4 pt-4">{navList}</nav>
           </aside>
         </>
       )}
