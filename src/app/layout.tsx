@@ -1,9 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import Sidebar from "@/components/layout/Sidebar";
+import AppShell from "@/components/layout/AppShell";
 import { getNavGroups } from "@/lib/nav";
 
 const GA_MEASUREMENT_ID = "G-0MZF9H5B13";
@@ -54,14 +52,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <Header />
-        <div className="flex min-h-0 flex-1">
-          <Sidebar groups={navGroups} />
-          <main className="min-w-0 flex-1 overflow-y-auto">
-            {children}
-            <Footer />
-          </main>
-        </div>
+        <AppShell groups={navGroups}>{children}</AppShell>
       </body>
     </html>
   );
