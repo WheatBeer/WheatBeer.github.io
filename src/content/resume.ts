@@ -6,7 +6,7 @@ export interface ResumeItem {
   dateRange?: string;
   subItemsHtml?: string[];
   /** Only used by the Contact section, rendered as an icon + label link. */
-  icon?: "email" | "linkedin";
+  icon?: "email" | "linkedin" | "github";
   href?: string;
   label?: string;
 }
@@ -48,10 +48,16 @@ export const resumeSections: ResumeSection[] = [
         label: "sungminryu94@gmail.com",
       },
       {
-        titleHtml: `Linkedin: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank" rel="noopener noreferrer">sungmin-ryu-2b0605194</a>`,
+        titleHtml: `Linkedin: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>`,
         icon: "linkedin",
         href: "https://www.linkedin.com/in/sungmin-ryu-2b0605194/",
-        label: "sungmin-ryu-2b0605194",
+        label: "LinkedIn",
+      },
+      {
+        titleHtml: `Github: <a href="https://github.com/WheatBeer" target="_blank" rel="noopener noreferrer">GitHub</a>`,
+        icon: "github",
+        href: "https://github.com/WheatBeer",
+        label: "GitHub",
       },
     ],
   },
@@ -88,7 +94,7 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `Software Engineer, Passive Tech Team, <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Apr. 2026 - Present",
         subItemsHtml: [
-          "ETF/ETN/ELW Liquidity Provider and Derivatives Market Making (MM)",
+          "Supporting ETF/ETN/ELW Liquidity Provider (LP) and Derivatives Market Making (MM)",
           "Managing the installation of Horizon OMS at HKEX (Hong Kong Exchange) colocation",
         ],
       },

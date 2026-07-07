@@ -1,9 +1,10 @@
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import type { ResumeSection } from "@/content/resume";
 
 const contactIcons = {
   email: FaEnvelope,
   linkedin: FaLinkedin,
+  github: FaGithub,
 };
 
 export default function ResumeSectionBlock({ section }: { section: ResumeSection }) {
