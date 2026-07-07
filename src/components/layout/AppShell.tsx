@@ -20,7 +20,7 @@ export default function AppShell({
       <Header mobileOpen={mobileOpen} onToggleMobile={() => setMobileOpen((v) => !v)} />
       <div className="flex min-h-0 flex-1">
         <Sidebar groups={groups} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} />
-        <main className="min-w-0 flex-1 overflow-y-auto">
+        <main className="min-w-0 flex-1 scroll-smooth overflow-y-auto">
           {children}
           <Footer />
         </main>

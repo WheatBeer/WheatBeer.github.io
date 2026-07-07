@@ -8,11 +8,11 @@ interface HeaderProps {
 
 export default function Header({ mobileOpen, onToggleMobile }: HeaderProps) {
   return (
-    <header className="flex shrink-0 items-center justify-start gap-3 border-b border-slate-200 bg-white px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-4 md:pl-8 dark:border-slate-800 dark:bg-slate-950">
+    <header className="relative flex shrink-0 items-center justify-center gap-3 border-b border-slate-200 bg-white px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-4 md:justify-start md:pl-8 dark:border-slate-800 dark:bg-slate-950">
       <button
         type="button"
         onClick={onToggleMobile}
-        className="flex items-center justify-center rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
+        className="absolute top-1/2 left-4 -translate-y-1/2 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
         aria-label="Toggle navigation"
       >
         {mobileOpen ? (
