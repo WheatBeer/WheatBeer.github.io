@@ -46,7 +46,9 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
           <li
             key={idx}
             className={
-              item.separatorBefore ? "border-t border-slate-200 pt-4 dark:border-slate-800" : undefined
+              item.separatorBefore
+                ? "mt-6 mb-2 border-t border-slate-200 pt-8 dark:border-slate-800"
+                : undefined
             }
           >
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
