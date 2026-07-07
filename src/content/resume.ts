@@ -24,8 +24,9 @@ export const resumeSections: ResumeSection[] = [
     id: "interests",
     heading: "Interests",
     items: [
-      { titleHtml: "Market Making" },
-      { titleHtml: "HFT (High-Frequency Trading) via DMA (Direct Market Access)" },
+      { titleHtml: "AI Programming" },
+      { titleHtml: "Market Making, Arbitrage Trading, HFT" },
+      { titleHtml: "DMA (OMS + FEP)" },
       {
         titleHtml:
           '<span class="text-xs tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Skills</span>',
