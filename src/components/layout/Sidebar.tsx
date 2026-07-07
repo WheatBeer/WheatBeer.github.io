@@ -116,7 +116,7 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
             aria-hidden
           />
           <aside className="fixed inset-y-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
-            <nav className="flex flex-col gap-4 p-4 pt-16">{navList}</nav>
+            <nav className="flex flex-col gap-4 p-4">{navList}</nav>
           </aside>
         </>
       )}
