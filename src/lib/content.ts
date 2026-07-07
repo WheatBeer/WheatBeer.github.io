@@ -8,6 +8,9 @@ import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
+import { visit } from "unist-util-visit";
+import { toString as hastToString } from "hast-util-to-string";
+import type { Root, Element } from "hast";
 
 const CONTENT_DIR = path.join(process.cwd(), "src", "content", "posts");
 
@@ -31,6 +34,45 @@ interface Frontmatter {
   externalSource?: string;
 }
 
+/**
+ * Legacy content authored a bare heading like "#### bg" purely to give kramdown's
+ * auto-generated id something to anchor to, immediately followed by the real
+ * visible heading (e.g. "### Background"). Hide the anchor-only heading visually
+ * (keeping its id so in-page links still work) instead of showing it as a
+ * duplicate heading.
+ */
+function hideAnchorOnlyHeadings() {
+  return (tree: Root) => {
+    visit(tree, "element", (node: Element, index, parent) => {
+      if (!parent || index === undefined || !/^h[1-6]$/.test(node.tagName)) return;
+
+      const text = hastToString(node).trim();
+      const isSlugOnly = /^[a-z][a-z0-9-]*$/.test(text);
+      if (!isSlugOnly) return;
+
+      let i = index + 1;
+      while (i < parent.children.length) {
+        const sibling = parent.children[i];
+        if (sibling.type === "text" && !sibling.value.trim()) {
+          i += 1;
+          continue;
+        }
+        break;
+      }
+      const next = parent.children[i];
+      const nextIsHeading = next?.type === "element" && /^h[1-6]$/.test(next.tagName);
+
+      if (nextIsHeading) {
+        const existingClass = node.properties?.className;
+        node.properties = {
+          ...node.properties,
+          className: [...(Array.isArray(existingClass) ? existingClass : []), "sr-only"],
+        };
+      }
+    });
+  };
+}
+
 function markdownToHtml(markdown: string): Promise<string> {
   return unified()
     .use(remarkParse)
@@ -38,6 +80,7 @@ function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeSlug)
+    .use(hideAnchorOnlyHeadings)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown)
     .then((file) => String(file));

@@ -29,6 +29,7 @@ This thesis presents a methodology for finding the most energy-efficient mapping
 <hr>
 
 <center><img src="/images/thesis_bg.png" width="95%"/></center>
+
 <br>
 
 #### related
@@ -41,6 +42,7 @@ This thesis presents a methodology for finding the most energy-efficient mapping
 * <a href="https://github.com/ZigZag-Project/zigzag" target="_blank">ZigZag</a>
 
 <center><img src="/images/thesis_related.png" width="95%"/></center>
+
 <br>
 
 #### method
@@ -48,6 +50,7 @@ This thesis presents a methodology for finding the most energy-efficient mapping
 <hr>
 
 <center><img src="/images/thesis_method.png" width="95%"/></center>
+
 <br>
 
 #### eval
@@ -55,6 +58,7 @@ This thesis presents a methodology for finding the most energy-efficient mapping
 <hr>
 
 <center><img src="/images/thesis_eval.png" width="95%"/></center>
+
 <br>
 
 #### adix
@@ -62,4 +66,5 @@ This thesis presents a methodology for finding the most energy-efficient mapping
 <hr>
 
 <center><img src="/images/thesis_adix.png" width="60%"/></center>
+
 <br>

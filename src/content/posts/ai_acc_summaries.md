@@ -35,6 +35,7 @@ They not only confirm the observation that dedicated storage is key for achievin
 <br>
 
 <center><img src="/images/diannao.png"/></center>
+
 **Methodology**
 <br>
 
@@ -71,6 +72,7 @@ The authors mention that there was no cycle-accurate DNN accelerator before SCAL
 <br>
 
 <center><img src="/images/scalesim.png"/></center>
+
 **Methodology**
 <br>
 
@@ -103,6 +105,7 @@ Highly-parallel computing hardware, such as SIMD/SIMT machines, can achieve high
 <br>
 
 <center><img src="/images/eyeriss.png"/></center>
+
 **Methodology**
 <br>
 
@@ -134,6 +137,7 @@ A large fraction of the computations performed by DNNs are intrinsically ineffec
 <br>
 
 <center><img src="/images/cnvlutin.png"/></center>
+
 **Methodology**
 <br>
 
@@ -165,6 +169,7 @@ Although the number of operations and memory accesses can be greatly reduced wit
 <br>
 
 <center><img src="/images/cambriconx.png"/></center>
+
 **Methodology**
 <br>
 
@@ -196,6 +201,7 @@ Sparse neural networks have emerged as an effective solution to reduce the amoun
 <br>
 
 <center><img src="/images/scnn.png"/></center>
+
 **Methodology**
 <br>
 
@@ -221,6 +227,7 @@ During matrix multiplication, the memory access is usually the bottleneck especi
 <br>
 
 <center><img src="/images/eie.png"/></center>
+
 **Methodology**
 <br>
 
@@ -252,6 +259,7 @@ In the speech recognition process, LSTM networks are used for an acoustic model,
 <br>
 
 <center><img src="/images/ese.png"/></center>
+
 **Methodology**
 <br>
 
@@ -283,6 +291,7 @@ Large RNNs have the potential to be handled in parallel. Left figure (Fig.2 in p
 <br>
 
 <center><img src="/images/dac20.png"/></center>
+
 **Methodology**
 <br>
 
@@ -308,6 +317,7 @@ Memory-augmented neural networks (MemNNs), which can make an inference with the 
 <br>
 
 <center><img src="/images/mnnfast.png"/></center>
+
 **Methodology**
 <br>
 
@@ -333,6 +343,7 @@ Memory-augmented neural networks (MANNs) can achieve one-shot learning and compl
 <br>
 
 <center><img src="/images/manna.png"/></center>
+
 **Methodology**
 <br>
 
