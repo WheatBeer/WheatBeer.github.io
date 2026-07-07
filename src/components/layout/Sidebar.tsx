@@ -116,7 +116,7 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
             aria-hidden
           />
           <aside className="fixed inset-y-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
-            <div className="flex items-center justify-end p-2">
+            <div className="flex items-center justify-start p-2">
               <button
                 type="button"
                 onClick={onCloseMobile}
