@@ -31,14 +31,12 @@ export const resumeSections: ResumeSection[] = [
         titleHtml:
           '<span class="text-xs tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Skills</span>',
         separatorBefore: true,
-        subItemsHtml: [
-          "C++/Boost C++, Python",
-          "Linux, Mac, WSL",
-          "Redis, Kafka",
-          "MySQL, PostgreSQL, Altibase",
-          "Onload, TCPDirect",
-        ],
       },
+      { titleHtml: "C++/Boost C++, Python" },
+      { titleHtml: "Linux, Mac, WSL" },
+      { titleHtml: "Redis, Kafka" },
+      { titleHtml: "MySQL, PostgreSQL, Altibase" },
+      { titleHtml: "Onload, TCPDirect" },
     ],
   },
   {

@@ -41,12 +41,12 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
       <h2 className="mb-4 text-xs font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">
         {section.heading}
       </h2>
-      <ul className="flex flex-col gap-6">
+      <ul className={`flex flex-col ${section.id === "interests" ? "gap-2" : "gap-6"}`}>
         {section.items.map((item, idx) => (
           <li
             key={idx}
             className={
-              item.separatorBefore ? "border-t border-slate-200 pt-6 dark:border-slate-800" : undefined
+              item.separatorBefore ? "border-t border-slate-200 pt-4 dark:border-slate-800" : undefined
             }
           >
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
