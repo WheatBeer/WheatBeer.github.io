@@ -93,7 +93,7 @@ export const resumeSections: ResumeSection[] = [
     heading: "Work Experiences",
     items: [
       {
-        titleHtml: `Software Engineer, Passive Tech Team, <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
+        titleHtml: `Software Engineer<br>Passive Tech Team &middot; <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Apr. 2026 - Present",
         subItemsHtml: [
           "Supporting ETF/ETN/ELW Liquidity Provider (LP) and Derivatives Market Making (MM)",
@@ -101,7 +101,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Quantitative Developer, Quant Dealing Part, <a href="https://iprovest.com/" target="_blank" rel="noopener noreferrer">Kyobo Securities</a><br>Seoul, Republic of Korea`,
+        titleHtml: `Quantitative Developer<br>Quant Dealing Part &middot; <a href="https://iprovest.com/" target="_blank" rel="noopener noreferrer">Kyobo Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Feb. 2023 - Apr. 2026",
         subItemsHtml: [
           "Developed and improved automated market making (MM) systems in KRX securities and derivatives markets",
@@ -111,7 +111,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Software Engineer, IT Team, <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
+        titleHtml: `Software Engineer<br>IT Team &middot; <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
         dateRange: "Aug. 2022 - Jan. 2023",
         subItemsHtml: [
           "Linux system programming (e.g., IPC, thread, socket, etc.)",
