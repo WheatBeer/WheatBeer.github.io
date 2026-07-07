@@ -121,7 +121,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Intern, <a href="https://www.etri.re.kr/intro.html" target="_blank" rel="noopener noreferrer">Electronics and Telecommunications Research Institute</a> (ETRI)<br>SW-SoC R&amp;D Center, Gyeonggi-do, Republic of Korea`,
+        titleHtml: `Intern<br><a href="https://www.etri.re.kr/intro.html" target="_blank" rel="noopener noreferrer">Electronics and Telecommunications Research Institute</a> (ETRI)<br>SW-SoC R&amp;D Center, Gyeonggi-do, Republic of Korea`,
         dateRange: "Jul. 2019 - Aug. 2019",
         subItemsHtml: [
           "Internship program sponsored by the national government",
@@ -129,7 +129,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Intern, <a href="https://www.chain.partners/" target="_blank" rel="noopener noreferrer">Chain Partners</a> (Blockchain Start-up)<br>Seoul, Republic of Korea`,
+        titleHtml: `Intern<br><a href="https://www.chain.partners/" target="_blank" rel="noopener noreferrer">Chain Partners</a> (Blockchain Start-up)<br>Seoul, Republic of Korea`,
         dateRange: "May. 2018 - Sep. 2018",
         subItemsHtml: ["Research on blockchain systems", "UI/UX design for blockchain applications"],
       },
