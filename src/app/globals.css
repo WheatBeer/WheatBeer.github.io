@@ -54,3 +54,26 @@ body {
 .prose-content :is(h1, h2, h3, h4, h5, h6) {
   scroll-margin-top: 1rem;
 }
+
+/*
+ * Some content is fetched from external sources at build time (e.g. the
+ * AI accelerator paper list) and can contain very long unbroken strings
+ * (unescaped/unparsed link syntax, long URLs) that would otherwise
+ * overflow the container width and cause horizontal page movement on
+ * mobile.
+ */
+.prose-content {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.prose-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.prose-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
