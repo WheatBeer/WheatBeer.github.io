@@ -50,16 +50,16 @@ export const resumeSections: ResumeSection[] = [
         label: "LinkedIn",
       },
       {
-        titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
-        icon: "email",
-        href: "mailto:sungminryu94@gmail.com",
-        label: "sungminryu94@gmail.com",
-      },
-      {
         titleHtml: `Github: <a href="https://github.com/WheatBeer" target="_blank" rel="noopener noreferrer">GitHub</a>`,
         icon: "github",
         href: "https://github.com/WheatBeer",
         label: "GitHub",
+      },
+      {
+        titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
+        icon: "email",
+        href: "mailto:sungminryu94@gmail.com",
+        label: "sungminryu94@gmail.com",
       },
     ],
   },

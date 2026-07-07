@@ -51,7 +51,7 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
           >
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <p
-                className="font-semibold text-slate-800 dark:text-slate-100 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 dark:[&_a]:text-indigo-400"
+                className="text-sm font-medium text-slate-700 dark:text-slate-300 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 dark:[&_a]:text-indigo-400"
                 dangerouslySetInnerHTML={{ __html: item.titleHtml }}
               />
               {item.dateRange && (
