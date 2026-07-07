@@ -9,10 +9,12 @@ function CategoryBlock({
   name,
   items,
   currentSlug,
+  onNavigate,
 }: {
   name: string;
   items: { slug: string; title: string; href: string }[];
   currentSlug: string;
+  onNavigate: () => void;
 }) {
   const [open, setOpen] = useState<boolean>(true);
 
@@ -40,6 +42,7 @@ function CategoryBlock({
             <li key={item.slug}>
               <Link
                 href={item.href}
+                onClick={onNavigate}
                 className={`block rounded px-2 py-1 text-sm ${
                   item.slug === currentSlug
                     ? "bg-indigo-50 font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
@@ -70,6 +73,7 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
     <>
       <Link
         href="/"
+        onClick={onCloseMobile}
         className={`rounded px-2 py-1 text-sm font-semibold ${
           pathname === "/"
             ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
@@ -90,6 +94,7 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
               name={category.name}
               items={category.items}
               currentSlug={currentSlug}
+              onNavigate={onCloseMobile}
             />
           ))}
         </div>
@@ -110,7 +115,7 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
             onClick={onCloseMobile}
             aria-hidden
           />
-          <aside className="fixed inset-y-0 left-0 z-40 w-64 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
+          <aside className="fixed inset-y-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
             <nav className="flex flex-col gap-4 p-4 pt-4">{navList}</nav>
           </aside>
         </>
