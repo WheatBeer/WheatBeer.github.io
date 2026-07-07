@@ -160,7 +160,7 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `C. Park, B. Kim, <b>S. Ryu</b>, and W. Song, &ldquo;NeuroSpector: Systematic Optimization of Dataflow Scheduling in DNN Accelerators,&rdquo; <i>IEEE Transactions on Parallel and Distributed Systems (TPDS)</i>, vol. 34, no. 8, Aug. 2023, pp. 2279-2294 <a href="https://ieeexplore.ieee.org/document/10145602/" target="_blank" rel="noopener noreferrer">[Paper]</a> <a href="https://github.com/yonsei-icsl/neurospector" target="_blank" rel="noopener noreferrer">[Github]</a>`,
       },
       {
-        titleHtml: `<b>S. Ryu</b>, &ldquo;Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction,&rdquo; <i>Master&rsquo;s Thesis</i>, Yonsei University, Dec. 2021. <a href="https://library.yonsei.ac.kr/search/detail/CAT000002096932?briefLink=/main/searchBrief?q=%EB%B0%94%ED%85%80%EC%97%85+%EB%A7%A4%ED%95%91" target="_blank" rel="noopener noreferrer">[Paper]</a>`,
+        titleHtml: `<b>S. Ryu</b>, &ldquo;Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction,&rdquo; <i>Master&rsquo;s Thesis</i>, Yonsei University, Dec. 2021. <a href="https://library.yonsei.ac.kr/search/detail/CAT000002096932?briefLink=/main/searchBrief?q=%EB%B0%94%ED%85%80%EC%97%85+%EB%A7%A4%ED%95%91" target="_blank" rel="noopener noreferrer">[Paper]</a> <a href="/yonsei_ms_thesis/">[Summary]</a>`,
       },
     ],
   },
