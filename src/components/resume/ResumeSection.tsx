@@ -1,6 +1,40 @@
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import type { ResumeSection } from "@/content/resume";
 
+const contactIcons = {
+  email: FaEnvelope,
+  linkedin: FaLinkedin,
+};
+
 export default function ResumeSectionBlock({ section }: { section: ResumeSection }) {
+  if (section.id === "contact") {
+    return (
+      <section id={section.id} className="border-t border-slate-200 py-8 first:border-t-0 dark:border-slate-800">
+        <h2 className="mb-4 text-xs font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">
+          {section.heading}
+        </h2>
+        <ul className="flex flex-wrap gap-x-8 gap-y-3">
+          {section.items.map((item, idx) => {
+            const Icon = item.icon ? contactIcons[item.icon] : null;
+            return (
+              <li key={idx}>
+                <a
+                  href={item.href}
+                  target={item.href?.startsWith("mailto:") ? undefined : "_blank"}
+                  rel={item.href?.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                  className="flex items-center gap-2 text-sm font-medium text-slate-700 transition-colors hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
+                >
+                  {Icon && <Icon size={18} />}
+                  {item.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    );
+  }
+
   return (
     <section id={section.id} className="border-t border-slate-200 py-8 first:border-t-0 dark:border-slate-800">
       <h2 className="mb-4 text-xs font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">

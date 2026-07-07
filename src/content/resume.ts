@@ -5,6 +5,10 @@ export interface ResumeItem {
   titleHtml: string;
   dateRange?: string;
   subItemsHtml?: string[];
+  /** Only used by the Contact section, rendered as an icon + label link. */
+  icon?: "email" | "linkedin";
+  href?: string;
+  label?: string;
 }
 
 export interface ResumeSection {
@@ -38,9 +42,15 @@ export const resumeSections: ResumeSection[] = [
     items: [
       {
         titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
+        icon: "email",
+        href: "mailto:sungminryu94@gmail.com",
+        label: "sungminryu94@gmail.com",
       },
       {
         titleHtml: `Linkedin: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank" rel="noopener noreferrer">sungmin-ryu-2b0605194</a>`,
+        icon: "linkedin",
+        href: "https://www.linkedin.com/in/sungmin-ryu-2b0605194/",
+        label: "sungmin-ryu-2b0605194",
       },
     ],
   },
@@ -77,8 +87,8 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `Software Engineer, Passive Tech Team, <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Apr. 2026 - Present",
         subItemsHtml: [
-          "ETF/ETN/ELW liquidity provisioning (LP) and derivatives market making (MM)",
-          "Introducing Horizon OMS to HKEX (Hong Kong Exchange)",
+          "ETF/ETN/ELW Liquidity Provider and Derivatives Market Making (MM)",
+          "Managing the installation of Horizon OMS at HKEX (Hong Kong Exchange) colocation",
         ],
       },
       {
