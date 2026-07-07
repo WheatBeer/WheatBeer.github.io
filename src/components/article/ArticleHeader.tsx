@@ -9,9 +9,9 @@ export default function ArticleHeader({ title, category, slug }: ArticleHeaderPr
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-10">
-      <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400">{title}</h3>
+      <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400">{category}</h3>
       <div className="mt-1 flex items-center gap-2">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">{category}</h2>
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">{title}</h2>
         <a
           href={editHref}
           target="_blank"
