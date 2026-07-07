@@ -116,7 +116,17 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
             aria-hidden
           />
           <aside className="fixed inset-y-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
-            <nav className="flex flex-col gap-4 p-4 pt-4">{navList}</nav>
+            <div className="flex items-center justify-end p-2">
+              <button
+                type="button"
+                onClick={onCloseMobile}
+                className="flex items-center justify-center rounded-md p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+                aria-label="Close navigation"
+              >
+                <span className="block text-lg leading-none">✕</span>
+              </button>
+            </div>
+            <nav className="flex flex-col gap-4 p-4 pt-0">{navList}</nav>
           </aside>
         </>
       )}
