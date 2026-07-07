@@ -25,7 +25,8 @@ export const resumeSections: ResumeSection[] = [
       { titleHtml: "Market Making" },
       { titleHtml: "HFT (High-Frequency Trading) via DMA (Direct Market Access)" },
       {
-        titleHtml: "Skills",
+        titleHtml:
+          '<span class="text-xs tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Skills</span>',
         subItemsHtml: [
           "C++/Boost C++, Python",
           "Linux, Mac, WSL",
