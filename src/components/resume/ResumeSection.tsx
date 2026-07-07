@@ -14,7 +14,7 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
         <h2 className="mb-4 text-xs font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">
           {section.heading}
         </h2>
-        <ul className="flex flex-wrap gap-x-8 gap-y-3">
+        <ul className="flex flex-col gap-3">
           {section.items.map((item, idx) => {
             const Icon = item.icon ? contactIcons[item.icon] : null;
             return (
@@ -43,7 +43,12 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
       </h2>
       <ul className="flex flex-col gap-6">
         {section.items.map((item, idx) => (
-          <li key={idx}>
+          <li
+            key={idx}
+            className={
+              item.separatorBefore ? "border-t border-slate-200 pt-6 dark:border-slate-800" : undefined
+            }
+          >
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <p
                 className="font-semibold text-slate-800 dark:text-slate-100 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 dark:[&_a]:text-indigo-400"

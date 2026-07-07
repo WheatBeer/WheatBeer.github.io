@@ -5,6 +5,8 @@ export interface ResumeItem {
   titleHtml: string;
   dateRange?: string;
   subItemsHtml?: string[];
+  /** Draws a divider above this item, separating it from the previous one. */
+  separatorBefore?: boolean;
   /** Only used by the Contact section, rendered as an icon + label link. */
   icon?: "email" | "linkedin" | "github";
   href?: string;
@@ -27,6 +29,7 @@ export const resumeSections: ResumeSection[] = [
       {
         titleHtml:
           '<span class="text-xs tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Skills</span>',
+        separatorBefore: true,
         subItemsHtml: [
           "C++/Boost C++, Python",
           "Linux, Mac, WSL",
@@ -42,16 +45,16 @@ export const resumeSections: ResumeSection[] = [
     heading: "Contact",
     items: [
       {
-        titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
-        icon: "email",
-        href: "mailto:sungminryu94@gmail.com",
-        label: "sungminryu94@gmail.com",
-      },
-      {
         titleHtml: `Linkedin: <a href="https://www.linkedin.com/in/sungmin-ryu-2b0605194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>`,
         icon: "linkedin",
         href: "https://www.linkedin.com/in/sungmin-ryu-2b0605194/",
         label: "LinkedIn",
+      },
+      {
+        titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
+        icon: "email",
+        href: "mailto:sungminryu94@gmail.com",
+        label: "sungminryu94@gmail.com",
       },
       {
         titleHtml: `Github: <a href="https://github.com/WheatBeer" target="_blank" rel="noopener noreferrer">GitHub</a>`,
