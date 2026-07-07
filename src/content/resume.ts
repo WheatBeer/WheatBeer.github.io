@@ -20,6 +20,16 @@ export const resumeSections: ResumeSection[] = [
     items: [
       { titleHtml: "Market Making" },
       { titleHtml: "HFT (High-Frequency Trading) via DMA (Direct Market Access)" },
+      {
+        titleHtml: "Skills",
+        subItemsHtml: [
+          "C++/Boost C++, Python",
+          "Linux, Mac, WSL",
+          "Redis, Kafka",
+          "MySQL, PostgreSQL, Altibase",
+          "Onload, TCPDirect",
+        ],
+      },
     ],
   },
   {
@@ -162,11 +172,6 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `W. Song, C. Park, B. Kim, and <b>S. Ryu</b>, &ldquo;Neural Network Computing Device and Control Method,&rdquo; <i>US17/883010</i>, Aug. 2022.`,
       },
     ],
-  },
-  {
-    id: "programming-languages",
-    heading: "Programming Languages",
-    items: [{ titleHtml: "C/C++, Python, Java, CUDA C/C++, Verilog, HTML, CSS, MySQL" }],
   },
   {
     id: "certifications",
