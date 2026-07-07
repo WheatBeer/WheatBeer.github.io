@@ -11,20 +11,31 @@ export interface NavCategory {
   items: NavItem[];
 }
 
-const CATEGORY_ORDER = ["AI", "TRADING", "HOMELAB"];
+export interface NavGroup {
+  name: string;
+  categories: NavCategory[];
+}
+
+const GROUP_STRUCTURE: { name: string; categories: string[] }[] = [
+  { name: "Projects", categories: ["Yonsei"] },
+  { name: "AI", categories: ["HOMELAB", "TRADING"] },
+];
 
 function toNavItem(meta: ContentMeta): NavItem {
   return { slug: meta.slug, title: meta.title, href: `/${meta.slug}/` };
 }
 
-export function getNavCategories(): NavCategory[] {
+export function getNavGroups(): NavGroup[] {
   const all = getAllContentMeta();
 
-  return CATEGORY_ORDER.map((name) => ({
-    name,
-    items: all
-      .filter((meta) => meta.category === name)
-      .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title))
-      .map(toNavItem),
+  return GROUP_STRUCTURE.map((group) => ({
+    name: group.name,
+    categories: group.categories.map((categoryName) => ({
+      name: categoryName,
+      items: all
+        .filter((meta) => meta.group === group.name && meta.category === categoryName)
+        .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title))
+        .map(toNavItem),
+    })),
   }));
 }

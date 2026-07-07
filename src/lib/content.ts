@@ -12,6 +12,7 @@ const CONTENT_DIR = path.join(process.cwd(), "src", "content", "posts");
 export interface ContentMeta {
   slug: string;
   title: string;
+  group: string;
   category: string;
   order: number;
 }
@@ -22,6 +23,7 @@ export interface ContentEntry extends ContentMeta {
 
 interface Frontmatter {
   title: string;
+  group: string;
   category: string;
   order?: number;
   externalSource?: string;
@@ -51,6 +53,7 @@ export function getAllContentMeta(): ContentMeta[] {
     return {
       slug,
       title: data.title,
+      group: data.group,
       category: data.category,
       order: data.order ?? 0,
     };
@@ -85,6 +88,7 @@ export async function getContentBySlug(slug: string): Promise<ContentEntry | nul
   return {
     slug,
     title: data.title,
+    group: data.group,
     category: data.category,
     order: data.order ?? 0,
     html,
