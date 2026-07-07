@@ -36,3 +36,21 @@ body {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+
+/*
+ * Anchor-only headings (kept for in-page link targets) stay in normal
+ * flow with zero visual size, instead of position:absolute (e.g. sr-only),
+ * so the browser's anchor-jump scroll position isn't thrown off.
+ */
+.anchor-target {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.prose-content :is(h1, h2, h3, h4, h5, h6) {
+  scroll-margin-top: 1rem;
+}

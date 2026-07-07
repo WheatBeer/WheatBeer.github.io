@@ -66,7 +66,7 @@ function hideAnchorOnlyHeadings() {
         const existingClass = node.properties?.className;
         node.properties = {
           ...node.properties,
-          className: [...(Array.isArray(existingClass) ? existingClass : []), "sr-only"],
+          className: [...(Array.isArray(existingClass) ? existingClass : []), "anchor-target"],
         };
       }
     });
