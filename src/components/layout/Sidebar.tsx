@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import type { NavGroup } from "@/lib/nav";
+import type { NavCategory } from "@/lib/nav";
 
 function CategoryBlock({
   name,
@@ -15,6 +15,14 @@ function CategoryBlock({
   currentSlug: string;
 }) {
   const [open, setOpen] = useState<boolean>(true);
+
+  if (items.length === 0) {
+    return (
+      <div className="flex items-center gap-1.5 px-2 py-1.5 text-sm font-medium text-slate-400 dark:text-slate-600">
+        {name}
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -48,7 +56,7 @@ function CategoryBlock({
   );
 }
 
-export default function Sidebar({ groups }: { groups: NavGroup[] }) {
+export default function Sidebar({ categories }: { categories: NavCategory[] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const currentSlug = pathname.replace(/^\/|\/$/g, "");
@@ -66,23 +74,16 @@ export default function Sidebar({ groups }: { groups: NavGroup[] }) {
         Home
       </Link>
 
-      {groups.map((group) =>
-        group.categories.length === 0 ? null : (
-          <div key={group.type} className="flex flex-col gap-1">
-            <h2 className="px-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
-              {group.label}
-            </h2>
-            {group.categories.map((category) => (
-              <CategoryBlock
-                key={category.name}
-                name={category.name}
-                items={category.items}
-                currentSlug={currentSlug}
-              />
-            ))}
-          </div>
-        ),
-      )}
+      <div className="flex flex-col gap-1">
+        {categories.map((category) => (
+          <CategoryBlock
+            key={category.name}
+            name={category.name}
+            items={category.items}
+            currentSlug={currentSlug}
+          />
+        ))}
+      </div>
     </>
   );
 

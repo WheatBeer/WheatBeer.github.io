@@ -1,6 +1,6 @@
 ---
 title: DRAMsim3
-category: Simulators
+category: AI
 ---
 
 ## Play with DRAMsim3 

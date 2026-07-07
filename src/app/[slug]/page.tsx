@@ -33,12 +33,7 @@ export default async function ContentPage({
 
   return (
     <>
-      <ArticleHeader
-        title={entry.title}
-        category={entry.category}
-        editSlug={entry.slug}
-        editType={entry.type}
-      />
+      <ArticleHeader title={entry.title} category={entry.category} slug={entry.slug} />
       <ArticleBody html={entry.html} />
     </>
   );

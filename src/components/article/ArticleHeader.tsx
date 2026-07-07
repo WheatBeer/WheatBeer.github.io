@@ -1,12 +1,11 @@
 interface ArticleHeaderProps {
   title: string;
   category: string;
-  editSlug: string;
-  editType: string;
+  slug: string;
 }
 
-export default function ArticleHeader({ title, category, editSlug, editType }: ArticleHeaderProps) {
-  const editHref = `https://github.com/WheatBeer/WheatBeer.github.io/edit/master/src/content/${editType}/${editSlug}.md`;
+export default function ArticleHeader({ title, category, slug }: ArticleHeaderProps) {
+  const editHref = `https://github.com/WheatBeer/WheatBeer.github.io/edit/master/src/content/posts/${slug}.md`;
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-10">
