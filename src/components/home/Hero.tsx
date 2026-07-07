@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative flex h-72 items-center justify-center overflow-hidden md:h-96">
+    <div className="relative flex h-full min-h-80 items-center justify-center overflow-hidden">
       <Image
         src="/images/stock_banner.jpg"
         alt=""
