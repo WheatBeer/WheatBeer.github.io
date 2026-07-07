@@ -63,9 +63,10 @@ interface SidebarProps {
   groups: NavGroup[];
   mobileOpen: boolean;
   onCloseMobile: () => void;
+  topOffset: number;
 }
 
-export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarProps) {
+export default function Sidebar({ groups, mobileOpen, onCloseMobile, topOffset }: SidebarProps) {
   const pathname = usePathname();
   const currentSlug = pathname.replace(/^\/|\/$/g, "");
 
@@ -111,11 +112,15 @@ export default function Sidebar({ groups, mobileOpen, onCloseMobile }: SidebarPr
       {mobileOpen && (
         <>
           <div
-            className="fixed inset-0 z-30 touch-none overscroll-contain bg-black/30 md:hidden"
+            style={{ top: topOffset }}
+            className="fixed right-0 bottom-0 left-0 z-30 touch-none overscroll-contain bg-black/30 md:hidden"
             onClick={onCloseMobile}
             aria-hidden
           />
-          <aside className="fixed inset-y-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900">
+          <aside
+            style={{ top: topOffset }}
+            className="fixed bottom-0 left-0 z-40 w-56 overflow-y-auto overscroll-contain bg-white shadow-xl md:hidden dark:bg-slate-900"
+          >
             <nav className="flex flex-col gap-4 p-4">{navList}</nav>
           </aside>
         </>

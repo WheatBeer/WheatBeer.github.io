@@ -16,6 +16,18 @@ export default function AppShell({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const mainRef = useRef<HTMLElement>(null);
+  const headerWrapRef = useRef<HTMLDivElement>(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useEffect(() => {
+    const el = headerWrapRef.current;
+    if (!el) return;
+    const updateHeight = () => setHeaderHeight(el.offsetHeight);
+    updateHeight();
+    const observer = new ResizeObserver(updateHeight);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const el = mainRef.current;
@@ -27,9 +39,16 @@ export default function AppShell({
 
   return (
     <>
-      <Header mobileOpen={mobileOpen} onToggleMobile={() => setMobileOpen((v) => !v)} />
+      <div ref={headerWrapRef} className="shrink-0">
+        <Header mobileOpen={mobileOpen} onToggleMobile={() => setMobileOpen((v) => !v)} />
+      </div>
       <div className="flex min-h-0 flex-1">
-        <Sidebar groups={groups} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} />
+        <Sidebar
+          groups={groups}
+          mobileOpen={mobileOpen}
+          onCloseMobile={() => setMobileOpen(false)}
+          topOffset={headerHeight}
+        />
         <main
           ref={mainRef}
           className="relative min-w-0 flex-1 scroll-smooth overflow-x-hidden overflow-y-auto"

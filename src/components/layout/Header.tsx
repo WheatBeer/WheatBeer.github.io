@@ -12,7 +12,7 @@ export default function Header({ mobileOpen, onToggleMobile }: HeaderProps) {
       <button
         type="button"
         onClick={onToggleMobile}
-        className="absolute top-1/2 left-4 z-50 -translate-y-1/2 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
+        className="absolute top-1/2 left-4 -translate-y-1/2 rounded-md border border-slate-200 bg-white p-2 shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
         aria-label="Toggle navigation"
       >
         {mobileOpen ? (
