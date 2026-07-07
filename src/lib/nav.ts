@@ -17,8 +17,7 @@ export interface NavGroup {
 }
 
 const GROUP_STRUCTURE: { name: string; categories: string[] }[] = [
-  { name: "AI", categories: ["HOMELAB", "TRADING"] },
-  { name: "Projects", categories: ["Yonsei"] },
+  { name: "Projects", categories: ["Trading", "Homelab", "Yonsei"] },
   { name: "Research", categories: ["AI Accelerator (NPU)", "Simulators"] },
 ];
 
