@@ -1,6 +1,7 @@
 ---
 title: Class Projects
-category: AI
+group: Projects
+category: Yonsei
 ---
 
 ## Undergraduate

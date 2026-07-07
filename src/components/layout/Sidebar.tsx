@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import type { NavCategory } from "@/lib/nav";
+import type { NavGroup } from "@/lib/nav";
 
 function CategoryBlock({
   name,
@@ -56,7 +56,7 @@ function CategoryBlock({
   );
 }
 
-export default function Sidebar({ categories }: { categories: NavCategory[] }) {
+export default function Sidebar({ groups }: { groups: NavGroup[] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const currentSlug = pathname.replace(/^\/|\/$/g, "");
@@ -74,16 +74,21 @@ export default function Sidebar({ categories }: { categories: NavCategory[] }) {
         Home
       </Link>
 
-      <div className="flex flex-col gap-1">
-        {categories.map((category) => (
-          <CategoryBlock
-            key={category.name}
-            name={category.name}
-            items={category.items}
-            currentSlug={currentSlug}
-          />
-        ))}
-      </div>
+      {groups.map((group) => (
+        <div key={group.name} className="flex flex-col gap-1">
+          <h2 className="px-2 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            {group.name}
+          </h2>
+          {group.categories.map((category) => (
+            <CategoryBlock
+              key={category.name}
+              name={category.name}
+              items={category.items}
+              currentSlug={currentSlug}
+            />
+          ))}
+        </div>
+      ))}
     </>
   );
 
