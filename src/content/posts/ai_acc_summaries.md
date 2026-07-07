@@ -6,6 +6,7 @@ category: AI Accelerator (NPU)
 
 ## Paper list
 <hr>
+
 [1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning  [ASPLOS’14]](#diannao)
 <br>[2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18]](#scale-sim)
 <br>[3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]](#eyeriss)
@@ -23,6 +24,7 @@ category: AI Accelerator (NPU)
 #### diannao
 ## 1. DianNao: A Small-Footprint High-Throughput Accelerator for Ubiquitous Machine-Learning [ASPLOS’14]
 <hr>
+
 **Motivation**
 <br>
 Layers of state-of-art CNNs consist of thousands of neurons and millions of synapses. 
@@ -52,6 +54,7 @@ The previous studies have focused on efficiently implementing the computation pa
 ## 2. SCALE-Sim: Systolic CNN Accelerator Simulator [arXiv’18] <a href="https://github.com/ARM-software/SCALE-Sim" target="_blank">[github]</a>
 *Advanced Version: A Systematic Methodology for Characterizing Scalability of DNN Accelerators using SCALE-Sim [ISPASS’20]*
 <hr>
+
 **Motivation**
 <br>
 The authors mention that there was no cycle-accurate DNN accelerator before SCALE-Sim. The lack of accelerator analysis tools is the main motivation of this paper. It provides systolic array based accelerator analysis by taking various microarchitectural features. This tool allows architects to know principled insights on both the design trade-offs and efficient mapping strategies for accelerators. However, since this paper is not a conference paper, motivation and contribution to this paper are weaker than other papers. Thus, the authors have developed this paper’s methodologies to publish to a conference, and the advanced version of this paper was finally published in ISPASS’20. The advanced version focuses on scalability of accelerators that is described as scaling-up and scaling-out in the original. 
@@ -75,6 +78,7 @@ Since SCALE-Sim is the first public and open source CNN accelerator simulator, i
 ## 3. Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks [ISCA’16]
 *Cross-referenced paper: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks [JSSC’16]*
 <hr>
+
 **Motivation**
 <br>
 Highly-parallel computing hardware, such as SIMD/SIMT machines, can achieve high throughput during DNN processing. However, the DNN computational complexity, which comes from high-dimensional DNN layers, can make the machines energy inefficient from a large amount of data movement. Hence, finding a proper dataflow that brings about the minimal data movement cost is crucial to achieving energy efficient DNN processing. In this paper, they categorize existing dataflows (e.g., IS, WS, OS, and NLR) and propose their own dataflow called *row-stationary (RS)*. They also introduce a fabricated chip, called Eyeriss, which uses the RS dataflow.
@@ -97,6 +101,7 @@ They establish a novel dataflow called RS, and the dataflow is more energy effic
 #### cnvlutin
 ## 4. Cnvlutin: Ineffectual-Neuron-Free Deep Neural Network Computing [ISCA’16]
 <hr>
+
 **Motivation**
 <br>
 A large fraction of the computations performed by DNNs are intrinsically ineffectual as they involve a multiplication where one of the inputs is zero. The ineffectual computations can be skipped by taking additional units and control flow. The value-based DNN acceleration approach can enhance power efficiency and reduce execution time, and thus it can improve overall EDP and ED^2P.
@@ -119,6 +124,7 @@ Prior works targeted at accelerating sparse vector matrix operations using FPGAs
 #### cambricon-x
 ## 5. Cambricon-X: An Accelerator for Sparse Neural Networks [MICRO’16]
 <hr>
+
 **Motivation**
 <br>
 Although the number of operations and memory accesses can be greatly reduced with synapse pruning that brings about sparse and irregular neural networks, general purpose hardware and existing accelerators have not been able to exploit the pruning technique. To maximize efficiency, Cambricon-X utilizes the sparsity and irregularity of neural networks by taking an indexing module (IM). IM efficiently selects and transfers needed neurons to connected PEs with reduced bandwidth requirement, while each PE stores irregular and compressed synapses for local computation in an asynchronous fashion.
@@ -141,6 +147,7 @@ Prior accelerators (e.g., DianNao and DaDianNao) fill the pruned synapses with z
 #### scnn
 ## 6. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks [ISCA’17]
 <hr>
+
 **Motivation**
 <br>
 Sparse neural networks have emerged as an effective solution to reduce the amount of computation and memory required. The opportunities of the efficient reduction come from the zero-valued weights and zero-valued activations. The former data stem from network pruning during training, and the latter data arise from the common ReLU operator. To exploit the zero values, previous accelerators have been leveraged only for single-type data. Table 2 shows how the accelerators and SCNN (this work) exploit sparsity. Eyeriss exploits sparsity in activations by storing them in compressed form in DRAM and by gating computation cycles for zero-valued activations to save energy. Cnvlutin moves and stages sparse activations in compressed form and skips computation cycles for zero-valued activations to improve both performance and energy efficiency. Conversely, Cambricon-X exploits sparsity by compressing the pruned weights, skipping computation cycles for zero-valued weights, but it still suffers from wasted computation cycles when the non-zero weight is to be multiplied with zero-valued activations. Compared to the three accelerators, SCNN leverages all of the sparsity opportunities. 
@@ -159,6 +166,7 @@ They propose PT-IS-CP-sparse dataflow. The word order in the dataflow notation (
 #### eie
 ## 7. EIE: Efficient Inference Engine on Compressed Deep Neural Network [ISCA’16]
 <hr>
+
 **Motivation**
 <br>
 During matrix multiplication, the memory access is usually the bottleneck especially when the matrix is larger than the on-chip buffer capacity. Also, there is no reuse of the weight matrix, and thus a memory access is required for every operation. Therefore, an efficient way to execute a large matrix multiplication layer (e.g., FC layer) is needed. Network compression via pruning and weight sharing makes it possible to fit the layers. However, processing these compressed layers is challenging. To efficiently operate on the compressed layers, they propose EIE, an efficient inference engine, a specialized accelerator that performs customized sparse matrix vector multiplication and handles weight sharing with no loss of efficiency. 
@@ -181,6 +189,7 @@ Compressed layers are not efficient on previous sparse matrix multiplication (SP
 #### ese
 ## 8. ESE: Efficient Speech Recognition Engine with Sparse LSTM on FPGA [FPGA’17]
 <hr>
+
 **Motivation**
 <br>
 In the speech recognition process, LSTM networks are used for an acoustic model, and these are the most computation and memory intensive parts. To achieve higher prediction accuracy, large networks are used. As the networks grow, the opportunity to exploit the sparsity also increases. Although pruning and quantization can reduce memory footprint, some new challenges arise: 1) irregular computation, 2) load imbalance, and 3) failure to use the parallelism of compressed LSTM. General purpose processors cannot implement these challenges efficiently, but ESE can. 1) After quantization, the weight (12-bit) and index (4-bit) are not byte-aligned, and thus ESE groups both into 2 bytes. 2) ESE uses load balance-aware pruning to overcome the load imbalance that is caused by sparsity and reduce the hardware efficiency. 3) ESE takes advantage of the parallelism both inter sparse SpMV operation and intra SpMV operation.
@@ -203,6 +212,7 @@ Prior GRU/LSTM accelerators have only targeted parallelism for operations and no
 #### dac20
 ## 9. Scalable Multi-FPGA Acceleration for Large RNNs with Full Parallelism Levels [DAC’20]
 <hr>
+
 **Motivation**
 <br>
 Large RNNs have the potential to be handled in parallel. Left figure (Fig.2 in paper) shows parallelism levels of large-scale and stacked RNNs from fine-grained (left) to coarse-grained (right) operations. At each parallelism level, the parallelism degrees are defined by RNN models and continue to grow as models become larger and stacked for more high-quality services. However, existing model parallelism methods suffer from severe HW underutilization when they distribute RNNs to multiple accelerators and thus fail to obtain the scalable performance. Therefore, this work introduces full parallelism levels of modern RNNs and proposes a systematic strategy to obtain optimal parallelism degrees at each level.
@@ -221,6 +231,7 @@ This work introduces three parallelism levels of modern RNNs and proposes system
 #### mnnfast
 ## 10. MnnFast: A Fast and Scalable System Architecture for Memory-Augmented Neural Networks [ISCA’19]
 <hr>
+
 **Motivation**
 <br>
 Memory-augmented neural networks (MemNNs), which can make an inference with the previous history stored in memory, are known for their huge reasoning power and capability to learn from a large number of inputs rather than other networks. As the size of input datasets rapidly grows, the necessity of large-scale memory networks continuously arises. Although such large-scale memory networks provide excellent reasoning power, the current computer infrastructure cannot achieve scalable performance due to its limited system architecture. 
@@ -239,6 +250,7 @@ MemNN has three performance problems: 1) high memory bandwidth consumption, 2) h
 #### manna
 ## 11. Manna: An Accelerator for Memory-Augmented Neural Networks [MICRO’19]
 <hr>
+
 **Motivation**
 <br>
 Memory-augmented neural networks (MANNs) can achieve one-shot learning and complex cognitive capabilities that are well beyond those of classical DNNs. For soft reads and writes to the differentiable memory, access to all the memory locations is required for each operation. Thus, the enhanced capabilities of MANNs (or the larger memories of MANNs) lead to a high computational cost, and results in poor performance of MANNs on modern CPUs, GPUs, and other accelerators. To address this, this paper presents Manna, a specialized hardware inference accelerator for MANNs. 
