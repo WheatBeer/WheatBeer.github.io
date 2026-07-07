@@ -7,4 +7,4 @@ externalSourceLabel: here
 externalSourceUrl: https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md
 ---
 
-## **\* This page is from *<a href="https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md" target="_blank">here</a>*. \***
+## <em>This page is sourced from <a href="https://github.com/fengbintu/Neural-Networks-on-Silicon/blob/master/README.md" target="_blank">here</a>.</em>
