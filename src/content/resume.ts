@@ -130,11 +130,11 @@ export const resumeSections: ResumeSection[] = [
       },
       {
         titleHtml:
-          "Vice President of International Yonsei Community (Club)<br>Yonsei University, Seoul, Republic of Korea",
+          "Vice President of International Yonsei Community<br>Yonsei University, Seoul, Republic of Korea",
         dateRange: "Sep. 2018 - Dec. 2018",
       },
       {
-        titleHtml: "Yonsei Blockchain LAB (Club)<br>Yonsei University, Seoul, Republic of Korea",
+        titleHtml: "Yonsei Blockchain LAB<br>Yonsei University, Seoul, Republic of Korea",
         dateRange: "May. 2018 - Sep. 2018",
         subItemsHtml: [
           "Developed smart contracts in C++",
