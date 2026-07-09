@@ -23,7 +23,7 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
                   href={item.href}
                   target={item.href?.startsWith("mailto:") ? undefined : "_blank"}
                   rel={item.href?.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                  className="flex items-center gap-2 text-sm font-medium text-slate-700 transition-colors hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
+                  className="flex items-center gap-2 text-sm font-semibold text-slate-700 transition-colors hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
                 >
                   {Icon && <Icon size={18} />}
                   {item.label}
@@ -53,7 +53,7 @@ export default function ResumeSectionBlock({ section }: { section: ResumeSection
           >
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <p
-                className="text-sm font-medium text-slate-700 dark:text-slate-300 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 dark:[&_a]:text-indigo-400"
+                className="text-sm font-semibold text-slate-700 dark:text-slate-300 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 dark:[&_a]:text-indigo-400"
                 dangerouslySetInnerHTML={{ __html: item.titleHtml }}
               />
               {item.dateRange && (
