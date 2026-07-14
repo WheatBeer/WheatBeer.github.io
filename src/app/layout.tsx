@@ -17,6 +17,20 @@ export const metadata: Metadata = {
   verification: {
     google: "LQ8d5rlrBrPQBCFAX8aJR1AgnkzxhfibXfKFzrnDIQA",
   },
+  openGraph: {
+    title: "Sungmin Ryu (WheatBeer)",
+    description: "WheatBeer's Blog (Sungmin, Ryu)",
+    url: "https://WheatBeer.github.io",
+    siteName: "Sungmin Ryu (WheatBeer)",
+    images: ["/images/profile.jpg"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Sungmin Ryu (WheatBeer)",
+    description: "WheatBeer's Blog (Sungmin, Ryu)",
+    images: ["/images/profile.jpg"],
+  },
   icons: {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
