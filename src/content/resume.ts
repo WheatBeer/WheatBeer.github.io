@@ -25,6 +25,7 @@ export const resumeSections: ResumeSection[] = [
     heading: "Interests",
     items: [
       { titleHtml: "AI Programming" },
+      { titleHtml: "Progressive Web App (PWA)" },
       { titleHtml: "Market Making, Arbitrage Trading, HFT" },
       { titleHtml: "DMA (OMS + FEP)" },
       {
