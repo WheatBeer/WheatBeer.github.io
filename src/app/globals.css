@@ -67,6 +67,24 @@ body {
   word-break: break-word;
 }
 
+.prose-content a {
+  color: #4f46e5;
+}
+
+.prose-content a:hover {
+  color: #4338ca;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-content a {
+    color: #818cf8;
+  }
+
+  .prose-content a:hover {
+    color: #a5b4fc;
+  }
+}
+
 .prose-content table {
   display: block;
   max-width: 100%;
