@@ -16,9 +16,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const entry = await getContentBySlug(slug);
   if (!entry) return {};
+
+  const description = `${entry.title} — ${entry.category}`;
+  const url = `/${slug}/`;
+
   return {
     title: entry.title,
-    description: `${entry.title} — ${entry.category}`,
+    description,
+    openGraph: {
+      title: entry.title,
+      description,
+      url,
+      images: ["/images/logo.png"],
+      type: "article",
+    },
+    twitter: {
+      card: "summary",
+      title: entry.title,
+      description,
+      images: ["/images/logo.png"],
+    },
   };
 }
 
