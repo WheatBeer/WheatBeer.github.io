@@ -5,6 +5,7 @@ import type { NavGroup } from "@/lib/nav";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import ShareButton from "./ShareButton";
 
 export default function AppShell({
   groups,
@@ -57,6 +58,8 @@ export default function AppShell({
           <Footer />
         </main>
       </div>
+
+      <ShareButton />
 
       {showScrollTop && (
         <button
