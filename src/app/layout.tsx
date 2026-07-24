@@ -5,6 +5,7 @@ import AppShell from "@/components/layout/AppShell";
 import { getNavGroups } from "@/lib/nav";
 
 const GA_MEASUREMENT_ID = "G-0MZF9H5B13";
+const ADSENSE_CLIENT_ID = "ca-pub-3326258559005776";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://WheatBeer.github.io"),
@@ -52,6 +53,13 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="flex h-dvh flex-col overflow-hidden">
         <Script
           async
