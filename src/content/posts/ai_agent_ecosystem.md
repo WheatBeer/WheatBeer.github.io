@@ -1,10 +1,12 @@
 ---
-title: AI Agent Ecosystem (2026)
+title: AI Agent Ecosystem (2026) — KR
 group: AI+HOMELAB
 category: AI Agents
 ---
 
 ## AI Agent 생태계 정리 (2026)
+
+*[Read in English →](/ai_agent_ecosystem_en/)*
 
 AI Agent 생태계는 불과 몇 년 사이에 빠르게 발전했다.
 
