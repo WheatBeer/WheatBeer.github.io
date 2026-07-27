@@ -37,7 +37,6 @@ export const resumeSections: ResumeSection[] = [
       { titleHtml: "Linux, Mac, WSL, Docker" },
       { titleHtml: "Redis (Valkey), Kafka" },
       { titleHtml: "MySQL, PostgreSQL, Altibase" },
-      { titleHtml: "Onload, TCPDirect" },
     ],
   },
   {
@@ -108,7 +107,7 @@ export const resumeSections: ResumeSection[] = [
           "Developed and improved automated market making (MM) systems in KRX securities and derivatives markets",
           "Developed HFT-based arbitrage platform through DMA systems",
           "Developed an order management system (OMS) from scratch",
-          "C++17/Boost C++, MySQL, Redis, Onload, and TCPDirect",
+          "C++17/Boost C++, MySQL, Redis",
         ],
       },
       {
