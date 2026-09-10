@@ -107,7 +107,7 @@ export const resumeSections: ResumeSection[] = [
           "Developed and improved automated market making (MM) systems in KRX securities and derivatives markets",
           "Developed HFT-based arbitrage platform through DMA systems",
           "Developed an order management system (OMS) from scratch",
-          "C++17/Boost C++, MySQL, Redis",
+          "C++17/Boost C++, MySQL, Redis, and Onload",
         ],
       },
       {
