@@ -129,7 +129,7 @@ export const resumeSections: ResumeSection[] = [
         ],
       },
       {
-        titleHtml: `Intern<br><a href="https://www.chain.partners/" target="_blank" rel="noopener noreferrer">Chain Partners</a> (Blockchain Start-up)<br>Seoul, Republic of Korea`,
+        titleHtml: `Intern<br><a href="https://ai3.kr/" target="_blank" rel="noopener noreferrer">Chain Partners</a> (Blockchain Start-up)<br>Seoul, Republic of Korea`,
         dateRange: "May. 2018 - Sep. 2018",
         subItemsHtml: ["Research on blockchain systems", "UI/UX design for blockchain applications"],
       },
