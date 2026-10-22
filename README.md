@@ -1,6 +1,6 @@
-# WheatBeer's Blog
+# WheatBeer
 
-Personal resume/portfolio site built with Next.js (App Router), TypeScript, and Tailwind CSS, statically exported and deployed to GitHub Pages.
+Personal resume site built with Next.js (App Router), TypeScript, and Tailwind CSS, statically exported and deployed to GitHub Pages.
 
 ## Develop
 
@@ -17,8 +17,7 @@ npm run build     # emits static output to ./out
 
 ## Content
 
-* `src/content/resume.ts` — structured resume data (education, work experience, publications, etc.)
-* `src/content/posts/*.md` — Markdown articles with `title`/`group`/`category` frontmatter; `group` (e.g. AI, Projects, Research) and `category` control how each article is grouped in the sidebar
+* `src/content/resume.ts` — structured resume data (education, work experience, publications, etc.); the home page renders it as the site's only page
 
 ## Deploy
 

@@ -1,31 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface HeaderProps {
-  mobileOpen: boolean;
-  onToggleMobile: () => void;
-}
-
-export default function Header({ mobileOpen, onToggleMobile }: HeaderProps) {
+export default function Header() {
   return (
     <header className="relative flex shrink-0 items-center justify-center gap-3 border-b border-slate-200 bg-white px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-4 md:justify-start md:pl-8 dark:border-slate-800 dark:bg-slate-950">
-      <button
-        type="button"
-        onClick={onToggleMobile}
-        className="absolute top-1/2 left-4 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm md:hidden dark:border-slate-700 dark:bg-slate-900"
-        aria-label="Toggle navigation"
-      >
-        {mobileOpen ? (
-          <span className="block text-lg leading-none text-slate-700 dark:text-slate-300">✕</span>
-        ) : (
-          <span className="flex flex-col gap-1">
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-            <span className="block h-0.5 w-5 bg-slate-700 dark:bg-slate-300" />
-          </span>
-        )}
-      </button>
-
       <Link href="/" className="flex items-center gap-3">
         <Image
           src="/images/logo.png"

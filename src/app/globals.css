@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -30,68 +29,4 @@ body {
     Helvetica,
     Arial,
     sans-serif;
-}
-
-.prose-content hr {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-/*
- * Anchor-only headings (kept for in-page link targets) stay in normal
- * flow with zero visual size, instead of position:absolute (e.g. sr-only),
- * so the browser's anchor-jump scroll position isn't thrown off.
- */
-.anchor-target {
-  margin: 0;
-  padding: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0;
-  overflow: hidden;
-}
-
-.prose-content :is(h1, h2, h3, h4, h5, h6) {
-  scroll-margin-top: 1rem;
-}
-
-/*
- * Some content is fetched from external sources at build time (e.g. the
- * AI accelerator paper list) and can contain very long unbroken strings
- * (unescaped/unparsed link syntax, long URLs) that would otherwise
- * overflow the container width and cause horizontal page movement on
- * mobile.
- */
-.prose-content {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.prose-content a {
-  color: #4f46e5;
-}
-
-.prose-content a:hover {
-  color: #4338ca;
-}
-
-@media (prefers-color-scheme: dark) {
-  .prose-content a {
-    color: #818cf8;
-  }
-
-  .prose-content a:hover {
-    color: #a5b4fc;
-  }
-}
-
-.prose-content table {
-  display: block;
-  max-width: 100%;
-  overflow-x: auto;
-}
-
-.prose-content pre {
-  max-width: 100%;
-  overflow-x: auto;
 }

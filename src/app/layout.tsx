@@ -2,10 +2,8 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import AppShell from "@/components/layout/AppShell";
-import { getNavGroups } from "@/lib/nav";
 
 const GA_MEASUREMENT_ID = "G-0MZF9H5B13";
-const ADSENSE_CLIENT_ID = "ca-pub-3326258559005776";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://WheatBeer.github.io"),
@@ -13,14 +11,14 @@ export const metadata: Metadata = {
     default: "WheatBeer",
     template: "%s | WheatBeer",
   },
-  description: "WheatBeer's Blog (Sungmin, Ryu)",
+  description: "Resume of Sungmin Ryu (WheatBeer)",
   authors: [{ name: "Sungmin, Ryu" }],
   verification: {
     google: "LQ8d5rlrBrPQBCFAX8aJR1AgnkzxhfibXfKFzrnDIQA",
   },
   openGraph: {
     title: "Sungmin Ryu (WheatBeer)",
-    description: "WheatBeer's Blog (Sungmin, Ryu)",
+    description: "Resume of Sungmin Ryu (WheatBeer)",
     url: "https://WheatBeer.github.io",
     siteName: "Sungmin Ryu (WheatBeer)",
     images: ["/images/profile.jpg"],
@@ -29,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Sungmin Ryu (WheatBeer)",
-    description: "WheatBeer's Blog (Sungmin, Ryu)",
+    description: "Resume of Sungmin Ryu (WheatBeer)",
     images: ["/images/profile.jpg"],
   },
   icons: {
@@ -49,17 +47,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navGroups = getNavGroups();
-
   return (
     <html lang="en" className="h-full antialiased">
-      <head>
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className="flex h-dvh flex-col overflow-hidden">
         <Script
           async
@@ -74,7 +63,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <AppShell groups={navGroups}>{children}</AppShell>
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

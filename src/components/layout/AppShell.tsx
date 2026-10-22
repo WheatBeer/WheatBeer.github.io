@@ -1,34 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { NavGroup } from "@/lib/nav";
 import Header from "./Header";
-import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import ShareButton from "./ShareButton";
 
-export default function AppShell({
-  groups,
-  children,
-}: {
-  groups: NavGroup[];
-  children: React.ReactNode;
-}) {
-  const [mobileOpen, setMobileOpen] = useState(false);
+export default function AppShell({ children }: { children: React.ReactNode }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const mainRef = useRef<HTMLElement>(null);
-  const headerWrapRef = useRef<HTMLDivElement>(null);
-  const [headerHeight, setHeaderHeight] = useState(0);
-
-  useEffect(() => {
-    const el = headerWrapRef.current;
-    if (!el) return;
-    const updateHeight = () => setHeaderHeight(el.offsetHeight);
-    updateHeight();
-    const observer = new ResizeObserver(updateHeight);
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const el = mainRef.current;
@@ -40,24 +19,14 @@ export default function AppShell({
 
   return (
     <>
-      <div ref={headerWrapRef} className="shrink-0">
-        <Header mobileOpen={mobileOpen} onToggleMobile={() => setMobileOpen((v) => !v)} />
-      </div>
-      <div className="flex min-h-0 flex-1">
-        <Sidebar
-          groups={groups}
-          mobileOpen={mobileOpen}
-          onCloseMobile={() => setMobileOpen(false)}
-          topOffset={headerHeight}
-        />
-        <main
-          ref={mainRef}
-          className="relative min-w-0 flex-1 scroll-smooth overflow-x-hidden overflow-y-auto"
-        >
-          {children}
-          <Footer />
-        </main>
-      </div>
+      <Header />
+      <main
+        ref={mainRef}
+        className="relative min-h-0 flex-1 scroll-smooth overflow-x-hidden overflow-y-auto"
+      >
+        {children}
+        <Footer />
+      </main>
 
       <ShareButton />
 
