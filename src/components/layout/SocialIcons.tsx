@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaMedium } from "react-icons/fa";
 
 const links = [
   { href: "mailto:sungminryu94@gmail.com", label: "Email", Icon: FaEnvelope },
@@ -7,7 +7,6 @@ const links = [
     label: "LinkedIn",
     Icon: FaLinkedin,
   },
-  { href: "https://github.com/WheatBeer", label: "GitHub", Icon: FaGithub },
   { href: "https://medium.com/@wheatbeer", label: "Medium", Icon: FaMedium },
 ];
 

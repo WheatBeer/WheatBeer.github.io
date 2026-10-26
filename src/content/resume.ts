@@ -8,7 +8,7 @@ export interface ResumeItem {
   /** Draws a divider above this item, separating it from the previous one. */
   separatorBefore?: boolean;
   /** Only used by the Contact section, rendered as an icon + label link. */
-  icon?: "email" | "linkedin" | "github";
+  icon?: "email" | "linkedin";
   href?: string;
   label?: string;
 }
@@ -48,12 +48,6 @@ export const resumeSections: ResumeSection[] = [
         icon: "linkedin",
         href: "https://www.linkedin.com/in/sungmin-ryu-2b0605194/",
         label: "LinkedIn",
-      },
-      {
-        titleHtml: `Github: <a href="https://github.com/WheatBeer" target="_blank" rel="noopener noreferrer">GitHub</a>`,
-        icon: "github",
-        href: "https://github.com/WheatBeer",
-        label: "GitHub",
       },
       {
         titleHtml: `E-mail: <a href="mailto:sungminryu94@gmail.com">sungminryu94@gmail.com</a>`,
