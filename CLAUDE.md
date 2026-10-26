@@ -9,14 +9,14 @@ Next.js(App Router, 정적 export) + TypeScript + Tailwind → GitHub Pages.
 
 ## 어디에 무엇이
 
-- `src/content/resume.ts` — 이력서 데이터(학력·경력·발표 등). 홈(`src/app/page.tsx`)이 곧 이력서다 — 페이지는 이것 하나.
+- `src/content/resume.ts` — 이력서 데이터(학력·경력·발표 등, 구글 문서 `cv`의 파생본). 홈(`src/app/page.tsx`)이 곧 이력서다 — 페이지는 이것 하나.
 - `src/components/` — `home/`(배너·소개), `resume/`(이력서 본문), `layout/`(헤더·푸터·공유 버튼). 사이드바는 없다.
 - 예전 글 8개와 그림은 git 이력에만 있다(이 리포 `5ae53f6` 이전, 볼트는 `8a96f6c`에서 `writing/` 폐지) — 이 리포에 글을 다시 들이지 않는다.
 - `.github/workflows/deploy.yml` — `master` push → `npm ci → npm run build`(node 20) → `out/`을 Pages에 올린다.
 - **할 일은 이 리포에 없다** — 옵시디언 볼트 `~/Projects/obsidian/todo.md`의 `## career` 섹션이 원본이다.
   끝낸 항목은 체크로 남기지 말고 **지운다**(볼트 규칙). 볼트 쓰기 뒤엔 `~/Projects/obsidian/push.sh "<메시지>"`.
-- 이력서 원본 규칙과 파생본(구글 문서·LinkedIn·Seek·리멤버) 목록은 볼트 `~/Projects/obsidian/career/resume.md` —
-  `resume.ts`를 고치면 같은 날 파생본도 맞춘다.
+- **이력서 원본은 구글 문서 `cv`**다(2026-10-26 결정). `resume.ts`는 그걸 따라가는 파생본 — cv가 바뀌면 마스터가 넘기는
+  요청으로 맞춘다. 여기서 먼저 고치지 않는다. 원본 규칙과 파생본 목록은 볼트 `~/Projects/obsidian/career/resume.md`.
 
 ## 지킬 것
 
