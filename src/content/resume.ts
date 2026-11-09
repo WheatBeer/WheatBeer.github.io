@@ -1,4 +1,4 @@
-export const resumeTagline = "Software Engineer at KB Securities";
+export const resumeTagline = "Software Engineer — AI, Trading Systems, C++, Linux";
 
 export interface ResumeItem {
   /** May contain trusted inline HTML (links, <br>) authored by the site owner. */
@@ -33,8 +33,8 @@ export const resumeSections: ResumeSection[] = [
           '<span class="text-xs tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Skills</span>',
         separatorBefore: true,
       },
-      { titleHtml: "C++/Boost C++, Python" },
-      { titleHtml: "Linux, Mac, WSL, Docker" },
+      { titleHtml: "C++, Boost, Python" },
+      { titleHtml: "Linux, macOS, WSL, Docker, Onload (kernel-bypass)" },
       { titleHtml: "Redis (Valkey), Kafka" },
       { titleHtml: "MySQL, PostgreSQL, Altibase" },
     ],
@@ -90,28 +90,28 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `Software Engineer<br>Passive Tech Team &middot; <a href="https://www.kbsec.com" target="_blank" rel="noopener noreferrer">KB Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Apr. 2026 - Present",
         subItemsHtml: [
-          "Supporting ETF/ETN/ELW Liquidity Provider (LP) and Derivatives Market Making (MM)",
-          "Managing the installation of Horizon OMS at HKEX (Hong Kong Exchange) colocation",
+          "Supporting market making (MM) for ETF and derivatives",
+          "Managing the installation of the Horizon order management system (OMS) at the HKEX (Hong Kong Exchange) colocation",
+          "Building an AI-based tick-level market simulator for strategy testing",
         ],
       },
       {
         titleHtml: `Quantitative Developer<br>Quant Dealing Part &middot; <a href="https://iprovest.com/" target="_blank" rel="noopener noreferrer">Kyobo Securities</a><br>Seoul, Republic of Korea`,
         dateRange: "Feb. 2023 - Apr. 2026",
         subItemsHtml: [
-          "Developed and improved automated market making (MM) systems in KRX securities and derivatives markets",
-          "Developed HFT-based arbitrage platform through DMA systems",
-          "Developed an order management system (OMS) from scratch",
-          "C++17/Boost C++, MySQL, Redis, and Onload",
+          "Developed and improved automated MM systems for the Korea Exchange (KRX) securities and derivatives markets",
+          "Built a high-frequency trading (HFT) arbitrage platform on direct market access (DMA)",
+          "Developed an OMS from scratch",
         ],
       },
       {
-        titleHtml: `Software Engineer<br>IT Team &middot; <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (Derivatives Brokerage House)<br>Seoul, Republic of Korea`,
+        titleHtml: `Software Engineer<br>IT Team &middot; <a href="https://futures.co.kr/" target="_blank" rel="noopener noreferrer">NH Futures</a> (derivatives brokerage)<br>Seoul, Republic of Korea`,
         dateRange: "Aug. 2022 - Jan. 2023",
         subItemsHtml: [
-          "Linux system programming (e.g., IPC, thread, socket, etc.)",
+          "Linux system programming (IPC, threads, sockets)",
           "Developed and operated front-end processor (FEP) systems",
-          "Reorganized and developed HTS/MTS server systems to respond to the next-generation system of the Korea Exchange (KRX)",
-          "Operated direct market access (DMA) order management systems",
+          "Rebuilt HTS/MTS server systems for the next-generation KRX",
+          "Operated DMA order management systems",
         ],
       },
       {
@@ -150,8 +150,8 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: "Yonsei Blockchain LAB<br>Yonsei University, Seoul, Republic of Korea",
         dateRange: "May. 2018 - Sep. 2018",
         subItemsHtml: [
-          "Developed smart contracts in C++",
-          `Lecturer for <a href="https://github.com/EOSIO" target="_blank" rel="noopener noreferrer">EOSIO</a> software system`,
+          "Wrote smart contracts in C++",
+          `Lectured on the <a href="https://github.com/EOSIO" target="_blank" rel="noopener noreferrer">EOSIO</a> blockchain platform`,
         ],
       },
       {
@@ -182,7 +182,7 @@ export const resumeSections: ResumeSection[] = [
     heading: "Patents",
     items: [
       {
-        titleHtml: `W. Song, C. Park, B. Kim, and <b>S. Ryu</b>, &ldquo;Neural Network Computing Device and Control Method,&rdquo; <i>US17/883010</i>, Aug. 2022.`,
+        titleHtml: `W. Song, C. Park, B. Kim, and <b>S. Ryu</b>, &ldquo;Neural Network Computing Device and Control Method Thereof,&rdquo; <i>US 17/883,010</i>, Aug. 2022.`,
       },
     ],
   },
