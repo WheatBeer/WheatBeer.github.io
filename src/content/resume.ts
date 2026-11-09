@@ -170,10 +170,10 @@ export const resumeSections: ResumeSection[] = [
     heading: "Publications",
     items: [
       {
-        titleHtml: `C. Park, B. Kim, <b>S. Ryu</b>, and W. Song, &ldquo;NeuroSpector: Systematic Optimization of Dataflow Scheduling in DNN Accelerators,&rdquo; <i>IEEE Transactions on Parallel and Distributed Systems (TPDS)</i>, vol. 34, no. 8, Aug. 2023, pp. 2279-2294 <a href="https://ieeexplore.ieee.org/document/10145602/" target="_blank" rel="noopener noreferrer">[Paper]</a> <a href="https://github.com/yonsei-icsl/neurospector" target="_blank" rel="noopener noreferrer">[Github]</a>`,
+        titleHtml: `C. Park, B. Kim, <b>S. Ryu</b>, and W. Song, &ldquo;NeuroSpector: Systematic Optimization of Dataflow Scheduling in DNN Accelerators,&rdquo; <i>IEEE Transactions on Parallel and Distributed Systems (TPDS)</i>, vol. 34, no. 8, Aug. 2023, pp. 2279-2294 <a href="https://doi.org/10.1109/TPDS.2023.3283491" target="_blank" rel="noopener noreferrer">[Paper]</a> <a href="https://github.com/yonsei-icsl/neurospector" target="_blank" rel="noopener noreferrer">[Github]</a>`,
       },
       {
-        titleHtml: `<b>S. Ryu</b>, &ldquo;Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction,&rdquo; <i>Master&rsquo;s Thesis</i>, Yonsei University, Dec. 2021. <a href="https://library.yonsei.ac.kr/search/detail/CAT000002096932?briefLink=/main/searchBrief?q=%EB%B0%94%ED%85%80%EC%97%85+%EB%A7%A4%ED%95%91" target="_blank" rel="noopener noreferrer">[Paper]</a>`,
+        titleHtml: `<b>S. Ryu</b>, &ldquo;Optimization of Reconfigurable Deep Neural Network Accelerators Using Bottom-up Mapping and Energy Prediction,&rdquo; <i>Master&rsquo;s Thesis</i>, Yonsei University, Dec. 2021. <a href="https://library.yonsei.ac.kr/search/detail/CAT000002096932" target="_blank" rel="noopener noreferrer">[Paper]</a>`,
       },
     ],
   },
@@ -182,7 +182,7 @@ export const resumeSections: ResumeSection[] = [
     heading: "Patents",
     items: [
       {
-        titleHtml: `W. Song, C. Park, B. Kim, and <b>S. Ryu</b>, &ldquo;Neural Network Computing Device and Control Method Thereof,&rdquo; <i>US 17/883,010</i>, Aug. 2022.`,
+        titleHtml: `W. Song, C. Park, B. Kim, and <b>S. Ryu</b>, &ldquo;Neural Network Computing Device and Control Method Thereof,&rdquo; <i>US 17/883,010</i>, Aug. 2022. <a href="https://patents.google.com/patent/US20230042773" target="_blank" rel="noopener noreferrer">[Link]</a>`,
       },
     ],
   },
@@ -191,7 +191,7 @@ export const resumeSections: ResumeSection[] = [
     heading: "Certifications",
     items: [
       {
-        titleHtml: "Certified Derivatives Investment Advisor (파생상품투자권유자문인력), Korea Financial Investment Association",
+        titleHtml: "Certified Derivatives Investment Advisor, Korea Financial Investment Association",
         dateRange: "Nov. 2022",
       },
     ],
@@ -203,5 +203,10 @@ export const resumeSections: ResumeSection[] = [
       { titleHtml: "Graduate Admission Scholarship, Yonsei University", dateRange: "Jan. 2020" },
       { titleHtml: "High Honors Student Award, Yonsei University", dateRange: "Jan. 2019" },
     ],
+  },
+  {
+    id: "languages",
+    heading: "Languages",
+    items: [{ titleHtml: "Korean (Native) &middot; English (Proficient)" }],
   },
 ];
