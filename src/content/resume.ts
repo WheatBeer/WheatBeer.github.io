@@ -35,8 +35,7 @@ export const resumeSections: ResumeSection[] = [
       },
       { titleHtml: "C++, Boost, Python" },
       { titleHtml: "Linux, macOS, WSL, Docker, Onload (kernel-bypass)" },
-      { titleHtml: "Redis (Valkey), Kafka" },
-      { titleHtml: "MySQL, PostgreSQL, Altibase" },
+      { titleHtml: "MySQL, Redis (Valkey), PostgreSQL, Altibase" },
     ],
   },
   {
