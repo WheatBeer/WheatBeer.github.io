@@ -58,31 +58,6 @@ export const resumeSections: ResumeSection[] = [
     ],
   },
   {
-    id: "education",
-    heading: "Education",
-    items: [
-      {
-        titleHtml:
-          "M.S. in Electrical &amp; Electronic Engineering<br>Yonsei University, Seoul, Republic of Korea",
-        dateRange: "Mar. 2020 - Feb. 2022",
-        subItemsHtml: [
-          `Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank" rel="noopener noreferrer">William J. Song</a>`,
-          `Lab: <a href="https://casl.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Computer Architecture and System Lab (CASL)</a>`,
-        ],
-      },
-      {
-        titleHtml:
-          "B.S. in Electrical &amp; Electronic Engineering<br>Yonsei University, Seoul, Republic of Korea",
-        dateRange: "Mar. 2017 - Feb. 2020",
-        subItemsHtml: ["Transferred from Sogang University"],
-      },
-      {
-        titleHtml: "Whimoon High School, Seoul, Republic of Korea",
-        dateRange: "Mar. 2009 - Feb. 2012",
-      },
-    ],
-  },
-  {
     id: "work-experiences",
     heading: "Work Experiences",
     items: [
@@ -126,6 +101,31 @@ export const resumeSections: ResumeSection[] = [
         titleHtml: `Intern<br><a href="https://ai3.kr/" target="_blank" rel="noopener noreferrer">Chain Partners</a> (Blockchain Start-up)<br>Seoul, Republic of Korea`,
         dateRange: "May. 2018 - Sep. 2018",
         subItemsHtml: ["Research on blockchain systems", "UI/UX design for blockchain applications"],
+      },
+    ],
+  },
+  {
+    id: "education",
+    heading: "Education",
+    items: [
+      {
+        titleHtml:
+          "M.S. in Electrical &amp; Electronic Engineering<br>Yonsei University, Seoul, Republic of Korea",
+        dateRange: "Mar. 2020 - Feb. 2022",
+        subItemsHtml: [
+          `Advisor: <a href="https://sites.google.com/site/wjhsong" target="_blank" rel="noopener noreferrer">William J. Song</a>`,
+          `Lab: <a href="https://casl.yonsei.ac.kr/" target="_blank" rel="noopener noreferrer">Computer Architecture and System Lab (CASL)</a>`,
+        ],
+      },
+      {
+        titleHtml:
+          "B.S. in Electrical &amp; Electronic Engineering<br>Yonsei University, Seoul, Republic of Korea",
+        dateRange: "Mar. 2017 - Feb. 2020",
+        subItemsHtml: ["Transferred from Sogang University"],
+      },
+      {
+        titleHtml: "Whimoon High School, Seoul, Republic of Korea",
+        dateRange: "Mar. 2009 - Feb. 2012",
       },
     ],
   },
